@@ -1,3 +1,8 @@
+@import '../../styles/colors.css';
+
+$button-height: 42px;
+
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -5,13 +10,114 @@
   align-items: flex-end;
   justify-content: center;
   position: relative;
+  overflow: hidden;
   .bg {
-    max-width: 80vw;
-    position: absolute;
-    bottom: 20vh;
-    z-index: -1;
+    display: none;
+    @media (min-width: 500px) {
+      display: block;
+      max-width: 90vw;
+      position: absolute;
+      bottom: 15vh;
+      z-index: -1;
+    }
   }
   .deskitems {
-    width: 80vw;
+    margin-bottom: -5px;
+    width: 75vw;
+  }
+  header {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 500px) {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    hgroup {
+      text-align: center;
+      @media (min-width: 500px) {
+        text-align: left;
+        margin-top: 35vh;
+        margin-left: 15vw;
+      }
+      h1 {
+        font-size: 5em;
+        margin: 0;
+        transition: 500ms;
+        @media (min-width: 800px) {
+          font-size: 8em;
+        }
+      }
+      .tagline {
+        font-size: 1.5em;
+        margin: 0;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        @media (min-width: 500px) {
+          flex-direction: row;
+        }
+        .ctas {
+          .cta {
+            line-height: calc($button-height + 10px);
+            border: 1px solid $color-main;
+            background: white;
+            padding: 10px 20px;
+            margin-right: 5px;
+            color: $color-main;
+          }
+        }
+        .social {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .fa {
+            background: rgb(50, 100, 150);
+            border-radius: 50%;
+            position: relative;
+            height: $button-height;
+            width: $button-height;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3px;
+            &:after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              border: solid 2px white;
+              transform: scale(0.8);
+              position: absolute;
+              top: -2px;
+              left: -2px;
+              border-radius: 50%;
+              transition: all 0.5s ease;
+            }
+            &:hover:after {
+              transform: scale(1);
+              border-color: rgb(50,100,150)
+            }
+            &:hover {
+              background: white;
+              transition: all 0.5s ease;
+              transform: rotate(180deg);
+              cursor: pointer;
+              box-shadow: none;
+              color: rgb(50,100,150);
+            }
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -4,6 +4,8 @@ import { TimelineMax,  } from 'gsap/all';
 import BackgroundImage from '../../images/Landing-Desk/home-background.svg'
 import DeskItems from '../../images/Landing-Desk/desk-items.svg'
 
+import { FaInstagram, FaTwitter, FaGithubAlt, FaCodepen, FaLinkedin } from 'react-icons/fa';
+
 import componentStyles from './landing-desk.module.css'
 
 class DeskLanding extends Component {
@@ -12,11 +14,49 @@ class DeskLanding extends Component {
       <section className={componentStyles.container}>
         <BackgroundImage className={componentStyles.bg} />
         <DeskItems className={componentStyles.deskitems} />
+        <header>
+          <hgroup>
+            <h1>mJordan</h1>
+            <p className={componentStyles.tagline}>I design, develop & teach the web</p>
+            <div className={componentStyles.buttons}>
+              <div className={componentStyles.ctas}>
+                <a href="/projects" className={componentStyles.cta}>Projects</a>
+                <a href="/about" className={componentStyles.cta}>About</a>
+              </div>
+              <div className={componentStyles.social} >
+                <a href="https://www.twitter.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faTwitter} ${componentStyles.fa}`}>
+                  <FaTwitter />
+                </a>
+                <a href="https://www.github.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faGithub} ${componentStyles.fa}`}>
+                  <FaGithubAlt />
+                </a>
+                <a href="https://www.codepen.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faCodepen} ${componentStyles.fa}`}>
+                  <FaCodepen />
+                </a>
+                <a href="https://www.linkedin.com/in/michellejl/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faLinkedin} ${componentStyles.fa}`}>
+                  <FaLinkedin />
+                </a>
+                <a href="https://www.instagram.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faInstagram} ${componentStyles.fa}`}>
+                  <FaInstagram />
+                </a>
+              </div>
+            </div>
+          </hgroup>
+        </header>
       </section>
     );
   }
 
   componentDidMount() {
+    let lochmara      = '#326496',
+        comp          = '#966432',
+        splitRed      = '#963232',
+        splitYellow   = '#969632',
+        triPink       = '#963264',
+        triGreen      = '#649632';
+
+    let allColors = [lochmara, comp, splitRed]
+
     let lightRed      = '#f9dcdc',
         lightOrange   = '#ffeede',
         lightYellow   = '#f7f6e2',
