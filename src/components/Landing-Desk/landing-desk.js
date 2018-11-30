@@ -8,6 +8,27 @@ import { FaInstagram, FaTwitter, FaGithubAlt, FaCodepen, FaLinkedin } from 'reac
 
 import componentStyles from './landing-desk.module.css'
 
+let lochmara      = '#326496';
+
+// let allColors = ['#FA6050', '#FCB315', '#FFD203', '#BAD533', '#7ACED7'];
+let allColors = ['#AE70AF', '#F37E43', '#E66565', '#FFD603', '#9FCEB4', '#ACCAE8', '#9295CA'];
+
+let lightRed      = '#f9dcdc',
+    lightOrange   = '#ffeede',
+    lightYellow   = '#f7f6e2',
+    lightGreen    = '#e1f9e4',
+    lightBlue     = '#d2e9f9',
+    lightPurple   = '#f5e3fc';
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  function getRandomColor() {
+    let num = getRandomInt(allColors.length);
+    return allColors[num];    
+  }
+    
 class DeskLanding extends Component {
   render() {
     return (
@@ -16,27 +37,27 @@ class DeskLanding extends Component {
         <DeskItems className={componentStyles.deskitems} />
         <header>
           <hgroup>
-            <h1>mJordan</h1>
+            <h1 id="name">mJordan</h1>
             <p className={componentStyles.tagline}>I design, develop & teach the web</p>
             <div className={componentStyles.buttons}>
               <div className={componentStyles.ctas}>
-                <a href="/projects" className={componentStyles.cta}>Projects</a>
-                <a href="/about" className={componentStyles.cta}>About</a>
+                <a href="/projects" className={`${componentStyles.cta} cta`}>Projects</a>
+                <a href="/about" className={`${componentStyles.cta} cta`}>About</a>
               </div>
               <div className={componentStyles.social} >
-                <a href="https://www.twitter.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faTwitter} ${componentStyles.fa}`}>
+                <a href="https://www.twitter.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faTwitter} ${componentStyles.fa} fa`}>
                   <FaTwitter />
                 </a>
-                <a href="https://www.github.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faGithub} ${componentStyles.fa}`}>
+                <a href="https://www.github.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faGithub} ${componentStyles.fa} fa`}>
                   <FaGithubAlt />
                 </a>
-                <a href="https://www.codepen.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faCodepen} ${componentStyles.fa}`}>
+                <a href="https://www.codepen.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faCodepen} ${componentStyles.fa} fa`}>
                   <FaCodepen />
                 </a>
-                <a href="https://www.linkedin.com/in/michellejl/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faLinkedin} ${componentStyles.fa}`}>
+                <a href="https://www.linkedin.com/in/michellejl/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faLinkedin} ${componentStyles.fa} fa`}>
                   <FaLinkedin />
                 </a>
-                <a href="https://www.instagram.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faInstagram} ${componentStyles.fa}`}>
+                <a href="https://www.instagram.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faInstagram} ${componentStyles.fa} fa`}>
                   <FaInstagram />
                 </a>
               </div>
@@ -48,21 +69,44 @@ class DeskLanding extends Component {
   }
 
   componentDidMount() {
-    let lochmara      = '#326496',
-        comp          = '#966432',
-        splitRed      = '#963232',
-        splitYellow   = '#969632',
-        triPink       = '#963264',
-        triGreen      = '#649632';
 
-    let allColors = [lochmara, comp, splitRed]
+    // Randomize name colors
+    const name = document.getElementById('name').textContent;
+    let formattedName = '';
+    for(let i = 0; i < name.length; i++) {
+      formattedName += `<span style="color: ${getRandomColor()}">${name[i]}</span>`;
+    }
+    document.getElementById('name').innerHTML = formattedName;
 
-    let lightRed      = '#f9dcdc',
-        lightOrange   = '#ffeede',
-        lightYellow   = '#f7f6e2',
-        lightGreen    = '#e1f9e4',
-        lightBlue     = '#d2e9f9',
-        lightPurple   = '#f5e3fc';
+    // Randomize color of CTAs
+    const ctaButtons = document.querySelectorAll('.cta');
+    for(let i = 0; i < ctaButtons.length; i++) {
+      let color = getRandomColor();
+      let attrs = `border-color: ${color}; color: ${color}`
+      ctaButtons[i].setAttribute('style', attrs)
+
+      ctaButtons[i].onmouseover = function(){
+        this.setAttribute('style', `border-color: #000`)
+      }
+      ctaButtons[i].onmouseout = function(){
+        this.setAttribute('style', `border-color: ${color}`)
+      }
+    }
+
+    // object.onmouseover = function(){myScript};
+
+    const social = document.querySelectorAll('.fa');
+    for(let i = 0; i < social.length; i++) {
+      let color = getRandomColor();
+      let attrs = `background: ${color}`
+      social[i].setAttribute('style', attrs)
+      social[i].onmouseover = function(){
+        this.setAttribute('style', `background: #fff; color: ${color};`)
+      }
+      social[i].onmouseout = function(){
+        this.setAttribute('style', `background: ${color}; color: #fff;`)
+      }
+    }
 
     const bang = document.getElementById('bang').querySelectorAll('path');
     const bangColorChange = new TimelineMax({repeat: -1});

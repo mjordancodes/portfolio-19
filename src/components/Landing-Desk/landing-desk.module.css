@@ -46,9 +46,18 @@ $button-height: 42px;
       h1 {
         font-size: 5em;
         margin: 0;
-        transition: 500ms;
+        transition: 2s;
         @media (min-width: 800px) {
           font-size: 8em;
+          background: rgba(255, 255, 255, 0.4);
+          padding: 20px;
+          outline: 2px solid #000;
+          border: 2px solid #000;
+          outline-offset: -15px;
+          &:hover {
+            outline-offset: 100vw;
+            outline-color: #fff;
+          }
         }
       }
       .tagline {
@@ -65,11 +74,13 @@ $button-height: 42px;
         .ctas {
           .cta {
             line-height: calc($button-height + 10px);
-            border: 1px solid $color-main;
+            border: 3px solid $color-main;
             background: white;
             padding: 10px 20px;
             margin-right: 5px;
             color: $color-main;
+            text-decoration: none;
+            transition: 1s;
           }
         }
         .social {
@@ -101,7 +112,7 @@ $button-height: 42px;
             }
             &:hover:after {
               transform: scale(1);
-              border-color: rgb(50,100,150)
+              border-color: #000;
             }
             &:hover {
               background: white;
