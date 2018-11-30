@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { TimelineMax, Power0 } from 'gsap/all'; 
 
-import BackgroundImage from '../../images/Landing-Desk/home-background.svg'
-import DeskItems from '../../images/Landing-Desk/desk-items.svg'
+import BackgroundImage from '../../images/Landing-Desk/home-background.svg';
+import DeskItems from '../../images/Landing-Desk/desk-items.svg';
 
 import { FaInstagram, FaTwitter, FaGithubAlt, FaCodepen, FaLinkedin } from 'react-icons/fa';
 
-import componentStyles from './landing-desk.module.css'
+import componentStyles from './landing-desk.module.css';
 
 // let allColors = ['#FA6050', '#FCB315', '#FFD203', '#BAD533', '#7ACED7'];
 let allColors = ['#AE70AF', '#F37E43', '#E66565', '#FFD603', '#9FCEB4', '#ACCAE8', '#9295CA'];
