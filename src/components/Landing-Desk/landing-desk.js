@@ -215,9 +215,9 @@ class DeskLanding extends Component {
                  .to(fish, 3, {x:50, y:-240, ease: Power0.easeNone})
                  .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:120, y:-220, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:50, y:-200, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
                  .to(fish, 3, {x:120, y:-180, ease: Power0.easeNone})
                  .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:50, y:-160, ease: Power0.easeNone})
@@ -238,125 +238,34 @@ class DeskLanding extends Component {
                  .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:50, y:0, ease: Power0.easeNone})
 
+
     const  bubble1 = document.getElementById('bubble1');
-    const bubble1Animation = new TimelineMax({repeat: -1, delay: 7});
-    bubble1Animation.to(bubble1, 1, {y: -50, x:10, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -150, x:10, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -250, x:10, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -350, x:10, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -450, x:10, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -550, x:10, ease: Power0.easeNone})
-                    .to(bubble1, 1, {y: -600, x:-10, ease: Power0.easeNone})
-                    
     const  bubble2 = document.getElementById('bubble2');
-    const bubble2Animation = new TimelineMax({repeat: -1, delay: 3});
-    bubble2Animation.to(bubble2, 1, {y: -50, x:10, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -150, x:10, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -250, x:10, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -350, x:10, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -450, x:10, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -550, x:10, ease: Power0.easeNone})
-                    .to(bubble2, 1, {y: -600, x:-10, ease: Power0.easeNone})
-    
     const  bubble3 = document.getElementById('bubble3');
-    const bubble3Animation = new TimelineMax({repeat: -1});
-    bubble3Animation.to(bubble3, 1, {y: -50, x:10, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -150, x:10, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -250, x:10, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -350, x:10, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -450, x:10, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -550, x:10, ease: Power0.easeNone})
-                    .to(bubble3, 1, {y: -600, x:-10, ease: Power0.easeNone})
-    
     const  bubble4 = document.getElementById('bubble4');
-    const bubble4Animation = new TimelineMax({repeat: -1, delay: 9});
-    bubble4Animation.to(bubble4, 1, {y: -50, x:10, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -150, x:10, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -250, x:10, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -350, x:10, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -450, x:10, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -550, x:10, ease: Power0.easeNone})
-                    .to(bubble4, 1, {y: -600, x:-10, ease: Power0.easeNone})
-    
     const  bubble5 = document.getElementById('bubble5');
-    const bubble5Animation = new TimelineMax({repeat: -1, delay: 5});
-    bubble5Animation.to(bubble5, 1, {y: -50, x:10, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -150, x:10, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -250, x:10, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -350, x:10, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -450, x:10, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -550, x:10, ease: Power0.easeNone})
-                    .to(bubble5, 1, {y: -600, x:-10, ease: Power0.easeNone})
-    
     const  bubble6 = document.getElementById('bubble6');
-    const bubble6Animation = new TimelineMax({repeat: -1, delay: 4});
-    bubble6Animation.to(bubble6, 1, {y: -50, x:10, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -150, x:10, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -250, x:10, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -350, x:10, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -450, x:10, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -550, x:10, ease: Power0.easeNone})
-                    .to(bubble6, 1, {y: -600, x:-10, ease: Power0.easeNone})
-    
     const  bubble7 = document.getElementById('bubble7');
-    const bubble7Animation = new TimelineMax({repeat: -1, delay: 1});
-    bubble7Animation.to(bubble7, 1, {y: -50, x:10, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -150, x:10, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -250, x:10, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -350, x:10, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -450, x:10, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -550, x:10, ease: Power0.easeNone})
-                    .to(bubble7, 1, {y: -600, x:-10, ease: Power0.easeNone})
-    
     const  bubble8 = document.getElementById('bubble8');
-    const bubble8Animation = new TimelineMax({repeat: -1, delay: 6});
-    bubble8Animation.to(bubble8, 1, {y: -50, x:10, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -150, x:10, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -250, x:10, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -350, x:10, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -450, x:10, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -550, x:10, ease: Power0.easeNone})
-                    .to(bubble8, 1, {y: -600, x:-10, ease: Power0.easeNone})
+
+    // const bubbles = [bubble1, bubble2, bubble3, bubble4, bubble5, bubble6, bubble7, bubble8]
+    const bubbles = [bubble3, bubble1, bubble7, bubble6, bubble8, bubble2, bubble5, bubble4]
+
+    for(let i = 0; i < bubbles.length; i++) {
+      new TimelineMax({repeat: -1, delay: i})
+        .to(bubbles[i], 1, {y: -50, x:10, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -150, x:10, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -250, x:10, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -350, x:10, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -450, x:10, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -550, x:10, ease: Power0.easeNone})
+        .to(bubbles[i], 1, {y: -600, x:-10, ease: Power0.easeNone})
+    }
 
     // Stickers
     const debugging = document.getElementById('rubber-duck-debugger');

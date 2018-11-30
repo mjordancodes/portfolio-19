@@ -22,7 +22,7 @@ $button-height: 42px;
     }
   }
   .deskitems {
-    margin-bottom: -3px;
+    margin-bottom: -1px;
     width: 95vw;
     @media (min-width: 500px) {
       width: 75vw;
@@ -40,11 +40,13 @@ $button-height: 42px;
       justify-content: flex-start;
     }
     hgroup {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 10px;
       text-align: center;
       font-weight: bold;
       @media (min-width: 500px) {
         text-align: left;
-        margin-top: 35vh;
+        margin-top: 27vh;
         margin-left: 15vw;
       }
       h1 {
