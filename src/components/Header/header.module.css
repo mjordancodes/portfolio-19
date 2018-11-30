@@ -1,0 +1,51 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 5vw;
+  z-index: 10;
+  width: 90vw;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 500px) {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  h1 {
+    flex-grow: 3;
+    text-align: center;
+    @media (min-width: 500px) {
+      margin: 0;
+      text-align: left;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  nav {
+    padding: 10px 0;
+    @media (min-width: 500px) {
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+    a {
+      color: #000;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+    .pages {
+      display: none;
+      flex-grow: 1;
+      @media (min-width: 500px) {
+        display: flex;
+        max-width: 35vw;
+        justify-content: space-between;
+      }
+    }
+  }
+}

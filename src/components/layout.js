@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -29,7 +28,6 @@ const Layout = ({ children }) => (
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           {children}
         </div>
