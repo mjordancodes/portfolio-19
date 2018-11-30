@@ -128,6 +128,10 @@ class DeskLanding extends Component {
 
       let author = svgBooks[i].querySelector('[id*="author"]');
       author.textContent = recentlyRead[i].author;
+
+      svgBooks[i].addEventListener('click', function() {
+        window.location.href = '/books-read'
+      })
     }
 
     // Background Animation
@@ -249,14 +253,25 @@ class DeskLanding extends Component {
     const rdnode = document.getElementById('node-duck');
     const rdterminal = document.getElementById('terminal-duck');
 
-    const stickerAnimations = new TimelineMax({delay: 2});
+    const allStickers = [debugging, rdcss, rdhtml, rdjs, rdnode, rdterminal];
 
+    for (let i = 0; i < allStickers.length; i++) {
+      allStickers[i].addEventListener('click', function() {
+        window.location.href = '/stickers';
+      });
+    }
+
+    const stickerAnimations = new TimelineMax({delay: 2});
     stickerAnimations.from(debugging, 2, {autoAlpha: 0, ease: Power0.easeNone})
                      .from(rdhtml, 2, {autoAlpha: 0, ease: Power0.easeNone})
                      .from(rdjs, 2, {autoAlpha: 0, ease: Power0.easeNone})
                      .from(rdcss, 2, {autoAlpha: 0, ease: Power0.easeNone})
                      .from(rdterminal, 2, {autoAlpha: 0, ease: Power0.easeNone})
                      .from(rdnode, 2, {autoAlpha: 0, ease: Power0.easeNone})
+
+    document.getElementById('camera').addEventListener('click', function() {
+      window.location.href = 'http://threewoodenpigeons.com';
+    })
 
   }
 }
