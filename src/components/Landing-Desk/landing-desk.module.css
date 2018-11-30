@@ -23,7 +23,10 @@ $button-height: 42px;
   }
   .deskitems {
     margin-bottom: -3px;
-    width: 75vw;
+    width: 95vw;
+    @media (min-width: 500px) {
+      width: 75vw;
+    }
   }
   header {
     display: flex;

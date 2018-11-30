@@ -80,32 +80,57 @@ class DeskLanding extends Component {
     const ctaButtons = document.querySelectorAll('.cta');
     for(let i = 0; i < ctaButtons.length; i++) {
       let color = getRandomColor();
-      let attrs = `border-color: ${color}; color: ${color}`
-      ctaButtons[i].setAttribute('style', attrs)
+      let attrs = `border-color: ${color}; color: ${color}`;
+      ctaButtons[i].setAttribute('style', attrs);
 
       ctaButtons[i].onmouseover = function(){
-        this.setAttribute('style', `border-color: #000; color: #000`)
+        this.setAttribute('style', `border-color: #000; color: #000`);
       }
       ctaButtons[i].onmouseout = function(){
         color = getRandomColor();
-        this.setAttribute('style', `border-color: ${color}; color: ${color}`)
+        this.setAttribute('style', `border-color: ${color}; color: ${color}`);
       }
     }
 
+    // Randomize color of social icons
     const social = document.querySelectorAll('.fa');
     for(let i = 0; i < social.length; i++) {
       let color = getRandomColor();
       let attrs = `background: ${color}`
-      social[i].setAttribute('style', attrs)
+      social[i].setAttribute('style', attrs);
       social[i].onmouseover = function(){
-        this.setAttribute('style', `background: #fff; color: ${color};`)
-      }
+        this.setAttribute('style', `background: #fff; color: ${color};`);
+      };
       social[i].onmouseout = function(){
         color = getRandomColor();
-        this.setAttribute('style', `background: ${color}; color: #fff; transition: 1s;`)
+        this.setAttribute('style', `background: ${color}; color: #fff; transition: 1s;`);
       }
     }
 
+    // Set Book titles/authors
+    const svgBooks = [
+      document.getElementById('book-top'), 
+      document.getElementById('book-middle'), 
+      document.getElementById('book-bottom') ]
+
+    const recentlyRead = [
+      {title: 'SVG Animations',
+        author: 'Sarah Drasner'},
+      {title: 'Knife of Dreams',
+        author: 'Robert Jordan'},
+      {title: 'Crossroads of Twilight',
+        author: 'Robert Jordan'},
+    ]
+
+    for(let i = 0; i < svgBooks.length; i++) {
+      let title = svgBooks[i].querySelector('[id*="title"]');
+      title.textContent = recentlyRead[i].title;
+
+      let author = svgBooks[i].querySelector('[id*="author"]');
+      author.textContent = recentlyRead[i].author;
+    }
+
+    // Background Animation
     const bang = document.getElementById('bang').querySelectorAll('path');
     const bangColorChange = new TimelineMax({repeat: -1});
     bangColorChange.to(bang, 2, {fill: lightPurple})
@@ -118,50 +143,51 @@ class DeskLanding extends Component {
     const closingBrackets = document.getElementById('closing-brackets').querySelectorAll('path');
     const cbColorChange = new TimelineMax({repeat: -1, delay: 1});
     cbColorChange.to(closingBrackets, 2, {fill: lightPurple})
-                    .to(closingBrackets, 2, {fill: lightRed})
-                    .to(closingBrackets, 2, {fill: lightOrange})
-                    .to(closingBrackets, 2, {fill: lightYellow})
-                    .to(closingBrackets, 2, {fill: lightGreen})
-                    .to(closingBrackets, 2, {fill: lightBlue});
+                  .to(closingBrackets, 2, {fill: lightRed})
+                  .to(closingBrackets, 2, {fill: lightOrange})
+                  .to(closingBrackets, 2, {fill: lightYellow})
+                  .to(closingBrackets, 2, {fill: lightGreen})
+                  .to(closingBrackets, 2, {fill: lightBlue});
     
     const brackets = document.getElementById('brackets').querySelectorAll('path');
     const bracketsColorChange = new TimelineMax({repeat: -1, delay: 2});
     bracketsColorChange.to(brackets, 2, {fill: lightPurple})
-                  .to(brackets, 2, {fill: lightRed})
-                  .to(brackets, 2, {fill: lightOrange})
-                  .to(brackets, 2, {fill: lightYellow})
-                  .to(brackets, 2, {fill: lightGreen})
-                  .to(brackets, 2, {fill: lightBlue});
+                        .to(brackets, 2, {fill: lightRed})
+                        .to(brackets, 2, {fill: lightOrange})
+                        .to(brackets, 2, {fill: lightYellow})
+                        .to(brackets, 2, {fill: lightGreen})
+                        .to(brackets, 2, {fill: lightBlue});
 
     const curlyBrackets = document.getElementById('curly-brackets').querySelectorAll('path');
     const curlyBracketsColorChange = new TimelineMax({repeat: -1, delay: 3});
     curlyBracketsColorChange.to(curlyBrackets, 2, {fill: lightPurple})
-                    .to(curlyBrackets, 2, {fill: lightRed})
-                    .to(curlyBrackets, 2, {fill: lightOrange})
-                    .to(curlyBrackets, 2, {fill: lightYellow})
-                    .to(curlyBrackets, 2, {fill: lightGreen})
-                    .to(curlyBrackets, 2, {fill: lightBlue});
+                            .to(curlyBrackets, 2, {fill: lightRed})
+                            .to(curlyBrackets, 2, {fill: lightOrange})
+                            .to(curlyBrackets, 2, {fill: lightYellow})
+                            .to(curlyBrackets, 2, {fill: lightGreen})
+                            .to(curlyBrackets, 2, {fill: lightBlue});
 
     const semiColon = document.getElementById('semi-colon').querySelectorAll('path');
     const semiColonColorChange = new TimelineMax({repeat: -1, delay: 4});
     semiColonColorChange.to(semiColon, 2, {fill: lightPurple})
-                    .to(semiColon, 2, {fill: lightRed})
-                    .to(semiColon, 2, {fill: lightOrange})
-                    .to(semiColon, 2, {fill: lightYellow})
-                    .to(semiColon, 2, {fill: lightGreen})
-                    .to(semiColon, 2, {fill: lightBlue});
+                        .to(semiColon, 2, {fill: lightRed})
+                        .to(semiColon, 2, {fill: lightOrange})
+                        .to(semiColon, 2, {fill: lightYellow})
+                        .to(semiColon, 2, {fill: lightGreen})
+                        .to(semiColon, 2, {fill: lightBlue});
 
     const windowFrame = document.getElementById('window-outline');
     const windowFrameColonColorChange = new TimelineMax({repeat: -1});
     windowFrameColonColorChange.to(windowFrame, 10, {stroke: lightPurple})
-                    .to(windowFrame, 10, {stroke: lightRed})
-                    .to(windowFrame, 10, {stroke: lightOrange})
-                    .to(windowFrame, 10, {stroke: lightYellow})
-                    .to(windowFrame, 10, {stroke: lightGreen})
-                    .to(windowFrame, 10, {stroke: lightBlue});
+                                .to(windowFrame, 10, {stroke: lightRed})
+                                .to(windowFrame, 10, {stroke: lightOrange})
+                                .to(windowFrame, 10, {stroke: lightYellow})
+                                .to(windowFrame, 10, {stroke: lightGreen})
+                                .to(windowFrame, 10, {stroke: lightBlue});
 
+    // Fishtank Animations
     const fish = document.getElementById('fish');
-    const fishAnimation = new TimelineMax({});
+    const fishAnimation = new TimelineMax({repeat: -1});
     fishAnimation.to(fish, 3, {x:50, rotation: -15, ease: Power0.easeNone})
                  .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:120, y:-20, ease: Power0.easeNone})
@@ -193,23 +219,23 @@ class DeskLanding extends Component {
                  .to(fish, 3, {x:50, y:-200, ease: Power0.easeNone})
                  .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:120, y:-180, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:50, y:-160, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
                  .to(fish, 3, {x:120, y:-140, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:50, y:-120, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
                  .to(fish, 3, {x:120, y:-100, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:50, y:-80, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
                  .to(fish, 3, {x:120, y:-60, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:50, y:-40, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
                  .to(fish, 3, {x:120, y:-20, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
+                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
                  .to(fish, 3, {x:50, y:0, ease: Power0.easeNone})
 
     const  bubble1 = document.getElementById('bubble1');
@@ -331,8 +357,25 @@ class DeskLanding extends Component {
                     .to(bubble8, 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
                     .to(bubble8, 1, {y: -550, x:10, ease: Power0.easeNone})
                     .to(bubble8, 1, {y: -600, x:-10, ease: Power0.easeNone})
-  }
 
+    // Stickers
+    const debugging = document.getElementById('rubber-duck-debugger');
+    const rdcss = document.getElementById('css-duck');
+    const rdhtml = document.getElementById('html-duck');
+    const rdjs = document.getElementById('javascript-duck');
+    const rdnode = document.getElementById('node-duck');
+    const rdterminal = document.getElementById('terminal-duck');
+
+    const stickerAnimations = new TimelineMax({delay: 2});
+
+    stickerAnimations.from(debugging, 2, {autoAlpha: 0, ease: Power0.easeNone})
+                     .from(rdhtml, 2, {autoAlpha: 0, ease: Power0.easeNone})
+                     .from(rdjs, 2, {autoAlpha: 0, ease: Power0.easeNone})
+                     .from(rdcss, 2, {autoAlpha: 0, ease: Power0.easeNone})
+                     .from(rdterminal, 2, {autoAlpha: 0, ease: Power0.easeNone})
+                     .from(rdnode, 2, {autoAlpha: 0, ease: Power0.easeNone})
+
+  }
 }
 
 
