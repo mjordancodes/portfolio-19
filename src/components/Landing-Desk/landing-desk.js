@@ -132,49 +132,23 @@ class DeskLanding extends Component {
 
     // Background Animation
     const bang = document.getElementById('bang').querySelectorAll('path');
-    const bangColorChange = new TimelineMax({repeat: -1});
-    bangColorChange.to(bang, 2, {fill: lightPurple})
-                    .to(bang, 2, {fill: lightRed})
-                    .to(bang, 2, {fill: lightOrange})
-                    .to(bang, 2, {fill: lightYellow})
-                    .to(bang, 2, {fill: lightGreen})
-                    .to(bang, 2, {fill: lightBlue});
-
     const closingBrackets = document.getElementById('closing-brackets').querySelectorAll('path');
-    const cbColorChange = new TimelineMax({repeat: -1, delay: 1});
-    cbColorChange.to(closingBrackets, 2, {fill: lightPurple})
-                  .to(closingBrackets, 2, {fill: lightRed})
-                  .to(closingBrackets, 2, {fill: lightOrange})
-                  .to(closingBrackets, 2, {fill: lightYellow})
-                  .to(closingBrackets, 2, {fill: lightGreen})
-                  .to(closingBrackets, 2, {fill: lightBlue});
-    
     const brackets = document.getElementById('brackets').querySelectorAll('path');
-    const bracketsColorChange = new TimelineMax({repeat: -1, delay: 2});
-    bracketsColorChange.to(brackets, 2, {fill: lightPurple})
-                        .to(brackets, 2, {fill: lightRed})
-                        .to(brackets, 2, {fill: lightOrange})
-                        .to(brackets, 2, {fill: lightYellow})
-                        .to(brackets, 2, {fill: lightGreen})
-                        .to(brackets, 2, {fill: lightBlue});
-
     const curlyBrackets = document.getElementById('curly-brackets').querySelectorAll('path');
-    const curlyBracketsColorChange = new TimelineMax({repeat: -1, delay: 3});
-    curlyBracketsColorChange.to(curlyBrackets, 2, {fill: lightPurple})
-                            .to(curlyBrackets, 2, {fill: lightRed})
-                            .to(curlyBrackets, 2, {fill: lightOrange})
-                            .to(curlyBrackets, 2, {fill: lightYellow})
-                            .to(curlyBrackets, 2, {fill: lightGreen})
-                            .to(curlyBrackets, 2, {fill: lightBlue});
-
     const semiColon = document.getElementById('semi-colon').querySelectorAll('path');
-    const semiColonColorChange = new TimelineMax({repeat: -1, delay: 4});
-    semiColonColorChange.to(semiColon, 2, {fill: lightPurple})
-                        .to(semiColon, 2, {fill: lightRed})
-                        .to(semiColon, 2, {fill: lightOrange})
-                        .to(semiColon, 2, {fill: lightYellow})
-                        .to(semiColon, 2, {fill: lightGreen})
-                        .to(semiColon, 2, {fill: lightBlue});
+
+    const backgroundChars = [bang, closingBrackets, brackets, curlyBrackets, semiColon];
+
+    for (let i = 0; i < backgroundChars.length; i++) {
+      new TimelineMax({repeat: -1, delay: i})
+        .to(backgroundChars[i], 2, {fill: lightPurple})
+        .to(backgroundChars[i], 2, {fill: lightRed})
+        .to(backgroundChars[i], 2, {fill: lightOrange})
+        .to(backgroundChars[i], 2, {fill: lightYellow})
+        .to(backgroundChars[i], 2, {fill: lightGreen})
+        .to(backgroundChars[i], 2, {fill: lightBlue});
+
+    }
 
     const windowFrame = document.getElementById('window-outline');
     const windowFrameColonColorChange = new TimelineMax({repeat: -1});
