@@ -86,14 +86,13 @@ class DeskLanding extends Component {
       ctaButtons[i].setAttribute('style', attrs)
 
       ctaButtons[i].onmouseover = function(){
-        this.setAttribute('style', `border-color: #000`)
+        this.setAttribute('style', `border-color: #000; color: #000`)
       }
       ctaButtons[i].onmouseout = function(){
-        this.setAttribute('style', `border-color: ${color}`)
+        color = getRandomColor();
+        this.setAttribute('style', `border-color: ${color}; color: ${color}`)
       }
     }
-
-    // object.onmouseover = function(){myScript};
 
     const social = document.querySelectorAll('.fa');
     for(let i = 0; i < social.length; i++) {
@@ -104,7 +103,8 @@ class DeskLanding extends Component {
         this.setAttribute('style', `background: #fff; color: ${color};`)
       }
       social[i].onmouseout = function(){
-        this.setAttribute('style', `background: ${color}; color: #fff;`)
+        color = getRandomColor();
+        this.setAttribute('style', `background: ${color}; color: #fff; transition: 1s;`)
       }
     }
 

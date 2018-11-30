@@ -38,6 +38,7 @@ $button-height: 42px;
     }
     hgroup {
       text-align: center;
+      font-weight: bold;
       @media (min-width: 500px) {
         text-align: left;
         margin-top: 35vh;
@@ -49,15 +50,7 @@ $button-height: 42px;
         transition: 2s;
         @media (min-width: 800px) {
           font-size: 8em;
-          background: rgba(255, 255, 255, 0.4);
           padding: 20px;
-          outline: 2px solid #000;
-          border: 2px solid #000;
-          outline-offset: -15px;
-          &:hover {
-            outline-offset: 100vw;
-            outline-color: #fff;
-          }
         }
       }
       .tagline {
