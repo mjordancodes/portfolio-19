@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import { TimelineMax, Power0 } from 'gsap/all'; 
+import SocialIcons from '../Social-Icons/social-icons';
 
 import BackgroundImage from '../../images/Landing-Desk/home-background.svg';
 import DeskItems from '../../images/Landing-Desk/desk-items.svg';
-
-import { FaInstagram, FaTwitter, FaGithubAlt, FaCodepen, FaLinkedin } from 'react-icons/fa';
 
 import componentStyles from './landing-desk.module.css';
 
@@ -42,23 +41,7 @@ class DeskLanding extends Component {
                 <a href="/projects" className={`${componentStyles.cta} cta`}>Projects</a>
                 <a href="/about" className={`${componentStyles.cta} cta`}>About</a>
               </div>
-              <div className={componentStyles.social} >
-                <a href="https://www.twitter.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faTwitter} ${componentStyles.fa} fa`}>
-                  <FaTwitter />
-                </a>
-                <a href="https://www.github.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faGithub} ${componentStyles.fa} fa`}>
-                  <FaGithubAlt />
-                </a>
-                <a href="https://www.codepen.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faCodepen} ${componentStyles.fa} fa`}>
-                  <FaCodepen />
-                </a>
-                <a href="https://www.linkedin.com/in/michellejl/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faLinkedin} ${componentStyles.fa} fa`}>
-                  <FaLinkedin />
-                </a>
-                <a href="https://www.instagram.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faInstagram} ${componentStyles.fa} fa`}>
-                  <FaInstagram />
-                </a>
-              </div>
+              <SocialIcons />
             </div>
           </hgroup>
         </header>
@@ -89,21 +72,6 @@ class DeskLanding extends Component {
       ctaButtons[i].onmouseout = function(){
         color = getRandomColor();
         this.setAttribute('style', `border-color: ${color}; color: ${color}`);
-      }
-    }
-
-    // Randomize color of social icons
-    const social = document.querySelectorAll('.fa');
-    for(let i = 0; i < social.length; i++) {
-      let color = getRandomColor();
-      let attrs = `background: ${color}`
-      social[i].setAttribute('style', attrs);
-      social[i].onmouseover = function(){
-        this.setAttribute('style', `background: #fff; color: ${color};`);
-      };
-      social[i].onmouseout = function(){
-        color = getRandomColor();
-        this.setAttribute('style', `background: ${color}; color: #fff; transition: 1s;`);
       }
     }
 

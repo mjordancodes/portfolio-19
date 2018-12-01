@@ -28,9 +28,9 @@ const Layout = ({ children }) => (
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
           <html lang="en" />
         </Helmet>
-        <div>
+        <main>
           {children}
-        </div>
+        </main>
       </>
     )}
   />
