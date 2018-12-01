@@ -1,6 +1,6 @@
-.header {
+.header, .headerHome {
   position: fixed;
-  top: 2.5vh;
+  top: 0;
   left: 2.5vw;
   width: 95vw;
   z-index: 10;
@@ -28,4 +28,7 @@
       height: 100%;
     }
   }
+}
+.headerHome {
+  top: 2.5vh;
 }

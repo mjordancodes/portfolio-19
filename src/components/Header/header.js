@@ -1,12 +1,13 @@
 import React from 'react'
 import SocialIcons from '../Social-Icons/social-icons';
+import Logo from '../Logo/logo';
 
 import componentStyles from './header.module.css';
 
 const Header = () => (
   <header className={componentStyles.header}>
     <SocialIcons />
-    <h1><a href="/">mJordan</a></h1>
+    <Logo />
     <nav>
       <div className={componentStyles.pages}>
         <a href="/about">about</a>

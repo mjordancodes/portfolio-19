@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { TimelineMax, Power0 } from 'gsap/all'; 
 import SocialIcons from '../Social-Icons/social-icons';
+import Logo from '../Logo/logo';
 
 import BackgroundImage from '../../images/Landing-Desk/home-background.svg';
 import DeskItems from '../../images/Landing-Desk/desk-items.svg';
@@ -34,7 +35,7 @@ class DeskLanding extends Component {
         <DeskItems className={componentStyles.deskitems} />
         <header>
           <hgroup>
-            <h1 id="name">mJordan</h1>
+            <Logo />
             <p className={componentStyles.tagline}>I design, develop & teach the web</p>
             <div className={componentStyles.buttons}>
               <div className={componentStyles.ctas}>
@@ -50,15 +51,6 @@ class DeskLanding extends Component {
   }
 
   componentDidMount() {
-
-    // Randomize name colors
-    const name = document.getElementById('name').textContent;
-    let formattedName = '';
-    for(let i = 0; i < name.length; i++) {
-      formattedName += `<span style="color: ${getRandomColor()}">${name[i]}</span>`;
-    }
-    document.getElementById('name').innerHTML = formattedName;
-
     // Randomize color of CTAs
     const ctaButtons = document.querySelectorAll('.cta');
     for(let i = 0; i < ctaButtons.length; i++) {

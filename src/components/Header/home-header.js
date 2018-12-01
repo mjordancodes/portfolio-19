@@ -3,7 +3,7 @@ import React from 'react'
 import componentStyles from './header.module.css';
 
 const HomeHeader = () => (
-  <header className={componentStyles.header}>
+  <header className={componentStyles.headerHome}>
     <nav>
       <div className={componentStyles.pages}>
         <a href="/about">about</a>
