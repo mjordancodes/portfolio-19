@@ -1,26 +1,65 @@
 .about {
-  width: 95vw;
+  width: 75vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-areas:  'banana  empty1     hello      hello     empty2'
-                        'banana  community  community  groupImgs groupImgs'
-                        'banana  community  community  group     group'
-                        'banana  empty3     empty3     group     group';
   grid-gap: 10px;
-  .hello {
-    grid-area: hello;
-  }
-  .community {
-    grid-area: community;
-  }
+  grid-template-columns: 1fr;
+  position: relative;
   .meImage {
-    grid-area: banana;
+    position: fixed;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+    height: 85vh;
+    width: 100vw;
+    svg {
+      max-height: 100%;
+      display: block;
+      margin: 0 auto;
+    }
   }
-  .groupImages {
-    grid-area: groupImgs;
+  .hello {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
-  .group {
-    grid-area: group;
+  > * > * {
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (min-width: 800px) {
+  .about {
+    width: 95vw;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:  'meImage  empty1     hello      hello     empty2'
+                          'meImage  community  community  groupImgs groupImgs'
+                          'meImage  community  community  group     group'
+                          'meImage  empty3     empty3     group     group';
+    .hello {
+      grid-area: hello;
+      display: initial;
+      height: auto;
+    }
+    .community {
+      grid-area: community;
+    }
+    .meImage {
+      grid-area: meImage;
+      position: relative;
+      left: initial;
+      right: initial;
+      opacity: 1;
+      height: auto;
+      width: initial;
+    }
+    .groupImages {
+      grid-area: groupImgs;
+    }
+    .group {
+      grid-area: group;
+    }
   }
 }
