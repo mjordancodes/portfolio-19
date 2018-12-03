@@ -7,6 +7,10 @@ import Header from '../components/Header/header';
 import SimpleText from '../components/Simple-Text/simple-text';
 
 import AboutMe from '../images/about-me.svg';
+// import WWCode from './images/Group-Logos/wwcode.png';
+// import PDXNode from '../images/Group-Logos/pdxnode.png';
+// import Toastmasters from '../images/Group-Logos/toastmasters.png';
+
 
 class AboutPage extends Component {
   render() {
@@ -31,9 +35,9 @@ class AboutPage extends Component {
             </p>
           </SimpleText>
           <div className={componentStyles.groupImages}>
-            <span>WWCode</span>
-            <span>PDXNode</span>
-            <span>Toastmasters</span>
+            <img src="/images/Group-Logos/wwcode.png" alt="pdx node logo"/>
+            <img src="/images/Group-Logos/pdxnode.png" alt="women who code logo"/>
+            <img src="/images/Group-Logos/toastmasters.png" alt="toastmasters logo"/>
           </div>
           <SimpleText title="Women Who Code: Portland" className={componentStyles.group}>
             <p>
