@@ -31,9 +31,16 @@
   .groupImages {
     display: flex;
     align-items: center;
+    justify-content: center;
     img {
+      width: 33%;
       max-width: 33%;
+      transition: 500ms;
+      cursor: pointer;
     }
+  }
+  .group {
+    display: none;
   }
 }
 
@@ -41,10 +48,10 @@
   .about {
     width: 95vw;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, minmax(28vh, auto));
     grid-template-areas:  'meImage  empty1     hello      hello     empty2'
                           'meImage  community  community  groupImgs groupImgs'
-                          'meImage  community  community  group     group'
-                          'meImage  empty3     empty3     group     group';
+                          'meImage  community  community  group     group';
     .hello {
       grid-area: hello;
       display: initial;
