@@ -14,7 +14,7 @@ class AboutPage extends Component {
       <Layout>
         <Header />
         <div className={componentStyles.about}>
-          <div className="me-img">
+          <div className={componentStyles.meImage}>
             <AboutMe />
           </div>
           <SimpleText title="Hello World" className={componentStyles.hello}>

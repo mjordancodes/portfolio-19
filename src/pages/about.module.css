@@ -3,18 +3,19 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-areas:  'image  empty1     hello      hello     empty2'
-                        'image  community  community  groupImgs groupImgs'
-                        'image  community  community  group     group'
-                        'image  empty3     empty3     group     group';
+  grid-template-areas:  'banana  empty1     hello      hello     empty2'
+                        'banana  community  community  groupImgs groupImgs'
+                        'banana  community  community  group     group'
+                        'banana  empty3     empty3     group     group';
+  grid-gap: 10px;
   .hello {
     grid-area: hello;
   }
   .community {
     grid-area: community;
   }
-  .me-img {
-    grid-area: image;
+  .meImage {
+    grid-area: banana;
   }
   .groupImages {
     grid-area: groupImgs;
