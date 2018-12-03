@@ -1,0 +1,25 @@
+.about {
+  width: 95vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:  'image  empty1     hello      hello     empty2'
+                        'image  community  community  groupImgs groupImgs'
+                        'image  community  community  group     group'
+                        'image  empty3     empty3     group     group';
+  .hello {
+    grid-area: hello;
+  }
+  .community {
+    grid-area: community;
+  }
+  .me-img {
+    grid-area: image;
+  }
+  .groupImages {
+    grid-area: groupImgs;
+  }
+  .group {
+    grid-area: group;
+  }
+}

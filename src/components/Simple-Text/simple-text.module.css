@@ -1,0 +1,9 @@
+.title {
+  margin: 0;
+}
+.content {
+  text-align: justify;
+  p {
+    margin-top: 0;
+  }
+}

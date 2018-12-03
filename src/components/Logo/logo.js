@@ -14,7 +14,7 @@ function getRandomColor() {
 class Logo extends Component {
   render() {
     return (
-      <a href="/">
+      <a href="/" className={this.props.className}>
         <h1 id="name">
           mJordan
         </h1>

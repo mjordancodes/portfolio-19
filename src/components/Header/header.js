@@ -6,8 +6,8 @@ import componentStyles from './header.module.css';
 
 const Header = () => (
   <header className={componentStyles.header}>
-    <SocialIcons />
-    <Logo />
+    <SocialIcons className={componentStyles.hideMobile} />
+    <Logo className={componentStyles.logo} />
     <nav>
       <div className={componentStyles.pages}>
         <a href="/about">about</a>

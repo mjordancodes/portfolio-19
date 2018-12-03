@@ -17,7 +17,8 @@ function getRandomColor() {
 class SocialIcons extends Component {
   render() {
     return (
-      <div className={componentStyles.social} >
+      <div className={this.props.className}>
+      <div className={componentStyles.social}>
         <a href="https://www.twitter.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faTwitter} ${componentStyles.fa} fa`}>
           <FaTwitter />
         </a>
@@ -33,6 +34,7 @@ class SocialIcons extends Component {
         <a href="https://www.instagram.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faInstagram} ${componentStyles.fa} fa`}>
           <FaInstagram />
         </a>
+      </div>
       </div>
     );
   }

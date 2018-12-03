@@ -5,22 +5,25 @@
   width: 95vw;
   z-index: 10;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: 'social logo links';
+  grid-template-columns: 1fr  1fr 1fr 2fr;
+  grid-template-areas: 'socialLogo empty logo links';
   a {
       color: #000;
       text-decoration: none;
     }
-  h1 {
+  .logo {
     text-align: center;
-    grid-area: logo;
+    grid-area: socialLogo;
+    @media (min-width: 1000px) {
+      grid-area: logo;
+    }
   }
   nav {
     grid-area: links;
   }
   .pages {
     display: none;
-    @media (min-width: 500px) {
+    @media (min-width: 800px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -31,4 +34,10 @@
 }
 .headerHome {
   top: 2.5vh;
+}
+
+@media (max-width: 1000px) {
+  .hideMobile {
+    display: none;
+  }
 }
