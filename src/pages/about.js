@@ -7,6 +7,7 @@ import Header from '../components/Header/header';
 import SimpleText from '../components/Simple-Text/simple-text';
 
 import AboutMe from '../images/about-me.svg';
+import { TimelineMax } from 'gsap';
 // import WWCode from './images/Group-Logos/wwcode.png';
 // import PDXNode from '../images/Group-Logos/pdxnode.png';
 // import Toastmasters from '../images/Group-Logos/toastmasters.png';
@@ -103,6 +104,36 @@ class AboutPage extends Component {
       aboutToastmasters.style.display = 'block';
       accessoryToastmasters.style = '';
     })
+
+    function spin(groupImage, isRunning) {
+      const spinAnimation = new TimelineMax();
+      if(isRunning) {
+        spinAnimation.to(groupImage, 0.5, {scaleX: -1})
+      } else {
+        spinAnimation.to(groupImage, 0.5, {scaleX: 1})
+      }
+    }
+
+    wwcode.addEventListener('mouseover', function() {
+      spin(wwcode, true);
+    });
+    wwcode.addEventListener('mouseout', function() {
+      spin(wwcode, false);
+    });
+
+    pdxnode.addEventListener('mouseover', function() {
+      spin(pdxnode, true);
+    });
+    pdxnode.addEventListener('mouseout', function() {
+      spin(pdxnode, false);
+    });
+
+    toastmasters.addEventListener('mouseover', function() {
+      spin(toastmasters, true);
+    });
+    toastmasters.addEventListener('mouseout', function() {
+      spin(toastmasters, false);
+    });
   }
 }
 

@@ -4,6 +4,7 @@ $button-height: 42px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
   .fa {
     background: rgb(50, 100, 150);
     border-radius: 50%;

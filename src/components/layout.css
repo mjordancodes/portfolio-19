@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
 html {
   font-family: 'Poiret One', cursive;
+  font-size: 18px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -8,6 +12,7 @@ body {
 }
 main {
   margin-top: 100px;
+  height: calc(100vh - 100px);
 }
 a {
   text-decoration: none;
