@@ -22,3 +22,15 @@ collections:
     fields: 
       - { name: path, label: Path }
       - { name: title, label: Title }
+  - name: project
+    label: Project
+    folder: project
+    create: true
+    fields: 
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+      - { name: techs, label: Techs, widget: list, 
+            field: {name: tech, label: Tech,  widget: relation, collection: tech, searchFields: "name", valueField: "name", displayFields: "name" }
+        }
