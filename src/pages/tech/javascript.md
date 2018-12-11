@@ -1,4 +1,5 @@
 ---
 title: JavaScript
+layout: tech
 ---
 

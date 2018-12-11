@@ -1,5 +1,5 @@
 ---
-title: jQuery
+title: Vue.js
 layout: tech
 ---
 

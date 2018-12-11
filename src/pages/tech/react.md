@@ -1,5 +1,5 @@
 ---
-title: jQuery
+title: React.js
 layout: tech
 ---
 

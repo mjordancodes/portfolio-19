@@ -1,5 +1,5 @@
 ---
-title: jQuery
+title: NetlifyCMS
 layout: tech
 ---
 

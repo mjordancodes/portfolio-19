@@ -12,6 +12,10 @@ export default () => (
                 eq:"tech"
               }
             }
+          },
+          sort: {
+            fields: [frontmatter___title], 
+            order: ASC
           }
         ) {
           edges {
