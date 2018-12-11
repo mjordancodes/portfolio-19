@@ -3,6 +3,7 @@ module.exports = {
     title: 'mJordan Codes',
   },
   plugins: [
+    'gatsby-transformer-remark',
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
@@ -20,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     {

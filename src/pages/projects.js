@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Layout from '../components/layout';
 import Header from '../components/Header/header';
 
-import leaf from '../images/leaf.svg';
+// import leaf from '../images/leaf.svg';
 
 import componentStyles from './projects.module.css'
 
