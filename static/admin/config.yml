@@ -41,5 +41,7 @@ collections:
     fields:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: author, label: Author }
+      - { name: authorfirst, label: "Author First Name" }
+      - { name: authorlast, label: "Author Last Name" }
+      - { name: category, label: Category }
       - {label: "Layout", name: "layout", widget: "hidden", default: "book"}
