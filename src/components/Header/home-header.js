@@ -9,7 +9,7 @@ const HomeHeader = () => (
         <a href="/about">about</a>
         <a href="/projects">projects</a>
         <a href="/blog">blog</a>
-        <a href="/speaking">speaking</a>
+        <a href="https://slides.mjordan.codes/">speaking</a>
       </div>
     </nav>
   </header>
