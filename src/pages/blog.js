@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link, graphql } from "gatsby"
 
 import Layout from '../components/layout';
 import Header from '../components/Header/header';
@@ -10,22 +11,24 @@ class BlogPage extends Component {
     return (
       <Layout>
         <Header />
-        <header className={componentStyles.header}>
+        <header className={`container ${componentStyles.header}`}>
           <h1>mJordan Writes:</h1>
           <h2>articles, reviews, tutorials, life, and musings</h2>
         </header>
-        <ul className={componentStyles.postList}>
+        <ul className={`container ${componentStyles.postList}`}>
           {this.props.data.allMarkdownRemark.edges.map(post => (
-            <li className={componentStyles.post}>
-              <img src={post.node.frontmatter.thumbnail} alt="featured" />
-              <div className={componentStyles.words}>
-                <h2>{post.node.frontmatter.title}</h2>
-                <p className={componentStyles.info}>
-                  {post.node.frontmatter.date}
-                </p>
-                <p>{post.node.excerpt}</p>
-              </div>
-            </li>
+            <Link to={post.node.fields.slug}>
+              <li className={componentStyles.post}>
+                <img src={post.node.frontmatter.thumbnail} alt="featured" />
+                <div className={componentStyles.words}>
+                  <h2>{post.node.frontmatter.title}</h2>
+                  <p className={componentStyles.info}>
+                    {post.node.frontmatter.date}
+                  </p>
+                  <p>{post.node.excerpt}</p>
+                </div>
+              </li>
+            </Link>
           ))}
         </ul>
       </Layout>
@@ -46,6 +49,9 @@ export const blogListQuery = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             title
             layout

@@ -1,6 +1,4 @@
 .header {
-  width: 75%;
-  margin: 0 auto;
   text-align: center;
   > * {
     margin: 0;
@@ -10,9 +8,10 @@
 .postList {
   list-style-type: none;
   padding: 0;
+  a {
+    color: black;
+  }
   .post {
-    width: 75%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(150px, 250px) 2fr;
     img {

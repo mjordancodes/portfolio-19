@@ -1,13 +1,26 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
+import React from "react";
+import { graphql } from "gatsby";
+
+import Layout from "../components/layout";
+import Header from '../components/Header/header';
+
+import componentStyles from './blog-post.module.css';
 
 export default ({ data }) => {  
   const post = data.markdownRemark  
   return (
     <Layout>
-      <div>        
-        <h1>{post.frontmatter.title}</h1>        
+      <Header />
+      <div className="container">  
+        <header className={componentStyles.header}>
+          <img src={post.frontmatter.thumbnail} alt="featured" />  
+          <div className={componentStyles.text}>
+            <h1>{post.frontmatter.title}</h1>   
+            <p>
+              {post.frontmatter.date}
+            </p> 
+          </div>   
+        </header>      
         <div dangerouslySetInnerHTML={{ __html: post.html }} />      
       </div>    
     </Layout>
@@ -19,7 +32,9 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {      
       html      
       frontmatter {        
-        title      
+        title   
+        date(formatString: "MMMM DD, YYYY")
+        thumbnail   
       }    
     }  
   }
