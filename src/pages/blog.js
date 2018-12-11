@@ -3,20 +3,28 @@ import React, { Component } from 'react';
 import Layout from '../components/layout';
 import Header from '../components/Header/header';
 
+import componentStyles from './blog.module.css'
+
 class BlogPage extends Component {
   render() {
     return (
       <Layout>
         <Header />
-        <h1>Blog</h1>
-        <ul>
+        <header className={componentStyles.header}>
+          <h1>mJordan Writes:</h1>
+          <h2>articles, reviews, tutorials, life, and musings</h2>
+        </header>
+        <ul className={componentStyles.postList}>
           {this.props.data.allMarkdownRemark.edges.map(post => (
-            <li>
-              <h2>{post.node.frontmatter.title}</h2>
-              <p className="info">
-                {post.node.frontmatter.date}
-              </p>
+            <li className={componentStyles.post}>
               <img src={post.node.frontmatter.thumbnail} />
+              <div className={componentStyles.words}>
+                <h2>{post.node.frontmatter.title}</h2>
+                <p className={componentStyles.info}>
+                  {post.node.frontmatter.date}
+                </p>
+                <p>{post.node.excerpt}</p>
+              </div>
             </li>
           ))}
         </ul>
@@ -45,6 +53,7 @@ export const blogListQuery = graphql`
             thumbnail
           }
           html
+          excerpt
         }
       }
     }
