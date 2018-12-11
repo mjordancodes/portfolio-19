@@ -1,4 +1,5 @@
 ---
 title: HTML
+layout: tech
 ---
 

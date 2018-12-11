@@ -8,21 +8,23 @@ public_folder: assets
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: pages/blog
     create: true
     fields:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
   - name: tech
     label: Tech
-    folder: tech
+    folder: pages/tech
     create: true
     fields: 
       - { name: title, label: Title }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "tech"}
   - name: project
     label: Project
-    folder: project
+    folder: pages/project
     create: true
     fields: 
       - { name: date, label: Date, widget: date }
@@ -31,3 +33,4 @@ collections:
       - { name: techs, label: Techs, widget: list, 
             field: {name: tech, label: Tech,  widget: relation, collection: tech, searchFields: "name", valueField: "name", displayFields: "name" }
         }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "project"}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Layout from '../components/layout';
 import Header from '../components/Header/header';
+import TechList from '../components/Tech-List/tech-list';
 
 // import leaf from '../images/leaf.svg';
 
@@ -18,7 +19,8 @@ class ProjectsPage extends Component {
               <h2>Projects</h2>
               <p>Collection of various projects and experiments created during my coding journey.</p>
               <h3>Technologies I Use:</h3>
-              <ul>
+              <TechList />
+              {/* <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -32,7 +34,7 @@ class ProjectsPage extends Component {
                 <li>Greensock</li>
                 <li>Adobe Illustrator</li>
                 <li>SVG</li>
-              </ul>
+              </ul> */}
             </div>
             <div className={componentStyles.github} >
               <p>Github</p>
