@@ -1,6 +1,8 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
+import componentStyles from './tech-list.module.css'
+
 export default () => (
   <StaticQuery
     query={graphql`
@@ -33,7 +35,7 @@ export default () => (
       }
     `}
     render={data => (
-      <ul>
+      <ul className={componentStyles.techList}>
         {data.allMarkdownRemark.edges.map(tech => (
           <li>
             {tech.node.frontmatter.title}
