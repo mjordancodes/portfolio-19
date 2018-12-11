@@ -17,7 +17,7 @@ class BlogPage extends Component {
         <ul className={componentStyles.postList}>
           {this.props.data.allMarkdownRemark.edges.map(post => (
             <li className={componentStyles.post}>
-              <img src={post.node.frontmatter.thumbnail} />
+              <img src={post.node.frontmatter.thumbnail} alt="featured" />
               <div className={componentStyles.words}>
                 <h2>{post.node.frontmatter.title}</h2>
                 <p className={componentStyles.info}>
@@ -53,7 +53,7 @@ export const blogListQuery = graphql`
             thumbnail
           }
           html
-          excerpt
+          excerpt(pruneLength: 280)
         }
       }
     }

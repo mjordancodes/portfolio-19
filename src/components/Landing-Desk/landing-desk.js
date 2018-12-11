@@ -36,7 +36,7 @@ class DeskLanding extends Component {
         <header>
           <hgroup>
             <Logo />
-            <p className={componentStyles.tagline}>I design, develop & teach the web</p>
+            <p className={`title ${componentStyles.tagline}`}>I design, develop & teach the web</p>
             <div className={componentStyles.buttons}>
               <div className={componentStyles.ctas}>
                 <a href="/projects" className={`${componentStyles.cta} cta`}>Projects</a>

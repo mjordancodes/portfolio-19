@@ -13,7 +13,7 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
-          <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" /> 
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet" /> 
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
