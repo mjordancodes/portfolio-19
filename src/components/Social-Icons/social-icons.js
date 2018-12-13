@@ -3,16 +3,7 @@ import { FaInstagram, FaTwitter, FaGithubAlt, FaCodepen, FaLinkedin } from 'reac
 
 import componentStyles from './social-icons.module.css';
 
-let allColors = ['#AE70AF', '#F37E43', '#E66565', '#FFD603', '#9FCEB4', '#ACCAE8', '#9295CA'];
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-function getRandomColor() {
-  let num = getRandomInt(allColors.length);
-  return allColors[num];    
-}
+import { getRandomColor } from '../../tools/random-color';
 
 class SocialIcons extends Component {
   render() {

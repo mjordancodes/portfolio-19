@@ -4,7 +4,6 @@ import SocialIcons from '../Social-Icons/social-icons';
 import Logo from '../Logo/logo';
 
 import BackgroundImage from '../../images/Landing-Desk/home-background.svg';
-import DeskItems from '../../images/Landing-Desk/desk-items.svg';
 
 import componentStyles from './landing-desk.module.css';
 
@@ -13,7 +12,7 @@ import Computer from './computer';
 import Books from './books';
 import Cup from './pencil-cup';
 
-let allColors = ['#AE70AF', '#F37E43', '#E66565', '#FFD603', '#9FCEB4', '#ACCAE8', '#9295CA'];
+import { getRandomColor } from '../../tools/random-color';
 
 let lightRed      = '#f9dcdc',
     lightOrange   = '#ffeede',
@@ -22,15 +21,6 @@ let lightRed      = '#f9dcdc',
     lightBlue     = '#d2e9f9',
     lightPurple   = '#f5e3fc';
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-function getRandomColor() {
-  let num = getRandomInt(allColors.length);
-  return allColors[num];    
-}
-    
 class DeskLanding extends Component {
   render() {
     return (
