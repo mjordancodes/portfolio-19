@@ -8,7 +8,11 @@ import DeskItems from '../../images/Landing-Desk/desk-items.svg';
 
 import componentStyles from './landing-desk.module.css';
 
-// let allColors = ['#FA6050', '#FCB315', '#FFD203', '#BAD533', '#7ACED7'];
+import Fishtank from './fishtank';
+import Computer from './computer';
+import Books from './books';
+import Cup from './pencil-cup';
+
 let allColors = ['#AE70AF', '#F37E43', '#E66565', '#FFD603', '#9FCEB4', '#ACCAE8', '#9295CA'];
 
 let lightRed      = '#f9dcdc',
@@ -18,25 +22,31 @@ let lightRed      = '#f9dcdc',
     lightBlue     = '#d2e9f9',
     lightPurple   = '#f5e3fc';
 
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-  }
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
-  function getRandomColor() {
-    let num = getRandomInt(allColors.length);
-    return allColors[num];    
-  }
+function getRandomColor() {
+  let num = getRandomInt(allColors.length);
+  return allColors[num];    
+}
     
 class DeskLanding extends Component {
   render() {
     return (
       <section className={componentStyles.container}>
         <BackgroundImage className={componentStyles.bg} />
-        <DeskItems className={componentStyles.deskitems} />
+        {/* <DeskItems className={componentStyles.deskitems} /> */}
+        <div className={componentStyles.deskitems}>
+          <Cup />
+          <Books />
+          <Computer />
+          <Fishtank />
+        </div>
         <header>
           <hgroup>
             <Logo />
-            <p className={`title ${componentStyles.tagline}`}>I design, develop & teach the web</p>
+            <p className={`title ${componentStyles.tagline}`}>I design, develop &amp; teach the web</p>
             <div className={componentStyles.buttons}>
               <div className={componentStyles.ctas}>
                 <a href="/projects" className={`${componentStyles.cta} cta`}>Projects</a>
@@ -67,32 +77,7 @@ class DeskLanding extends Component {
       }
     }
 
-    // Set Book titles/authors
-    const svgBooks = [
-      document.getElementById('book-top'), 
-      document.getElementById('book-middle'), 
-      document.getElementById('book-bottom') ]
-
-    const recentlyRead = [
-      {title: 'SVG Animations',
-        author: 'Sarah Drasner'},
-      {title: 'Knife of Dreams',
-        author: 'Robert Jordan'},
-      {title: 'Crossroads of Twilight',
-        author: 'Robert Jordan'},
-    ]
-
-    for(let i = 0; i < svgBooks.length; i++) {
-      let title = svgBooks[i].querySelector('[id*="title"]');
-      title.textContent = recentlyRead[i].title;
-
-      let author = svgBooks[i].querySelector('[id*="author"]');
-      author.textContent = recentlyRead[i].author;
-
-      svgBooks[i].addEventListener('click', function() {
-        window.location.href = '/books-read'
-      })
-    }
+    
 
     // Background Animation
     const bang = document.getElementById('bang').querySelectorAll('path');
@@ -123,115 +108,9 @@ class DeskLanding extends Component {
                                 .to(windowFrame, 10, {stroke: lightGreen})
                                 .to(windowFrame, 10, {stroke: lightBlue});
 
-    // Fishtank Animations
-    const fish = document.getElementById('fish');
-    const fishAnimation = new TimelineMax({repeat: -1});
-    fishAnimation.to(fish, 3, {x:50, rotation: -15, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-20, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-40, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-60, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-80, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-100, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-120, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-140, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-160, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-180, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-200, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-220, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-240, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-220, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-200, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-180, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-160, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-140, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-120, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-100, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-80, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-60, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-40, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-20, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:0, ease: Power0.easeNone})
-
-
-    const  bubble1 = document.getElementById('bubble1');
-    const  bubble2 = document.getElementById('bubble2');
-    const  bubble3 = document.getElementById('bubble3');
-    const  bubble4 = document.getElementById('bubble4');
-    const  bubble5 = document.getElementById('bubble5');
-    const  bubble6 = document.getElementById('bubble6');
-    const  bubble7 = document.getElementById('bubble7');
-    const  bubble8 = document.getElementById('bubble8');
-
-    // const bubbles = [bubble1, bubble2, bubble3, bubble4, bubble5, bubble6, bubble7, bubble8]
-    const bubbles = [bubble3, bubble1, bubble7, bubble6, bubble8, bubble2, bubble5, bubble4]
-
-    for(let i = 0; i < bubbles.length; i++) {
-      new TimelineMax({repeat: -1, delay: i})
-        .to(bubbles[i], 1, {y: -50, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -150, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -250, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -350, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -450, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -550, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -600, x:-10, ease: Power0.easeNone})
-    }
-
-    // Stickers
-    const debugging = document.getElementById('rubber-duck-debugger');
-    const rdcss = document.getElementById('css-duck');
-    const rdhtml = document.getElementById('html-duck');
-    const rdjs = document.getElementById('javascript-duck');
-    const rdnode = document.getElementById('node-duck');
-    const rdterminal = document.getElementById('terminal-duck');
-
-    const allStickers = [debugging, rdcss, rdhtml, rdjs, rdnode, rdterminal];
-
-    for (let i = 0; i < allStickers.length; i++) {
-      allStickers[i].addEventListener('click', function() {
-        window.location.href = '/stickers';
-      });
-    }
-
-    const stickerAnimations = new TimelineMax({delay: 2});
-    stickerAnimations.from(debugging, 2, {autoAlpha: 0, ease: Power0.easeNone})
-                     .from(rdhtml, 2, {autoAlpha: 0, ease: Power0.easeNone})
-                     .from(rdjs, 2, {autoAlpha: 0, ease: Power0.easeNone})
-                     .from(rdcss, 2, {autoAlpha: 0, ease: Power0.easeNone})
-                     .from(rdterminal, 2, {autoAlpha: 0, ease: Power0.easeNone})
-                     .from(rdnode, 2, {autoAlpha: 0, ease: Power0.easeNone})
-
-    document.getElementById('camera').addEventListener('click', function() {
-      window.location.href = 'http://threewoodenpigeons.com';
-    })
+    
+    
+    
 
   }
 }

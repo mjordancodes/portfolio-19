@@ -2,15 +2,13 @@
 
 $button-height: 42px;
 
-
 .container {
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
   position: absolute;
-  top: 0;r
+  top: 0;
   overflow: hidden;
   .bg {
     display: none;
@@ -21,16 +19,6 @@ $button-height: 42px;
       bottom: 15vh;
       z-index: -2;
     }
-  }
-  .deskitems {
-    margin-bottom: -1px;
-    width: 95vw;
-    @media (min-width: 500px) {
-      width: 75vw;
-    }
-  }
-  .fishtank {
-    max-height: 50vh;
   }
   header {
     display: flex;
@@ -91,4 +79,42 @@ $button-height: 42px;
       }
     }
   }
+}
+
+.deskitems {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 10px;
+  grid-template-areas: 'empty     camera  empty     empty'
+                       'pencils   books   computer  fishtank'; */
+
+  .fishtank {
+    grid-area: fishtank;
+    height: 55vh;
+  }
+
+  .computer {
+    grid-area: computer;
+    height: 35vh;
+  }
+
+  .books {
+    grid-area: books;
+    height: 25vh;
+  }
+
+  .cup {
+    grid-area: pencils;
+    height: 18vh;
+  }
+
+  @media (max-width: 1200px) {
+      display: none;
+    }
+
 }
