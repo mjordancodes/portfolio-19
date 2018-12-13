@@ -1,15 +1,50 @@
 import React, { Component } from 'react'
 import { TimelineMax, Power0 } from 'gsap/all'; 
-import { graphql } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 
 import componentStyles from './landing-desk.module.css';
 
 import BooksItem from '../../images/Landing-Desk/book-stack.svg';
 
+const BooksWithQuery = () => (
+  <StaticQuery
+    query={graphql`
+      query BooksQuery {
+        allMarkdownRemark(
+          filter: {
+            frontmatter : {
+              layout:{
+                eq:"book"
+              }
+            }
+          },
+          sort: {
+            fields: [frontmatter___date], 
+            order: DESC
+          }
+        ) {
+          edges {
+            node {
+              frontmatter {
+                title
+                authorfirst
+                authorlast
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Books data={data} />
+    )}
+  />
+)
+
 class Books extends Component {
   render() {
     return (
-      <BooksItem className={componentStyles.books} />  
+      <BooksItem className={componentStyles.books} />
     )
   }
 
@@ -20,21 +55,15 @@ class Books extends Component {
       document.getElementById('book-middle'), 
       document.getElementById('book-bottom') ]
 
-    const recentlyRead = [
-      {title: 'SVG Animations',
-        author: 'Sarah Drasner'},
-      {title: 'Knife of Dreams',
-        author: 'Robert Jordan'},
-      {title: 'Crossroads of Twilight',
-        author: 'Robert Jordan'},
-    ]
+    const booksData = this.props.data.allMarkdownRemark.edges;
+    console.log(booksData);
 
     for(let i = 0; i < svgBooks.length; i++) {
       let title = svgBooks[i].querySelector('[id*="title"]');
-      title.textContent = recentlyRead[i].title;
+      title.textContent = booksData[i].node.frontmatter.title;
 
       let author = svgBooks[i].querySelector('[id*="author"]');
-      author.textContent = recentlyRead[i].author;
+      author.textContent = booksData[i].node.frontmatter.authorfirst + ' ' + booksData[i].node.frontmatter.authorlast;
 
       svgBooks[i].addEventListener('click', function() {
         window.location.href = '/books-read'
@@ -48,4 +77,4 @@ class Books extends Component {
   }
 }
 
-export default Books
+export default BooksWithQuery
