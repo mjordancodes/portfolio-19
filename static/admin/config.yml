@@ -45,5 +45,26 @@ collections:
       - { name: authorfirst, label: "Author First Name" }
       - { name: authorlast, label: "Author Last Name" }
       - { name: category, label: Category }
-      - { name: pages, label: "Pages", widget: number, valueType: "int"}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "book"}
+      - { name: pages, label: "Pages", widget: number, valueType: "int" }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "book" }
+  - name: now
+    label: Now 
+    folder: src/pages/now
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "now" }
+      - { name: date, label: "Date", widget: date }
+      - { name: body, label: Body, widget: markdown }
+      - { name: featured, label: featured, widget: boolean }
+      - { name: image, label: "Icon", widget: image, allow_multiple: false, required: false }
+  - name: uses
+    label: Uses 
+    folder: src/pages/uses
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "uses" }
+      - { name: date, label: "Date", widget: date }
+      - { name: image, label: "Image or Logo", widget: image, allow_multiple: false }
+      - { name: body, label: Body, widget: markdown }
+
+      
