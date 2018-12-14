@@ -26,6 +26,8 @@ const BooksTable = ({className}) => (
               frontmatter {
                 title
                 date(formatString: "MM/YY")
+                datecomplete(formatString: "MM/YY")
+                pages
                 authorfirst
                 authorlast
                 category
@@ -41,14 +43,14 @@ const BooksTable = ({className}) => (
           <th>Title</th>
           <th>Author</th>
           <th>Category</th>
-          <th>Date</th>
+          <th>Finished</th>
         </tr>
         {data.allMarkdownRemark.edges.map(book => (
           <tr>
             <td>{book.node.frontmatter.title}</td>
             <td>{book.node.frontmatter.authorfirst} {book.node.frontmatter.authorlast}</td>
             <td>{book.node.frontmatter.category}</td>
-            <td>{book.node.frontmatter.date}</td>
+            <td>{book.node.frontmatter.datecomplete}</td>
           </tr>
         )) }
       </table>
