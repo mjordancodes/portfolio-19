@@ -14,14 +14,14 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
   - name: tech
     label: Tech
     folder: src/pages/tech
     create: true
     fields: 
       - { name: title, label: Title }
-      - {label: "Layout", name: "layout", widget: "hidden", default: "tech"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "tech" }
   - name: project
     label: Project
     folder: src/pages/project
@@ -33,7 +33,7 @@ collections:
       - { name: techs, label: Techs, widget: list, 
             field: {name: tech, label: Tech,  widget: relation, collection: tech, searchFields: "name", valueField: "name", displayFields: "name" }
         }
-      - {label: "Layout", name: "layout", widget: "hidden", default: "project"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "project" }
   - name: book
     label: Book
     folder: src/pages/book
@@ -46,27 +46,42 @@ collections:
       - { name: authorlast, label: "Author Last Name" }
       - { name: category, label: Category }
       - { name: pages, label: "Pages", widget: number, valueType: "int" }
-      - {label: "Layout", name: "layout", widget: "hidden", default: "book" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "book" }
   - name: now
     label: Now 
     folder: src/pages/now
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "now" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "now" }
       - { name: date, label: "Date", widget: date }
-      - { name: body, label: Body, widget: markdown }
-      - { name: featured, label: featured, widget: boolean }
-      - { name: image, label: "Icon", widget: image, allow_multiple: false, required: false }
+      - { name: tech1: label: "Technology Focus: 1", widget: string }
+      - { name: tech2: label: "Technology Focus: 2", widget: string }
+      - { name: tech3: label: "Technology Focus: 3", widget: string }
+      - { name: personalprojecttitle, label: "Personal Project Title", widget: string }
+      - { name: personalprojectabout, label: "Personal Project Title", widget: markdown }
+      - { name: jobcompany, label: "Company I Work At", widget: string, default: "Alchemy Code Lab" }
+      - { name: jobtitle, label: "Job Title", widget: string, default: "Lead Instructor" }
+      - { name: body, label: "General Info", widget: markdown }
   - name: uses
     label: Uses 
     folder: src/pages/uses
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "uses" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "uses" }
       - { name: date, label: "Date", widget: date }
       - { name: image, label: "Image or Logo", widget: image, allow_multiple: false }
       - { name: category, label: Category }
       - { name: body, label: Body, widget: markdown }
-
-
-      
+  - name: talk
+    label: Talk
+    folder: src/pages/talk
+    create: true
+    fields: 
+      - { label: "Layout", name: "layout", widget: "hidden", default: "talk" }
+      - { name: title, label: "Talk Title" }
+      - { name: date, label: "Date", widget: date }
+      - { name: notistlink, label: "Noti.st Link" }
+      - { name: eventpage, label: "Event Page" }
+      - { name: coverimage, label: "Image" }   
+      - { name: conference, label: Confernece, widget: boolean }
+      - { name: body, label: Body, widget: markdown }
