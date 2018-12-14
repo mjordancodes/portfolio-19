@@ -1,0 +1,11 @@
+.books {
+  margin-top: 10vh;
+  width: 100%;
+  @media (min-width: 700px) {
+    width: 75%;
+  }
+  th, td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { TimelineMax, Power0 } from 'gsap/all'; 
 import { graphql, StaticQuery } from 'gatsby';
 
 import componentStyles from './landing-desk.module.css';
