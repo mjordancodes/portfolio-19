@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TimelineMax, Power0 } from 'gsap/all'; 
+import { TimelineMax } from 'gsap/all'; 
 import SocialIcons from '../Social-Icons/social-icons';
 import Logo from '../Logo/logo';
 

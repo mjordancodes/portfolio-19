@@ -1,9 +1,6 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 
-import Layout from '../layout';
-import Header from '../Header/header';
-
 import componentStyles from './book-table.module.css';
 
 
