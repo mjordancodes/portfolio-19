@@ -65,6 +65,8 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "uses" }
       - { name: date, label: "Date", widget: date }
       - { name: image, label: "Image or Logo", widget: image, allow_multiple: false }
+      - { name: category, label: Category }
       - { name: body, label: Body, widget: markdown }
+
 
       
