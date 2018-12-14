@@ -54,9 +54,9 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "now" }
       - { name: date, label: "Date", widget: date }
-      - { name: tech1: label: "Technology Focus: 1", widget: string }
-      - { name: tech2: label: "Technology Focus: 2", widget: string }
-      - { name: tech3: label: "Technology Focus: 3", widget: string }
+      - { name: tech1, label: "Technology Focus: 1", widget: string }
+      - { name: tech2, label: "Technology Focus: 2", widget: string }
+      - { name: tech3, label: "Technology Focus: 3", widget: string }
       - { name: personalprojecttitle, label: "Personal Project Title", widget: string }
       - { name: personalprojectabout, label: "Personal Project Title", widget: markdown }
       - { name: jobcompany, label: "Company I Work At", widget: string, default: "Alchemy Code Lab" }
