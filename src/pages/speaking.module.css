@@ -1,0 +1,28 @@
+.container {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1vw;
+  a {
+    color: black;
+  }
+  .talkcard {
+    display: grid;
+    grid-template-columns: 2fr auto;
+    grid-column-gap: 10px;
+    height: 100%;
+    img {
+      max-width: 100%;
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+    > * {
+      margin: 0;
+    }
+    p, h3 {
+      align-self: end;
+    }
+  }
+}
