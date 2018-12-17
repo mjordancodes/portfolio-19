@@ -90,8 +90,8 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "talk" }
       - { name: title, label: "Talk Title" }
       - { name: date, label: "Date", widget: date }
-      - { name: notistlink, label: "Noti.st Link" }
-      - { name: eventpage, label: "Event Page" }
-      - { name: coverimage, label: "Image" }   
+      - { name: notistlink, label: "Noti.st Link", required: false  }
+      - { name: eventpage, label: "Event Page", required: false }
+      - { name: coverimage, label: "Image", widget: image, allow_multiple: false}   
       - { name: conference, label: Confernece, widget: boolean }
       - { name: body, label: Body, widget: markdown }
