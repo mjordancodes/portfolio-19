@@ -1,0 +1,27 @@
+---
+layout: now
+title: 'December 17, 2018'
+date: 2018-12-17T19:17:43.955Z
+tech1: Greensock
+tech2: CSS Animation
+tech3: SVG
+personalprojecttitle: Portfolio
+personalprojectabout: >-
+  I have once again started to rebuild my portfolio site. The logic (excuse)
+  this time is that I have a fancy new name so I need a fancy new site to go
+  with it. Part of the new name comes from my switch to using my middle name
+  instead of my first name (see blog for the long story) and part of the new
+  name comes from getting married (a thing I did last week).
+
+
+  I am building my portfolio in Gatsby because it is awesome. I am also using
+  Netlify for deployment/hosting and NetlifyCMS for content. I've also put a big
+  focus on creating my own illustrations in Adobe Illustrator and animating them
+  with a combination of CSS Animations and Greensock. It has been a lot of fun
+  to combine all of these different technologies and figuring out how to make
+  them play nicely. I may have to write a blog post (or two) about the process
+  once I finish.
+jobcompany: Alchemy Code Lab
+jobtitle: Lead Instructor
+---
+The first group I co-taught is just starting project week at the end of the sections I teach. It is super cool to see how much they have learnt in such a short period of time. I'll be spending the next few weeks deeply focused on what I want to teach to the next group which I get at the end of January.
