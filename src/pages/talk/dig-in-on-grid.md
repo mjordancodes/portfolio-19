@@ -7,6 +7,5 @@ eventpage: 'https://2018.portland.wordcamp.org/session/dig-in-on-grid/'
 coverimage: temp
 conference: true
 ---
-Code examples can be found in my codepen collection: Flexbox and Grid Workshop. 
-
+Code examples can be found in my codepen collection: [Flexbox and Grid Workshop](https://codepen.io/collection/441086714661b3321de79f936931be8b/#). 
 _hint: Check out the JavaScript box for the completed CSS code!_
