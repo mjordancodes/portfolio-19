@@ -23,11 +23,11 @@ class Computer extends Component {
 
     const allStickers = [debugging, rdcss, rdhtml, rdjs, rdnode, rdterminal];
 
-    for (let i = 0; i < allStickers.length; i++) {
-      allStickers[i].addEventListener('click', function() {
-        window.location.href = '/stickers';
-      });
-    }
+    // for (let i = 0; i < allStickers.length; i++) {
+    //   allStickers[i].addEventListener('click', function() {
+    //     window.location.href = '/stickers';
+    //   });
+    // }
 
     const stickerAnimations = new TimelineMax({delay: 2});
     stickerAnimations.from(debugging, 2, {autoAlpha: 0, ease: Power0.easeNone})

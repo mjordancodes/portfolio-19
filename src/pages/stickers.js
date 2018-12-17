@@ -9,6 +9,7 @@ class StickersPage extends Component {
       <Layout>
         <Header />
         <h1>Stickers</h1>
+        <p>Check back soon! I'm creating and ordering some fancy custom rubber duck stickers</p>
       </Layout>
     );
   }
