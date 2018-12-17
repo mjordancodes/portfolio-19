@@ -93,5 +93,5 @@ collections:
       - { name: notistlink, label: "Noti.st Link", required: false  }
       - { name: eventpage, label: "Event Page", required: false }
       - { name: coverimage, label: "Image", widget: image, allow_multiple: false}   
-      - { name: conference, label: Confernece, widget: boolean }
+      - { name: conference, label: Confernece, widget: boolean, required: false }
       - { name: body, label: Body, widget: markdown }
