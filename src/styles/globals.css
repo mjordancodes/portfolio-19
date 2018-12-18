@@ -4,4 +4,10 @@
   @media (min-width: 1000px) {
     width: 75%;
   }
+  a {
+    color: #E66565;
+    &:hover {
+      font-weight: bold;
+    }
+  }
 }

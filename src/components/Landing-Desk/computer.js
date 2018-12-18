@@ -21,8 +21,7 @@ class Computer extends Component {
     const rdnode = document.getElementById('node-duck');
     const rdterminal = document.getElementById('terminal-duck');
 
-    const allStickers = [debugging, rdcss, rdhtml, rdjs, rdnode, rdterminal];
-
+    // const allStickers = [debugging, rdcss, rdhtml, rdjs, rdnode, rdterminal];
     // for (let i = 0; i < allStickers.length; i++) {
     //   allStickers[i].addEventListener('click', function() {
     //     window.location.href = '/stickers';
