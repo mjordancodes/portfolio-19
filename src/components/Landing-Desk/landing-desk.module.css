@@ -85,56 +85,36 @@ $button-height: 42px;
 .deskitems {
   width: 90vw;
   margin: 0 auto;
-  /* display: flex;
-  align-items: flex-end;
-  justify-content: space-around; */
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  /* grid-template-rows: 10px; */
+  grid-template-columns: 1fr 2fr 3fr 1fr;
   grid-template-areas: 'pencils   books   computer  fishtank'; 
+  grid-gap: 1vw;
   align-items: end;
 
   > * {
     transition: 500ms;
+    max-width: 100%;
   }
 
   .fishtank {
     grid-area: fishtank;
-    height: 55vh;
-    @media (max-width: 1200px) {
-      height: 45vh;
-    }
-    @media (max-width: 800px) {
-      height: 35vh;
-    }
+    max-height: 55vh;
   }
 
   .computer {
     grid-area: computer;
-    height: 30vh;
-    @media (max-width: 1200px) {
-      height: 20vh
-    }
+    max-height: 30vh;
   }
 
   .books {
     grid-area: books;
-    height: 25vh;
-    @media (max-width: 1200px) {
-      height: 15vh;
-    }
+    max-height: 25vh;
   }
 
   .cup {
     grid-area: pencils;
-    height: 18vh;
-    @media (max-width: 1200px) {
-      display: none;
-    }
+    max-height: 18vh;
   }
 
-  @media (max-width: 700px) {
-      display: none;
-    }
 
 }
