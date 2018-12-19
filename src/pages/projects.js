@@ -25,7 +25,7 @@ class ProjectsPage extends Component {
             <TechList />
           </div>
           <div className={componentStyles.codepen} >
-          <a href="https://codepen.com/mjordancodes">
+          <a href="https://codepen.io/mjordancodes">
               <img src="/images/codepen.png" alt="codepen logo with screenshot of a pen" />
             </a>
           </div>
