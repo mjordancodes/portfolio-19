@@ -55,7 +55,6 @@ class Books extends Component {
       document.getElementById('book-bottom') ]
 
     const booksData = this.props.data.allMarkdownRemark.edges;
-    console.log(booksData);
 
     for(let i = 0; i < svgBooks.length; i++) {
       let title = svgBooks[i].querySelector('[id*="title"]');

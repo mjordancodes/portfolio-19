@@ -4,18 +4,13 @@ import Logo from '../Logo/logo';
 
 import componentStyles from './header.module.css';
 
+import HeaderNav from './nav';
+
 const Header = () => (
   <header className={componentStyles.header}>
     <SocialIcons className={componentStyles.hideMobile} />
     <Logo className={componentStyles.logo} />
-    <nav>
-      <div className={componentStyles.pages}>
-        <a href="/about">about</a>
-        <a href="/projects">projects</a>
-        <a href="/blog">blog</a>
-        <a href="/speaking">speaking</a>
-      </div>
-    </nav>
+    <HeaderNav />    
   </header>
 )
 

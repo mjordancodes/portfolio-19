@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { TimelineMax } from 'gsap';
 
 import componentStyles from './about.module.css';
 
@@ -7,11 +8,6 @@ import Header from '../components/Header/header';
 import SimpleText from '../components/Simple-Text/simple-text';
 
 import AboutMe from '../images/about-me.svg';
-import { TimelineMax } from 'gsap';
-// import WWCode from './images/Group-Logos/wwcode.png';
-// import PDXNode from '../images/Group-Logos/pdxnode.png';
-// import Toastmasters from '../images/Group-Logos/toastmasters.png';
-
 
 class AboutPage extends Component {
   render() {

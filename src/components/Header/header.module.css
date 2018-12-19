@@ -25,9 +25,27 @@
   }
   nav {
     grid-area: links;
+    transition: 500ms;
   }
   .pages {
-    display: none;
+    /* display: none; */
+    transition: 1s;
+   @media (max-width: 799px) {
+      position: absolute;
+      top: 60px;
+      right: -55vw;
+      width: 50vw;
+      min-height: 50vh;
+      padding: 50px 5px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      font-size: 2em;
+      line-height: 75px;
+      box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
+   }
+
     @media (min-width: 800px) {
       display: flex;
       justify-content: flex-end;
@@ -46,10 +64,64 @@
 .header {
   background: #fff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  .hamburger {
+    margin-top: 12px;
+  }
 }
 
 @media (max-width: 1000px) {
   .hideMobile {
+    display: none;
+  }
+}
+
+.pageNav {
+    position: relative;
+}
+.hamburger {
+  position: relative;
+  float: right;
+  width: 42px;
+  height: 42px;
+  label[for="hamburger"] {
+    width: 50px;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    span {
+      transition: 500ms;
+      display: block;
+      background: #9295CA;
+      width: 50px;
+      height: 6px;
+      margin-bottom: 11px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  input:checked + label span {
+    &:nth-child(1) {
+      transform: rotate(45deg);
+      transform-origin: 0 0 ;
+    }
+    &:nth-child(2) {
+      opacity: 0;
+      margin-left: 50px;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+  }
+  @media (min-width: 800px) {
     display: none;
   }
 }

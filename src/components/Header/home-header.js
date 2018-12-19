@@ -2,16 +2,11 @@ import React from 'react'
 
 import componentStyles from './header.module.css';
 
+import HeaderNav from './nav';
+
 const HomeHeader = () => (
   <header className={componentStyles.headerHome}>
-    <nav>
-      <div className={componentStyles.pages}>
-        <a href="/about">about</a>
-        <a href="/projects">projects</a>
-        <a href="/blog">blog</a>
-        <a href="/speaking">speaking</a>
-      </div>
-    </nav>
+    <HeaderNav />
   </header>
 )
 
