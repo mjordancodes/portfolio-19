@@ -5,7 +5,7 @@ import componentStyles from './header.module.css';
 class HeaderNav extends Component {
   render() {
     return (
-      <nav class={componentStyles.pageNav} id="page-nav">
+      <nav className={componentStyles.pageNav} id="page-nav">
         <div className={componentStyles.hamburger}>
           <input type="checkbox" id="hamburger" />
           <label htmlFor="hamburger">

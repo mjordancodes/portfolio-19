@@ -27,7 +27,6 @@ export default () => (
               }
               frontmatter {
                 title
-                layout
               }
             }
           }
@@ -37,7 +36,7 @@ export default () => (
     render={data => (
       <ul className={componentStyles.techList}>
         {data.allMarkdownRemark.edges.map(tech => (
-          <li>
+          <li key={tech.node.frontmatter.title}>
             {tech.node.frontmatter.title}
           </li>
         ))}
