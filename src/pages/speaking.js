@@ -17,7 +17,7 @@ class TalksPage extends Component {
         </header>
         <ul className={`container ${componentStyles.container}`}>
           {this.props.data.allMarkdownRemark.edges.map(post => (
-            <Link to={post.node.fields.slug}>
+            <Link to={post.node.fields.slug} key={post.node.fields.slug}>
               <li className={componentStyles.talkcard}>
                 <img src={post.node.frontmatter.coverimage} alt={post.node.frontmatter.title} />
                 <h3>{post.node.frontmatter.title}</h3>
