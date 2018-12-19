@@ -27,6 +27,7 @@ export default () => (
               }
               frontmatter {
                 title
+                icon
               }
             }
           }
@@ -37,6 +38,7 @@ export default () => (
       <ul className={componentStyles.techList}>
         {data.allMarkdownRemark.edges.map(tech => (
           <li key={tech.node.frontmatter.title}>
+            <img src={tech.node.frontmatter.icon} alt={`${tech.node.frontmatter.title} logo`} />
             {tech.node.frontmatter.title}
           </li>
         ))}

@@ -1,5 +1,5 @@
 ---
-title: Adobe Illustrator
+title: Illustrator
 icon: /assets/adobe-illustrator-cc.svg
 layout: tech
 ---

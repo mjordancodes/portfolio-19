@@ -19,15 +19,15 @@ class ProjectsPage extends Component {
               <img src="/images/github.png" alt="github logo with custom octocat" />
             </a>
           </div>
-          <div className={componentStyles.projectsInfo}>
-            {/* <p>Collection of various projects and experiments created during my coding journey.</p>  */}
-            <h3>Technologies I Use:</h3>
-            <TechList />
-          </div>
           <div className={componentStyles.codepen} >
           <a href="https://codepen.io/mjordancodes">
               <img src="/images/codepen.png" alt="codepen logo with screenshot of a pen" />
             </a>
+          </div>
+          <div className={componentStyles.projectsInfo}>
+            {/* <p>Collection of various projects and experiments created during my coding journey.</p>  */}
+            <h3>Technologies I Use:</h3>
+            <TechList />
           </div>
         </div>
       </Layout>
