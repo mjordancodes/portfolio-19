@@ -17,7 +17,7 @@ class BlogPage extends Component {
         </header>
         <ul className={`container ${componentStyles.postList}`}>
           {this.props.data.allMarkdownRemark.edges.map(post => (
-            <Link to={post.node.fields.slug}>
+            <Link to={post.node.fields.slug} key={post.node.fields.slug}>
               <li className={componentStyles.post}>
                 <img src={post.node.frontmatter.thumbnail} alt="featured" />
                 <div className={componentStyles.words}>
