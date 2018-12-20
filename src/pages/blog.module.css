@@ -11,6 +11,11 @@
   padding: 0;
   a {
     color: black;
+    &:hover {
+      p {
+        font-style: italic;
+      }
+    }
   }
   .post {
     display: grid;
