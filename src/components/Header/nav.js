@@ -14,12 +14,28 @@ class HeaderNav extends Component {
             <span></span>
           </label>
         </div>
-        <div className={componentStyles.pages} id="page-list">
-          <a href="/about">about</a>
-          <a href="/projects">projects</a>
-          <a href="/blog">blog</a>
-          <a href="/speaking">speaking</a>
-        </div>
+        <ul className={componentStyles.pages} id="page-list">
+          <li>
+            <a href="/about">about</a>
+            <ul>
+              <li>
+                <a href="/now">now</a>
+              </li>
+              <li>
+                <a href="/uses">uses</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/projects">projects</a>
+          </li>
+          <li>
+            <a href="/blog">blog</a>
+          </li>
+          <li>
+            <a href="/speaking">speaking</a>
+          </li>
+        </ul>
       </nav>
     )
   }

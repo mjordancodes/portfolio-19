@@ -29,8 +29,10 @@
   }
   .pages {
     /* display: none; */
+    list-style-type: none;
+    padding: 0;
     transition: 1s;
-   @media (max-width: 799px) {
+    @media (max-width: 799px) {
       position: absolute;
       top: 60px;
       right: -55vw;
@@ -52,9 +54,40 @@
       align-items: center;
       font-size: 1.5em;
       height: 100%;
+      li {
+        position: relative;
+        &:hover {
+          ul {
+            display: block;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            li:before {
+              content: '';
+            }
+          }
+        }
+      }
+      ul {
+        display: none;
+        background: rgba(255,255,255,0.6);
+      }
+      
     }
     a {
       padding: 0 1.5vw;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: smaller;
+      line-height: 42px;
+      li {
+        &:before {
+          font-size: smaller;
+          content: '>'
+        }
+      }
     }
   }
 }
