@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 2fr;
   grid-template-areas: 'socialLogo empty logo links';
+  align-items: center;
   a {
       color: #000;
       text-decoration: none;
