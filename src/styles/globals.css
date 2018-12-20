@@ -4,12 +4,11 @@
   @media (min-width: 1000px) {
     width: 75%;
   }
-  p {
-    a {
-      color: #E66565;
-      &:hover {
-        font-weight: bold;
-      }
+  a {
+    color: #E66565;
+    &:hover {
+      font-weight: bold;
     }
   }
 }
+

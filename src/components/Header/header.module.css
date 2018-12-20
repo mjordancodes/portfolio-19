@@ -12,6 +12,9 @@
   a {
       color: #000;
       text-decoration: none;
+      &:hover {
+        color: #E66565;
+      }
     }
   .logo {
     text-align: center;
