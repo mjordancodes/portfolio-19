@@ -61,15 +61,14 @@ collections:
     create: true
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "now" }
-      - { name: title, label: "Title(Date)"}
-      - { name: date, label: "Date", widget: date }
+      - { name: title, label: "Date", widget: date }
       - { name: tech1, label: "Technology Focus: 1", widget: string }
       - { name: tech2, label: "Technology Focus: 2", widget: string }
       - { name: tech3, label: "Technology Focus: 3", widget: string }
       - { name: personalprojecttitle, label: "Personal Project Title", widget: string }
       - { name: personalprojectabout, label: "Personal Project About", widget: markdown }
-      - { name: jobcompany, label: "Company I Work At", widget: string, default: "Alchemy Code Lab" }
-      - { name: jobtitle, label: "Job Title", widget: string, default: "Lead Instructor" }
+      - { name: jobcompany, label: "Company I Work At", widget: string, default: "Searching" }
+      - { name: jobtitle, label: "Job Title", widget: string, default: "Front End Web Developer" }
       - { name: body, label: "General Info", widget: markdown }
   - name: uses
     label: Uses 
