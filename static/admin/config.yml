@@ -61,6 +61,7 @@ collections:
     create: true
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "now" }
+      # - { name: title, label: "Title(used for file name only): mm-dd-yy" }
       - { name: title, label: "Date", widget: date }
       - { name: tech1, label: "Technology Focus: 1", widget: string }
       - { name: tech2, label: "Technology Focus: 2", widget: string }

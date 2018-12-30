@@ -49,6 +49,14 @@ exports.createPages = ({ graphql, actions }) => {
               slug: node.fields.slug,          
             },        
           })    
+        } else if (node.frontmatter.layout == "now") {
+          createPage({          
+            path: node.fields.slug,          
+            component: path.resolve(`./src/templates/now-post.js`),          
+            context: {                       
+              slug: node.fields.slug,          
+            },        
+          })    
         }       
       })      
       resolve()    
