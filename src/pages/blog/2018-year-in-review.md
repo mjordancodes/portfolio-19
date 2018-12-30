@@ -1,6 +1,7 @@
 ---
 date: 2018-12-30T00:55:15.932Z
 title: '2018: Year in Review'
+thumbnail: /assets/2018.jpg
 layout: blog
 ---
 It seems like it is that time of year to reflect on the past twelve months. 
