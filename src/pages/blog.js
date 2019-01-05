@@ -45,6 +45,9 @@ export const blogListQuery = graphql`
             eq:"blog"
           }
         }
+      }, 
+      sort: {
+        fields: [frontmatter___date], order: DESC
       }
     ) {
       edges {
