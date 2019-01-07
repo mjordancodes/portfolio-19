@@ -41,10 +41,10 @@ exports.createPages = ({ graphql, actions }) => {
               slug: node.fields.slug,          
             },        
           })    
-        } else if (node.frontmatter.layout == "talk") {
+        } else if (node.frontmatter.layout == "learning") {
           createPage({          
             path: node.fields.slug,          
-            component: path.resolve(`./src/templates/talk-post.js`),          
+            component: path.resolve(`./src/templates/learning-log-post.js`),          
             context: {                       
               slug: node.fields.slug,          
             },        
@@ -57,7 +57,15 @@ exports.createPages = ({ graphql, actions }) => {
               slug: node.fields.slug,          
             },        
           })    
-        }       
+        } else if (node.frontmatter.layout == "talk") {
+          createPage({          
+            path: node.fields.slug,          
+            component: path.resolve(`./src/templates/talk-post.js`),          
+            context: {                       
+              slug: node.fields.slug,          
+            },        
+          })    
+        } 
       })      
       resolve()    
     })  
