@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
-import { TimelineMax, Power0 } from 'gsap/all'; 
+// import { TimelineMax, Power0 } from 'gsap/all'; 
 
 import componentStyles from './landing-desk.module.css';
 
 import FishtankItem from '../../images/Landing-Desk/fishtank.svg';
+
+const { TimelineMax, Power0 } = require('gsap/all');
+
 
 class Fishtank extends Component {
   render() {

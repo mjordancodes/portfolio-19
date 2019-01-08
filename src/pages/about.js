@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { TimelineMax } from 'gsap';
+// import { TimelineMax } from 'gsap';
+
 
 import componentStyles from './about.module.css';
 
@@ -8,6 +9,8 @@ import Header from '../components/Header/header';
 import SimpleText from '../components/Simple-Text/simple-text';
 
 import AboutMe from '../images/about-me.svg';
+
+const { TimelineMax } = require('gsap/all');
 
 class AboutPage extends Component {
   render() {
