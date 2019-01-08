@@ -26,7 +26,7 @@ const BooksTable = ({className}) => (
               frontmatter {
                 title
                 date(formatString: "MM/YY")
-                datecomplete(formatString: "MM/YY")
+                datecomplete
                 pages
                 authorfirst
                 authorlast
