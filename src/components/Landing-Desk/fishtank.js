@@ -19,56 +19,21 @@ class Fishtank extends Component {
     // Fishtank Animations
     const fish = document.getElementById('fish');
     const fishAnimation = new TimelineMax({repeat: -1});
-    fishAnimation.to(fish, 3, {x:50, rotation: -15, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-20, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-40, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-60, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-80, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-100, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-120, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-140, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-160, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-180, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-200, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-220, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-240, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-220, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-200, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-180, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-160, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-140, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-120, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-100, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-80, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-60, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:-40, ease: Power0.easeNone})
-                 .to(fish, 1, {x:180, scaleX:-1, rotation:-15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:120, y:-20, ease: Power0.easeNone})
-                 .to(fish, 1, {x:0, scaleX:1, rotation:15, ease: Power0.easeNone})
-                 .to(fish, 3, {x:50, y:0, ease: Power0.easeNone})
 
+    let yNum = -20;
+    fishAnimation.to(fish, 3, {ease: Power0.easeNone,   x: 50,   rotation: -15,  y: 0});
+
+    for (let i = 0; i < 13; i++) {
+      fishAnimation.to(fish, 1, {ease: Power0.easeNone,   x: 180,  rotation: 15,   scaleX:-1})
+                   .to(fish, 3, {ease: Power0.easeNone,   x: 120,  y: yNum});
+      
+    i <= 5 ? yNum -= 20 : yNum += 20;    
+      
+    fishAnimation.to(fish, 1, {ease: Power0.easeNone,   x: 0,    rotation: -15,   scaleX:1})
+                 .to(fish, 3, {ease: Power0.easeNone,   x:50,    y: yNum});
+
+    i <= 5 ? yNum -= 20 : yNum += 20;    
+    }
 
     const  bubble1 = document.getElementById('bubble1');
     const  bubble2 = document.getElementById('bubble2');
@@ -83,21 +48,16 @@ class Fishtank extends Component {
     const bubbles = [bubble3, bubble1, bubble7, bubble6, bubble8, bubble2, bubble5, bubble4]
 
     for(let i = 0; i < bubbles.length; i++) {
-      new TimelineMax({repeat: -1, delay: i})
-        .to(bubbles[i], 1, {y: -50, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -100, x:-10, scale: 1.5, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -150, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -200, x:-10, scale: 2, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -250, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -300, x:-10, scale: 2.5, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -350, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -400, x:-10, scale: 3, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -450, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -500, x:-10, scale: 3.5, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -550, x:10, ease: Power0.easeNone})
-        .to(bubbles[i], 1, {y: -600, x:-10, ease: Power0.easeNone})
-    }
+      const bubbleAnimation = new TimelineMax({repeat: -1, delay: i})
 
+      let scaleNum = 1;
+      let xNum;
+      for(let j = 0; j < 12; j++) {
+        j % 2 === 0 ? xNum = 10 : xNum = -10;
+        scaleNum += 0.25
+        bubbleAnimation.to(bubbles[i], 1, {y: (j * -50), x: xNum, scale: scaleNum, ease: Power0.easeNone})
+      }
+    }
   }
 
 }
