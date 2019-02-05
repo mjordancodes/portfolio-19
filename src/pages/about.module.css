@@ -2,7 +2,7 @@
   width: 75vw;
   margin: 0 auto;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
 
   grid-template-columns: 1fr 2fr;
   grid-template-areas:  'img hello'
@@ -26,7 +26,7 @@
   .pdxnodeImg { grid-area: pdxnode; }
   .toastmastersImg { grid-area: toast; }
 
-  @media (min-width: 750px) {
+  @media (min-width: 1000px) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 'img hello hello'
                          'img comm comm'
@@ -38,92 +38,4 @@
     max-width: 75%;
     margin: 10px auto;
   }
-
 }
-
-
-/* .about {
-  width: 75vw;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: 1fr;
-  position: relative;
-  .meImage {
-    position: fixed;
-    left: 0;
-    z-index: -1;
-    opacity: 0.1;
-    height: calc(100vh - 50px);
-    max-width: 100vw;
-    svg {
-      max-height: 85%;
-      display: block;
-      margin: 0 auto;
-    }
-  }
-  .hello {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 100px;
-  }
-  > * > * {
-    background: rgba(255, 255, 255, 0.8);
-  }
-  .groupImages {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      width: 33%;
-      max-width: 33%;
-      transition: 500ms;
-      cursor: pointer;
-      filter: grayscale(1);
-      &:hover {
-        filter: grayscale(0);
-      }
-    }
-  }
-  .group {
-    display: none;
-  }
-}
-
-@media (min-width: 800px) {
-  .about {
-    width: 95vw;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, minmax(20vh, auto));
-    grid-template-areas:  'meImage  empty1     hello      hello     empty2'
-                          'meImage  community  community  groupImgs groupImgs'
-                          'meImage  community  community  group     group';
-    .hello {
-      grid-area: hello;
-      display: initial;
-      height: auto;
-    }
-    .community {
-      grid-area: community;
-    }
-    .meImage {
-      grid-area: meImage;
-      position: relative;
-      left: initial;
-      right: initial;
-      opacity: 1;
-      height: auto;
-      width: initial;
-      transition: 1s;
-    }
-    .groupImages {
-      grid-area: groupImgs;
-    }
-    .group {
-      grid-area: group;
-    }
-  }
-} */
