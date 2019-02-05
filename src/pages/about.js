@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import { TimelineMax } from 'gsap';
-
 
 import componentStyles from './about.module.css';
 
@@ -23,7 +21,7 @@ class AboutPage extends Component {
           </div>
           <SimpleText title="Hello World" className={componentStyles.hello}>
             <p>
-              I’m Jordan, a creative front end developer currently teaching as lead instructor at Alchemy Code Lab in Portland, Oregon. Nothing excites me more than immersing myself in a good challenge or a great book. For me, coding is the perfect mix of logical problem solving, and creative artistic expression. When not coding, I am spending my time creating something new, getting involved in the local tech community, or exploring the world around me with my trusty Nikon camera.
+              I’m Jordan, a creative front end developer in Portland, Oregon. Nothing excites me more than immersing myself in a good challenge or a great book. For me, coding is the perfect mix of logical problem solving, and creative artistic expression. When not coding, I am spending my time creating something new, getting involved in the local tech community, or exploring the world around me with my trusty Nikon camera.
             </p>
           </SimpleText>
           <SimpleText title="Community Involvement" className={componentStyles.community}>

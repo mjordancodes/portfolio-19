@@ -1,6 +1,6 @@
 ---
 date: 2019-01-28T23:49:43.399Z
-datecomplete: ''
+datecomplete: 2019-01-28T23:49:43.399Z
 title: The Gathering Storm
 authorfirst: Robert
 authorlast: Jordan

@@ -26,7 +26,7 @@ const BooksTable = ({className}) => (
               frontmatter {
                 title
                 date(formatString: "MM/YY")
-                datecomplete
+                datecomplete(formatString: "MM/YY")
                 pages
                 authorfirst
                 authorlast
@@ -50,7 +50,7 @@ const BooksTable = ({className}) => (
             <td>{book.node.frontmatter.title}</td>
             <td>{book.node.frontmatter.authorfirst} {book.node.frontmatter.authorlast}</td>
             <td>{book.node.frontmatter.category}</td>
-            <td>{book.node.frontmatter.datecomplete}</td>
+            <td>{(book.node.frontmatter.date === book.node.frontmatter.datecomplete) ? '' : book.node.frontmatter.datecomplete}</td>
           </tr>
         )) }
       </table>
