@@ -1,15 +1,18 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   text-align: center;
   img {
     width: 90%;
     display: block;
     margin: 0 auto;
   }
+  h1 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
   .projectsInfo {
     grid-column-start: 1;
     grid-column-end: -1;
-    grid-row-start: 1;
   }
 }
