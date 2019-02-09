@@ -21,3 +21,6 @@ a {
 h1, h2, h3, h4, h5, h6, nav a, .title {
   font-family: 'Poiret One', cursive;
 }
+img {
+  max-width: 100%;
+}
