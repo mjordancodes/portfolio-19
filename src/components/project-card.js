@@ -1,6 +1,6 @@
 import React from 'react';
 
-import componentStyles from './project-card.module.css';
+// import componentStyles from './project-card.module.css';
 
 const ProjectCard = ({ title, image, description, live, github }) => (
   <div>
