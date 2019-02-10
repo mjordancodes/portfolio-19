@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 
 import Layout from '../components/layout';
 
+import componentStyles from './portfolio.module.css';
+
+import SiteCard from '../components/Site-Card/site-card'
+
+
 class PortfolioPage extends Component {
   render() {
     return (
@@ -66,20 +71,50 @@ class PortfolioPage extends Component {
               <li>
                 <p>Other Portfolio Sites</p>
                 <p>I love to look at the portfolio sites that other people build. I try to find sites of people I know in the community and sites from the super cool people I follow on Twitter.</p>
-                <p>A few of my favorites:</p>
-                <ul>
-                  <li>
-                    <a href="http://www.themostawful.com/" target="_blank" rel="noopener noreferrer">Sarah Joy</a> - This is the portfolio site of another leader from Women Who Code Portland. I love the buttons for things that she likes playing with. When you click on the "color" button the background color randomly changes. This inspired me to make it so that I would have some colors on my site randomly change on every page load(or reload). 
-                    <img src="/assets/themostawful-buttons.png" />
-                  </li>
-                  <li>
-                    <a href="https://www.alispit.tel/#/" target="_blank" rel="noopener noreferrer">Ali Spittel</a> - Ali writes lots of super cool blog posts that are really helpful. I love the colors she uses on her name on the home page, and the simple information right under it that quickly sums up what she likes to do. 
-                    <img src="/assets/alispittel.png" />
-                  </li>
+                <ul className={componentStyles.siteGrid}>
+                  <SiteCard 
+                    site="alispit.tel/"
+                    url="https://www.alispit.tel/"
+                    thumbnail="/assets/alispittel-sm.jpg"
+                    fullImg="/assets/alispittel.png"
+                  />
+                  <SiteCard 
+                    site="tobiasahlin.com"
+                    url="http://tobiasahlin.com/"
+                    thumbnail="/assets/TobiasAhlin-sm.jpg"
+                    fullImg="/assets/TobiasAhlin.jpg"
+                  />
+                  <SiteCard 
+                    site="weaintplastic.com/"
+                    url="http://weaintplastic.com/"
+                    thumbnail="/assets/aintplastic-sm.jpg"
+                    fullImg="/assets/aintplastic.png"
+                  />
+                  <SiteCard 
+                    site="adhamdannaway.com/"
+                    url="http://www.adhamdannaway.com/"
+                    thumbnail="/assets/AdhamDannaway-sm.jpg"
+                    fullImg="/assets/AdhamDannaway.png"
+                  />
+                  <SiteCard 
+                    site="milkisnice.com/"
+                    url="https://milkisnice.com/"
+                    thumbnail="/assets/milkisnice-sm.jpg"
+                    fullImg="/assets/milkisnice.jpg"
+                  />
+                  <SiteCard 
+                    site="kuon.space/"
+                    url="https://kuon.space/"
+                    thumbnail="/assets/kuonyagi-sm.jpg"
+                    fullImg="/assets/kunoyagi.png"
+                  />
+                  <SiteCard 
+                    site="moonfarmer.com/"
+                    url="https://moonfarmer.com/"
+                    thumbnail="/assets/moonfarmer-sm.jpg"
+                    fullImg="/assets/moonfarmer.jpg"
+                  />
                 </ul>
-
-                <p>I combined the random color generation idea that I got from Sarah Joy, and the colorful letters on Ali's site and came up with my own homepage landing bit.</p>
-                <img src="/assets/nameplate.png" />
               </li>
             </ul>
           </li>
