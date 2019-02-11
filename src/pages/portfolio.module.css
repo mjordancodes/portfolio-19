@@ -1,6 +1,6 @@
 .siteGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   list-style-type: none;
   padding: 0;
   grid-gap: 10px;
@@ -9,12 +9,16 @@
     border: 1px solid black;
     text-align: center;
     a {
-      font-size: 1.25em;
-      color: black;
+      color: #AE70AF;
       line-height: 3em;
     }
     img {
       display: block;
+    }
+    p {
+      text-align: justify;
+      padding: 5px;
+      margin: 0;
     }
   }
 }

@@ -77,46 +77,85 @@ class PortfolioPage extends Component {
                     url="https://www.alispit.tel/"
                     thumbnail="/assets/alispittel-sm.jpg"
                     fullImg="/assets/alispittel.png"
+                    desc="I love the bright colors of this site. Her content is also super great and the click for random color/shapes in the background is entertaining."
                   />
                   <SiteCard 
-                    site="tobiasahlin.com"
-                    url="http://tobiasahlin.com/"
-                    thumbnail="/assets/TobiasAhlin-sm.jpg"
-                    fullImg="/assets/TobiasAhlin.jpg"
+                    site="sarahdrasnerdesign.com/"
+                    url="https://sarahdrasnerdesign.com/"
+                    thumbnail="/assets/SarahDrasner-sm.jpg"
+                    fullImg="/assets/SarahDrasner.png"
+                    desc="I think the bright, fun colors and shapes give this site a very playful feel. I love the super simple statement at the beginning: 'I make things'"
                   />
                   <SiteCard 
-                    site="weaintplastic.com/"
-                    url="http://weaintplastic.com/"
-                    thumbnail="/assets/aintplastic-sm.jpg"
-                    fullImg="/assets/aintplastic.png"
+                    site="bradfrost.com/"
+                    url="http://bradfrost.com/"
+                    thumbnail="/assets/BradFrost-sm.jpg"
+                    fullImg="/assets/BradFrost.png"
+                    desc="Brad's site amuses me with the color fill on hover with the circles at the top and bottom of his site."
+                  />
+                  <SiteCard 
+                    site="labs.jensimmons.com/"
+                    url="https://labs.jensimmons.com/"
+                    thumbnail="/assets/JenSimmons-sm.jpg"
+                    fullImg="/assets/JenSimmons.png"
+                    desc="This site is a good example of responsive grid layout. It also has lots of other really cool CSS examples that I love to poke at."
+                  />
+                  <SiteCard 
+                    site="lynnandtonic.com/archive/2017/"
+                    url="https://lynnandtonic.com/archive/2017/"
+                    thumbnail="/assets/LynnFisher-sm.jpg"
+                    fullImg="/assets/LynnFisher.png"
+                    desc="This site is updated yearly. Most versions are pretty fun. I really loved the 2017 version. The layout changes and content moves around dramatically at all the different break points."
+                  />
+                  <SiteCard 
+                    site="chriscoyier.net/"
+                    url="https://chriscoyier.net/"
+                    thumbnail="/assets/ChrisCoyier-sm.jpg"
+                    fullImg="/assets/ChrisCoyier.png"
+                    desc="I like the interaction with the bio. You can change the length, the point of view, and how it is rendered. This seems super handy for someone who does a lot of speaking and has to frequently provide a bio."
+                  />
+                  <SiteCard 
+                    site="una.im/"
+                    url="https://una.im/"
+                    thumbnail="/assets/UnaKravets-sm.jpg"
+                    fullImg="/assets/UnaKravets.png"
+                    desc="Unicorns are cool and this one changes colors when you hover over it!"
                   />
                   <SiteCard 
                     site="adhamdannaway.com/"
                     url="http://www.adhamdannaway.com/"
                     thumbnail="/assets/AdhamDannaway-sm.jpg"
                     fullImg="/assets/AdhamDannaway.png"
-                  />
-                  <SiteCard 
-                    site="milkisnice.com/"
-                    url="https://milkisnice.com/"
-                    thumbnail="/assets/milkisnice-sm.jpg"
-                    fullImg="/assets/milkisnice.jpg"
-                  />
-                  <SiteCard 
-                    site="kuon.space/"
-                    url="https://kuon.space/"
-                    thumbnail="/assets/kuonyagi-sm.jpg"
-                    fullImg="/assets/kunoyagi.png"
-                  />
-                  <SiteCard 
-                    site="moonfarmer.com/"
-                    url="https://moonfarmer.com/"
-                    thumbnail="/assets/moonfarmer-sm.jpg"
-                    fullImg="/assets/moonfarmer.jpg"
+                    desc="Really fun way to show that he does both code and design. Hovering over one side expands the design in that direction."
                   />
                 </ul>
               </li>
             </ul>
+          </li>
+          <li>
+            <h3>The Design Process</h3>
+            <p>Now that I have some ideas about the content, what I want the site to do, and I've found some cool things to inspire me, it is time to start on the actual design. I like to go back to the list of things I wanted to show off and start figuring out the how. For example, I wanted to nod to my background in graphic design, so I decided to create my own illustrations.</p>
+            
+            <h4>Site Map</h4>
+            <p>Before I get too far into design, I like to make a site map. This helps me outline the site a little bit and figure out what types of pages I am going to need.</p>
+            <p>
+              _____________________________<br />
+              home<br />
+              ┣ about<br />
+              &nbsp; &nbsp; ┣ uses<br />
+              &nbsp; &nbsp; ┣ now<br />
+              ┣ projects<br />
+              ┣ blog<br />
+              ┣ speaking<br />
+              _____________________________
+            </p>
+            <p>Looking at this, I will have 1 landing page (home), 3 list pages (portfolio, blog, speaking), and the rest will be fairly basic content pages.</p>
+            
+            <h4>Wireframe</h4>
+            <p>I usually start wireframes with the list pages. I'll figure out what information I want to show in the list view and sketch out a few different ways I can lay it out. Knowing what information I want to display makes it easier to arrange the pieces.</p>
+
+            <h4>Mockups</h4>
+            <p>Once I have a basic wireframe sketched out, I often jump into Illustrator to start mocking up a high-fidelity version of the site. When building this site, I spent a lot of time during this phase creating the different illustrations that I wanted to use. I usually don't mock up the full site at this stage. I focus on areas that I want to be doing something extra or fancy, and let the wireframe work as a vague idea to guide the design on the simpler pages.</p>
           </li>
         </ol>
       </Layout>
