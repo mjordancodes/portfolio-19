@@ -1,14 +1,44 @@
-.container {
-  width: 100%;
-  margin: 0 auto;
-  @media (min-width: 1000px) {
-    width: 75%;
+@import "./colors.css";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+a, a:visited, a:focus {
+  text-decoration: none;
+  color: $color_dark;
+  &:hover {
+    color: $color_default;
   }
-  a {
-    color: #E66565;
-    &:hover {
-      font-weight: bold;
-    }
+}
+h1, h2, h3, h4, h5, h6, nav a, .title {
+  font-family: 'Poiret One', cursive;
+}
+img {
+  max-width: 100%;
+}
+
+
+#page {
+  margin-top: 125px;
+  height: calc(100vh - 125px);
+}
+
+#container {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 5px;
+  @media (min-width: 1000px) {
+    width: 75vw;
   }
 }
 

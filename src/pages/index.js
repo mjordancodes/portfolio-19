@@ -4,10 +4,7 @@ import React, { Component } from 'react';
 import HomeHeader from '../components/Header/home-header';
 import DeskLanding from '../components/Landing-Desk/landing-desk';
 
-
-import '../components/layout.css'
 import '../styles/globals.css'
-
 
 class IndexPage extends Component {
   render() {

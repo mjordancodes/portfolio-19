@@ -5,17 +5,9 @@
   width: 100vw;
   padding: 0 2.5vw;
   z-index: 10;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr;
-  grid-template-areas: 'socialLogo empty logo links';
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  a {
-      color: #000;
-      text-decoration: none;
-      &:hover {
-        color: #E66565;
-      }
-    }
   .logo {
     text-align: center;
     grid-area: socialLogo;
@@ -97,6 +89,7 @@
 }
 .headerHome {
   top: 2.5vh;
+  justify-content: flex-end;
 }
 .header {
   background: #fff;

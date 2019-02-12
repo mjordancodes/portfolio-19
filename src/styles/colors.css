@@ -1,3 +1,15 @@
-$lochmara: #326496;
+/*  Main Colors  */
+$red:       #E66565;
+$orange:    #F37E43;
+$yellow:    #FFD603;
+$green:     #9FCEB4;
+$blue:      #ACCAE8;
+$lavender:  #9295CA;
+$purple:    #AE70AF;
 
-$color-main: $lochmara;
+$black:     #000000;
+
+/* Use Colors */
+$color_default: $red;
+$color-main: $red;
+$color_dark: $black;
