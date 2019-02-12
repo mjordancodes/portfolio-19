@@ -31,6 +31,11 @@ class HeaderNav extends Component {
           </li>
           <li>
             <a href="/blog">blog</a>
+            <ul>
+              <li>
+                <a href="/portfolio">portfolio</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="/speaking">speaking</a>

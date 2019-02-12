@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import Layout from '../components/layout';
-import Header from '../components/Header/header';
 import BooksTable from '../components/Book-Table/book-table';
 
 import BookCase from '../images/bookcase.svg';
@@ -12,11 +11,10 @@ class BooksPage extends Component {
   render() {
     return (
       <Layout>
-          <Header />
-          <div className={`container ${componentStyles.container}`}>
-            <BooksTable />
-            <BookCase className="book-case" />
-          </div>
+        <div className={`container ${componentStyles.container}`}>
+          <BooksTable />
+          <BookCase className="book-case" />
+        </div>
       </Layout>
     )
   }

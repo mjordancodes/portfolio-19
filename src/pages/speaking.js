@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link, graphql } from "gatsby";
 
 import Layout from '../components/layout';
-import Header from '../components/Header/header';
 
 import componentStyles from './speaking.module.css';
 
@@ -10,7 +9,6 @@ class TalksPage extends Component {
   render() {
     return (
       <Layout>
-        <Header />
         <header className={`container`}>
           <h1>mJordan Speaks:</h1>
           <h2>meetups, workshops, conferneces</h2>

@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 
 import Layout from '../components/layout';
-import Header from '../components/Header/header';
 
+import componentStyles from './uses.module.css';
 
-import componentStyles from './uses.module.css'
+import UsesSVG from '../images/uses.svg';
 
 class UsesPage extends Component {
   render() {
     return (
       <Layout>
-        <Header />
+        <header className={componentStyles.usesHeader}>
+          <UsesSVG />
+        </header>
         <div className={`container ${componentStyles.container}`}>
-
-          <h1 id="page-title">Uses</h1>
           <p>Decided to create a uses page inspired by <a href="https://wesbos.com/uses/" target="_blank" rel="noopener noreferrer">Wes Bos</a>. I will try and keep this updated.</p>
+          <p>Want to know about something not listed here? Shoot me a <a href="https://twitter.com/mjordancodes" target="_blank" rel="noopener noreferrer">DM on Twitter</a>!</p>
           <p>Click a link to jump to a specific bit of my set up, or read on to see it all. The page got a little longer than originally intended. Might break it up into blog posts later on and add more things.</p>
           <ul>
             <li>
@@ -41,6 +42,13 @@ class UsesPage extends Component {
             </li>
             <li>
               <a href="#other">Other Applications</a>
+            </li>
+            <li>
+              <a href="#hardware">Hardware</a>
+              <ul>
+                <li><a href="#computers">Computers</a></li>
+                <li><a href="#tablets">Tablets</a></li>
+              </ul>
             </li>
           </ul>
 
@@ -182,10 +190,19 @@ class UsesPage extends Component {
           <h1 id="other">Other Programs</h1>
           <ul>
             <li>I use <a href="https://flexibits.com/fantastical" target="_blank" rel="noopener noreferrer">Fantastical</a> for syncing my multiple Google calendars</li>
-            <li>I use <a href="" target="_blank" rel="noopener noreferrer">Spectacle</a> for window management. It really makes life better.</li>
-            <li>I use <a href="" target="_blank" rel="noopener noreferrer">Franz</a> for trying to keep as many of my chat applications in the same window as possible. It might not be perfect, but it does help me remember to open all the different channels of communication I rely on.</li>
+            <li>I use <a href="https://www.spectacleapp.com/" target="_blank" rel="noopener noreferrer">Spectacle</a> for window management. It really makes life better.</li>
+            <li>I use <a href="https://meetfranz.com/" target="_blank" rel="noopener noreferrer">Franz</a> for trying to keep as many of my chat applications in the same window as possible. It might not be perfect, but it does help me remember to open all the different channels of communication I rely on.</li>
           </ul>
 
+          <hr />
+          <h1 id="hardware">Hardware</h1>
+
+          <h2 id="computers">Computers</h2>
+          <p>My main computer is a MacBook Pro 13-inch, 2016 model with an Core i5 processor and 16gb memory. It runs pretty well with all the graphics I do, but I will definitely get a better processor next time.</p>
+          <p>I also have a Microsoft Surface that I picked up in 2018. This computer is the first Windows computer I have used with the Windows Linux Subsystem thing. It has definitely been a little weird to get used to, but I like it. I wanted this to be my travel / conference computer, but the form factor makes it hard to use at conferences (not good without a table to put it on).</p>
+          
+          <h2 id="tablets">Tablets</h2>
+          <p>I have an iPad with an Apple Pencil that I really love. It has been great for notes, drawing, and reading.</p>
         </div>
       </Layout> 
     );

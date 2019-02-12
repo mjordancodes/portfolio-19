@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Layout from '../components/layout';
-import Header from '../components/Header/header';
 import TechList from '../components/Tech-List/tech-list';
 
 import ProjectCard from '../components/project-card';
@@ -12,7 +11,6 @@ class ProjectsPage extends Component {
   render() {
     return (
       <Layout>
-        <Header />
         <div className={`container ${componentStyles.container}`}>
         <h1>Recent Projects</h1>
         <ProjectCard 
