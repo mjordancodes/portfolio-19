@@ -19,6 +19,9 @@ class HeaderNav extends Component {
             <a href="/about">about</a>
             <ul>
               <li>
+                <a href="/resume">resume</a>
+              </li>
+              <li>
                 <a href="/now">now</a>
               </li>
               <li>
