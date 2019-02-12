@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link, graphql } from "gatsby";
 
 import Layout from '../components/layout';
-import Header from '../components/Header/header';
 
 import componentStyles from './blog.module.css'
 
@@ -10,7 +9,6 @@ class BlogPage extends Component {
   render() {
     return (
       <Layout>
-        <Header />
         <header className={`container ${componentStyles.header}`}>
           <h1>mJordan Writes:</h1>
           <h2>articles, reviews, tutorials, life, and musings</h2>

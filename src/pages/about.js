@@ -3,18 +3,16 @@ import React, { Component } from 'react';
 import componentStyles from './about.module.css';
 
 import Layout from '../components/layout';
-import Header from '../components/Header/header';
 import SimpleText from '../components/Simple-Text/simple-text';
 
 import AboutMe from '../images/dev.svg';
 
-const { TimelineMax } = require('gsap/all');
+// const { TimelineMax } = require('gsap/all');
 
 class AboutPage extends Component {
   render() {
     return (
       <Layout>
-        <Header />
         <div className={componentStyles.about}>
           <div className={componentStyles.meImage}>
             <AboutMe />

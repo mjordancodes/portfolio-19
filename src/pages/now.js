@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link, graphql } from "gatsby";
 
 import Layout from '../components/layout';
-import Header from '../components/Header/header';
 import NowCurrent from '../components/Now-Current/now-current';
 
 // import componentStyles from './now.module.css'
@@ -11,7 +10,6 @@ class NowPage extends Component {
   render() {
     return (
       <Layout>
-        <Header />
         <header className={`container`}>
           <h1>Now</h1>
         </header>
