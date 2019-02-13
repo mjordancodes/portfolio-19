@@ -1,88 +1,134 @@
 @import "../../styles/colors.css";
 
-.headerHome, .header {
-  position: fixed;
-  width: 100%;
-  top: 45px;
-  z-index: 10;
-  display: flex;
-  justify-content: flex-end;
-}
 
-.nav {
-  width: 40vw;
-  min-width: 300px;
-  max-width: 600px;
-  height: 50px;
-  /* background: $color_light; */
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.15em;
-  > div {
-    flex-grow: 1;
-    height: 100%;
-    position: relative;
-    > a {
-      text-align: center;
-      width: 100%;
-      height: 100%;
-      display: block;
-      line-height: 50px;
-      color: $color_dark;
+  .headerHome, .header {
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+  }
+
+  .toggle {
+    display: block;
+    svg {
+      margin-right: 10px;
     }
-    &:hover > a {
-      color: $color_default;
-    }
-    &:not(:first-of-type):not(:last-of-type) > div {
-      left: -50%;
-    }
-    &:first-of-type > div {
-      left: 0;
-    }
-    &:last-of-type > div {
-      right: 0;
-    }
-    &:hover > div {
-      display: block;
-    }
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+
+@media (max-width: 599px) {
+  .nav {
+    /* position: absolute; */
+    /* right: -100%; */
+    background: $color_light;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.25em;
+    align-items: stretch;
+    padding-left: 25px;
     > div {
-      display: none;
-      overflow: hidden;
-      background-color: $color_light;
-      box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
-      border-radius: 0 0 5px 5px;
-      min-width: 200%;
-      position: absolute;
-      padding: 10px;
+      line-height: 42px;
+      margin: 10px auto;
+      width: 60%;
+      min-width: 350px;
       > a {
         display: block;
-        float: left;
-        padding: 10px;
-        width: 46%;
-        margin: 1% 2%;
-        text-align: center;
-        transition: box-shadow 0.2s ease;
-        background: $color_light;
-        &:hover {
-          background: $color_light;
-          box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+      }
+      > div {
+        padding-left: 25px;
+        a {
+          display: block;
         }
       }
     }
   }
-  svg {
-    margin-right: 10px;
-  }
 }
-@media (max-width:600px) {
-  .nav > div > div > a {
-      margin: 5px 0;
-      width: 100%;
+  
+
+@media (min-width:600px) {
+  .headerHome, .header {
+    justify-content: flex-end;
+    top: 45px;
   }
-  .nav > div > a > span {
-      display: none;
+
+  .nav {
+    width: 40vw;
+    min-width: 300px;
+    max-width: 600px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.15em;
+    > div {
+      flex-grow: 1;
+      height: 100%;
+      position: relative;
+      > a {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: block;
+        line-height: 50px;
+        color: $color_dark;
+      }
+      &:hover > a {
+        color: $color_default;
+      }
+      &:not(:first-of-type):not(:last-of-type) > div {
+        left: -50%;
+      }
+      &:first-of-type > div {
+        left: 0;
+      }
+      &:last-of-type > div {
+        right: 0;
+      }
+      &:hover > div {
+        display: block;
+      }
+      > div {
+        display: none;
+        overflow: hidden;
+        background-color: $color_light;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+        border-radius: 0 0 5px 5px;
+        min-width: 200%;
+        position: absolute;
+        padding: 10px;
+        > a {
+          display: block;
+          float: left;
+          padding: 10px;
+          width: 46%;
+          margin: 1% 2%;
+          text-align: center;
+          transition: box-shadow 0.2s ease;
+          background: $color_light;
+          &:hover {
+            background: $color_light;
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+          }
+        }
+      }
+    }
   }
-}
+
+  .toggle {
+    display: none;
+  }
+} 
+
+
+
 
 
 

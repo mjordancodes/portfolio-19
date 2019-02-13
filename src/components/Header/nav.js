@@ -2,33 +2,36 @@ import React from 'react'
 import { Link } from "gatsby";
 
 
-import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaWordpressSimple, FaMicrophoneAlt, FaDog, FaLaptopCode, FaPencilAlt, FaBriefcase } from 'react-icons/fa';
+import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaWordpressSimple, FaMicrophoneAlt, FaDog, FaLaptopCode, FaPencilAlt, FaBriefcase, FaAngleDoubleLeft } from 'react-icons/fa';
 
 import componentStyles from './header.module.css';
 
 const Nav = () => (
-  <nav className={componentStyles.nav}>
-    <div>
-      <Link to="/about"><FaUserAstronaut /><span>About</span></Link>
+  <div>
+    <span className={componentStyles.toggle}><FaAngleDoubleLeft />Menu</span>
+    <nav className={componentStyles.nav}>
       <div>
-        <Link><FaRegClock />Now</Link>
-        <Link><FaToolbox />Uses</Link>
-        <Link><FaBriefcase />Resume</Link>
+        <Link to="/about"><span><FaUserAstronaut /></span>About</Link>
+        <div>
+          <Link to="/now"><FaRegClock />Now</Link>
+          <Link to="/uses"><FaToolbox />Uses</Link>
+          <Link to="/resume"><FaBriefcase />Resume</Link>
+        </div>
       </div>
-    </div>
-    <div>
-      <Link><FaCode /><span>Projects</span></Link>
       <div>
-        <Link><FaLaptopCode />Portfolio</Link>
-        <Link><FaWordpressSimple />WordPress to Gatsby</Link>
-        <Link><FaMicrophoneAlt />Speaking</Link>
-        <Link><FaDog />Puppies and Portfolios</Link>
+        <Link to="projects"><span><FaCode /></span>Projects</Link>
+        <div>
+          {/* <Link to="/projects"><FaLaptopCode />Portfolio</Link> */}
+          <Link to="speaking"><FaMicrophoneAlt />Speaking</Link>
+          <Link to="wp-gatsby"><FaWordpressSimple />WordPress to Gatsby</Link>
+          <Link to="portfolios"><FaDog />Puppies and Portfolios</Link>
+        </div>
       </div>
-    </div>
-    <div>
-      <Link><FaPencilAlt /><span>Blog</span></Link>
-    </div>
-  </nav>
+      <div>
+        <Link to="/blog"><span><FaPencilAlt /></span>Blog</Link>
+      </div>
+    </nav>
+  </div>
 )
 
 export default Nav
