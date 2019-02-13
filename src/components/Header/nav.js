@@ -2,13 +2,17 @@ import React from 'react'
 import { Link } from "gatsby";
 
 
-import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaWordpressSimple, FaMicrophoneAlt, FaDog, FaLaptopCode, FaPencilAlt, FaBriefcase, FaAngleDoubleLeft } from 'react-icons/fa';
+import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaWordpressSimple, FaMicrophoneAlt, FaDog, FaLaptopCode, FaPencilAlt, FaBriefcase, FaAngleDoubleLeft, FaWrench } from 'react-icons/fa';
 
 import componentStyles from './header.module.css';
 
 const Nav = () => (
   <div>
-    <span className={componentStyles.toggle}><FaAngleDoubleLeft />Menu</span>
+    <input type="checkbox" id="toggleBox" className={componentStyles.toggleBox} />
+    <label for ="toggleBox" className={componentStyles.toggle} >
+      <FaAngleDoubleLeft /
+      >Menu
+    </label>
     <nav className={componentStyles.nav}>
       <div>
         <Link to="/about"><span><FaUserAstronaut /></span>About</Link>
@@ -29,6 +33,9 @@ const Nav = () => (
       </div>
       <div>
         <Link to="/blog"><span><FaPencilAlt /></span>Blog</Link>
+      </div>
+      <div>
+        <Link to="/resources"><span><FaWrench /></span>Resources</Link>
       </div>
     </nav>
   </div>
