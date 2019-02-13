@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby";
 
 
-import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaWordpressSimple, FaMicrophoneAlt, FaDog, FaLaptopCode, FaPencilAlt, FaBriefcase, FaAngleDoubleLeft, FaWrench } from 'react-icons/fa';
+import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaWordpressSimple, FaMicrophoneAlt, FaDog, FaPencilAlt, FaBriefcase, FaAngleDoubleLeft, FaWrench } from 'react-icons/fa';
 
 import componentStyles from './header.module.css';
 

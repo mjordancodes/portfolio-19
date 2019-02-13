@@ -11,6 +11,10 @@
     z-index: 10;
   }
 
+  .header {
+    background: $color_light;
+  }
+  
   .nav {
     svg {
       margin-right: 10px;
