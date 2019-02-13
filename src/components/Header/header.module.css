@@ -16,10 +16,13 @@
       margin-right: 10px;
     }
   }
-
-  svg {
-    margin-right: 10px;
+  .nav {
+    svg {
+      margin-right: 10px;
+    }
   }
+
+  
 
 @media (max-width: 599px) {
   .nav {
