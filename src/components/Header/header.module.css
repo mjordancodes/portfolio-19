@@ -5,9 +5,10 @@
     transition: 0.5s;
     position: fixed;
     top: 0;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     z-index: 10;
-    display: flex;
   }
 
   .nav {
@@ -17,11 +18,11 @@
   }
 
   
+.toggleBox {
+  opacity: 0;
+}
 
 @media (max-width: 599px) {
-  .toggleBox {
-    opacity: 0;
-  }
   .toggleBox:checked + .toggle {
     svg {
       transform: rotate(180deg);
@@ -34,7 +35,7 @@
     display: block;
     position: absolute;
     right: 15px;
-    top: 5px;
+    top: 30px;
     z-index: 15;
     svg {
       margin-right: 10px;
@@ -70,12 +71,25 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .headerHome, .header {
+    justify-content: space-between;
+  }
+  .hideMobile {
+    display: none;
+  }
+}
   
 
 @media (min-width:600px) {
-  .headerHome, .header {
+  .headerHome {
     justify-content: flex-end;
     top: 45px;
+  }
+
+  .header {
+    top: 0;
   }
 
   .nav {
@@ -145,4 +159,6 @@
     display: none;
   }
 } 
+
+
 
