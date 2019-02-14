@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "gatsby";
+
 
 import componentStyles from './about.module.css';
 
@@ -21,6 +23,7 @@ class AboutPage extends Component {
             <p>
               I’m Jordan, a creative front end developer in Portland, Oregon. Nothing excites me more than immersing myself in a good challenge or a great book. For me, coding is the perfect mix of logical problem solving, and creative artistic expression. When not coding, I am spending my time creating something new, getting involved in the local tech community, or exploring the world around me with my trusty Nikon camera.
             </p>
+            <p>I have spent a lot of time freelancing and doing contract work, but I am really hoping to find a long-term job that I can really dig in on. This job would include an awesome team that I can learn from and and teach things to as I grow as a developer. I am looking for a role that allows me to flex my creativity muscles, while I work on solving challenging problems with code. Check out my <Link to="/resume">resume</Link>, and send me a message if you think I might be a good fit for your team.</p>
           </SimpleText>
           <SimpleText title="Community Involvement" className={componentStyles.community}>
             <p>
