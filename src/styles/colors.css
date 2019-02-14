@@ -1,16 +1,26 @@
 /*  Main Colors  */
-$red:       #E66565;
-$orange:    #F37E43;
-$yellow:    #FFD603;
-$green:     #9FCEB4;
-$blue:      #ACCAE8;
-$lavender:  #9295CA;
-$purple:    #AE70AF;
+$red:             #E66565;
+$red_trans:       rgba(230,101,101,0.3);
+$orange:          #F37E43;
+$orange_trans:    rgba(243,126,67,0.3);
+$yellow:          #FFD603;
+$yellow_trans:    rgba(255,214,3,0.3);
+$green:           #9FCEB4;
+$green_trans:     rgba(159,206,180,0.3);
+$blue:            #ACCAE8;
+$blue_trans:      rgba(172,202,232,0.3);
+$purple:          #9295CA;
+$purple_trans:    rgba(146,149,202,0.3);
+$magenta:         #AE70AF;
+$magenta_trans:   rgba(174,112,175,0.3);
 
-$black:     #000000;
-$white:     #ffffff;
+$black:           #333333;
+$black_trans:     rgba(51,51,51,0.3);
+$white:           #ffffff;
 
 /* Use Colors */
-$color_default: $red;
-$color_dark: $black;
-$color_light: $white;
+$color_default:       $red;
+$color_default_trans: $blue_trans;
+$color_dark:          $black;
+$color_dark_trans:    $black_trans;
+$color_light:         $white;

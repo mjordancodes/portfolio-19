@@ -13,13 +13,13 @@ html {
 body {
   margin: 0;
 }
-a, a:visited, a:focus {
+a, a:visited {
   text-decoration: none;
   color: $color_dark;
-  &:hover {
+}
+a:hover , a:focus{
     color: $color_default;
   }
-}
 h1, h2, h3, h4, h5, h6, nav a, .title {
   font-family: 'Poiret One', cursive;
 }
@@ -39,6 +39,15 @@ img {
   padding: 5px;
   @media (min-width: 1000px) {
     width: 75vw;
+  }
+   a, a:visited {
+    background: linear-gradient(rgba(0,0,0,0) 20%, $color_default_trans 100%);
+    padding: 0 2px;
+    border-radius: 5px;
+   }
+   a:hover , a:focus{
+    color: $color_default;
+    background: linear-gradient(rgba(0,0,0,0) 80%, $color_default_trans 100%);
   }
 }
 
