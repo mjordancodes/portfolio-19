@@ -1,4 +1,4 @@
-.about {
+/* .about {
   display: grid;
   grid-gap: 20px;
 
@@ -35,5 +35,37 @@
   img {
     max-width: 75%;
     margin: 10px auto;
+  }
+} */
+
+.meImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  position: fixed;
+  width: 100vw;
+  height: 75vh;
+  z-index: -1;
+  @media (min-width: 500px) {
+    display: initial;
+    opacity: initial;
+    position: initial;
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 0 25px 0 0;
+  }
+}
+
+.commGrid {
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
   }
 }
