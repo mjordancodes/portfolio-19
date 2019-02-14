@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
+import { Link, graphql, StaticQuery } from 'gatsby';
 
 import componentStyles from './now-current.module.css';
 
@@ -66,6 +66,7 @@ const NowCurrent = ({className}) => (
           <div>
             <Working />
             <p>I am a <span>{data.allMarkdownRemark.edges[0].node.frontmatter.jobtitle}</span> at <span>{data.allMarkdownRemark.edges[0].node.frontmatter.jobcompany}</span></p>
+            <p>If you are curious about my work history you can view <Link to="/resume">my resume here</Link>.</p>
           </div>
         </div>
         <div className={componentStyles.main} dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html}} />

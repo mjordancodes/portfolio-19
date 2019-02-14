@@ -1,8 +1,7 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
-import Header from '../components/Header/header';
 
 import componentStyles from './blog-post.module.css';
 
@@ -29,6 +28,7 @@ export default ({ data }) => {
             <div>
                 <h3>Working</h3>
                 <p>I am a <span>{now.frontmatter.jobtitle}</span> at <span>{now.frontmatter.jobcompany}</span></p>
+                <p>If you are curious about my work history you can view <Link to="/resume">my resume here</Link>.</p>
             </div>
             <hr />
             <div className={componentStyles.main} dangerouslySetInnerHTML={{ __html: now.html}} />
