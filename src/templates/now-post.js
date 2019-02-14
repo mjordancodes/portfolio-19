@@ -10,7 +10,6 @@ export default ({ data }) => {
   const now = data.markdownRemark  
   return (
     <Layout>
-        <Header />
         <div className="container">  
             <h2>{now.frontmatter.date}</h2>
             <div>
@@ -31,6 +30,7 @@ export default ({ data }) => {
                 <h3>Working</h3>
                 <p>I am a <span>{now.frontmatter.jobtitle}</span> at <span>{now.frontmatter.jobcompany}</span></p>
             </div>
+            <hr />
             <div className={componentStyles.main} dangerouslySetInnerHTML={{ __html: now.html}} />
         </div>    
     </Layout>

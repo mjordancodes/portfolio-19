@@ -10,7 +10,6 @@ export default ({ data }) => {
   const post = data.markdownRemark  
   return (
     <Layout>
-      <Header />
       <div className="container">  
         <header>
           <div>

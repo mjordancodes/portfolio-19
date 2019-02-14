@@ -10,7 +10,6 @@ export default ({ data }) => {
   const post = data.markdownRemark  
   return (
     <Layout>
-      <Header />
       <div className="container">  
         <header className={componentStyles.header}>
           <img src={post.frontmatter.thumbnail} alt="featured" />  
