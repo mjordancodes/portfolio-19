@@ -85,8 +85,8 @@ collections:
       - { name: screenshot, label: "Screenshot", widget: image, allow_multiple: false }
       - { name: techs, label: Techs, widget: list, 
             field: {
-              name: tech, 
-              label: Tech,  
+              name: techused, 
+              label: "Tech Used",  
               widget: "relation", 
               collection: "tech", 
               searchFields: "title", 
