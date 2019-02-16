@@ -5,12 +5,17 @@ import React from 'react';
 const ProjectCard = ({ title, image, description, live, github }) => (
   <div>
     <img src={ image } alt="" />
-    <h2>{ title }</h2>
-    <p>{ description }</p>
-    
-    { github ? (<a href={ github }>GitHub</a>) : <span /> }
-    &nbsp;
-    { live ? (<a href={ live }>Live Site</a>) : <span /> }
+    <div className="info">
+      <h2>{ title }</h2>
+      <p>{ description }</p>
+      
+      { github ? (<a href={ github }>GitHub</a>) : <span /> }
+      &nbsp;
+      { live ? (<a href={ live }>Live Site</a>) : <span /> }
+
+      {/* TECH LIST */}
+    </div>
+
   </div>
 )
 
