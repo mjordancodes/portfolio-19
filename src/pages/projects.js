@@ -13,18 +13,19 @@ class ProjectsPage extends Component {
   render() {
     return (
       <Layout>
-        <div className={`container ${componentStyles.container}`}>
         <h1>Recent Projects</h1>
-        {this.props.data.allMarkdownRemark.edges.map(project => (
-          <ProjectCard 
-            title={project.node.frontmatter.title}
-            image={project.node.frontmatter.screenshot} 
-            github={project.node.frontmatter.github} 
-            live={project.node.frontmatter.live} 
-          >
-            <div dangerouslySetInnerHTML={{ __html: project.html }} /> 
-          </ProjectCard>
-        ))}
+        <ul className={componentStyles.projectGrid}>
+          {this.props.data.allMarkdownRemark.edges.map(project => (
+            <ProjectCard 
+              title={project.node.frontmatter.title}
+              image={project.node.frontmatter.screenshot} 
+              github={project.node.frontmatter.github} 
+              live={project.node.frontmatter.live} 
+            >
+              <div dangerouslySetInnerHTML={{ __html: project.node.html }} /> 
+            </ProjectCard>
+          ))}
+        </ul>
           {/* <div className={componentStyles.github} >
             <a href="https://github.com/mjordancodes">
               <img src="/images/github.png" alt="github logo with custom octocat" />
@@ -39,7 +40,6 @@ class ProjectsPage extends Component {
             <h3>Technologies I Use:</h3>
             <TechList />
           </div>
-        </div>
       </Layout>
     );
   }

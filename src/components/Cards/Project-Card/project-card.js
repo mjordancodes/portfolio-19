@@ -2,12 +2,12 @@ import React from 'react';
 
 // import componentStyles from './project-card.module.css';
 
-const ProjectCard = ({ title, image, description, live, github }) => (
-  <div>
+const ProjectCard = ({ title, image, children, live, github, className }) => (
+  <li className={className}>
     <img src={ image } alt="" />
     <div className="info">
       <h2>{ title }</h2>
-      <p>{ description }</p>
+      {children}
       
       { github ? (<a href={ github }>GitHub</a>) : <span /> }
       &nbsp;
@@ -16,7 +16,7 @@ const ProjectCard = ({ title, image, description, live, github }) => (
       {/* TECH LIST */}
     </div>
 
-  </div>
+  </li>
 )
 
 export default ProjectCard
