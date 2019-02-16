@@ -41,6 +41,7 @@ collections:
       - { name: date, label: "Date", widget: date }
       - { name: eventpage, label: "Event Page", required: false }
       - { name: group, label: 'Group or Event'}
+  
   - name: learning
     label: 'Learning Log'
     folder: src/pages/learningLog
@@ -78,7 +79,10 @@ collections:
     fields: 
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: github, label: Github, required: false }
+      - { name: live, label: "Live Site", required: false }
       - { name: body, label: Body, widget: markdown }
+      - { name: screenshot, label: "Screenshot", widget: image, allow_multiple: false }
       - { name: techs, label: Techs, widget: list, 
             field: {
               name: tech, 
