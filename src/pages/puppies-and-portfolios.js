@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from '../components/layout';
 
@@ -19,10 +19,13 @@ class PuppiesAndPortfoliosPage extends Component {
             <p>
               This group was created to encourage and help people with creating awesome portfolios. We meet every other weekend at various locations around Portland to learn from each other and talk about designs and content. You can also get help with the code, or advice on what stack you should use to build the portfolio. We can review projects and help you decide which ones to showcase, or look at designs and give feedback. <em>I want to help you have a super cool portfolio to help you break into the tech field / advance your career!</em>
             </p>
+            <p>
+              You can join us on slack! --> <a href="http://bit.ly/pupsandports" target="_blank" rel="noopener noreferrer">http://bit.ly/pupsandports</a>
+            </p>
         </div>
         <div className={componentStyles.members}>
-          <p>If you have come to one or more of the events and want to show of your portfolio here, follow the steps in this <a href="https://github.com/mjordancodes/Puppies-and-Portfolio-members" target="_blank" rel="noopener noreferrer">repo</a>.</p>
           <h2>Members</h2>
+          <p>If you have come to one or more of the events and want to show of your portfolio here, follow the steps <a href="https://github.com/mjordancodes/portfolio-19/blob/master/src/pages/puppy-members/README.md" target="_blank" rel="noopener noreferrer">here</a>.</p>
           <ul>
             {this.props.data.allMarkdownRemark.edges.map(member => (
               <PuppyMember 

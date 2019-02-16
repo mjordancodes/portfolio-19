@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
-import Header from '../components/Header/header';
 
 import componentStyles from './blog-post.module.css';
 
