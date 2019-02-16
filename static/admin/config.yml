@@ -31,6 +31,16 @@ collections:
       - { name: pages, label: "Pages", widget: number, valueType: "int" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "book" }
 
+  - name: futuretalk
+    label: Future Talk
+    folder: src/pages/future-talk
+    create: true
+    fields: 
+      - { label: "Layout", name: "layout", widget: "hidden", default: "future-talk" }
+      - { name: title, label: "Talk Title" }
+      - { name: date, label: "Date", widget: date }
+      - { name: eventpage, label: "Event Page", required: false }
+      - { name: group, label: 'Group or Event'}
   - name: learning
     label: 'Learning Log'
     folder: src/pages/learningLog
