@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Layout from '../components/layout';
 import TechList from '../components/Tech-List/tech-list';
 
-import ProjectCard from '../components/project-card';
+import ProjectCard from '../components/Cards/Project-Card/project-card';
 
 import componentStyles from './projects.module.css'
 
