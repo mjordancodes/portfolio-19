@@ -102,30 +102,6 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: icon, label: "icon", widget: image, allow_multiple: false, required: false }
-      
-  - name: talk
-    label: Talk
-    folder: src/pages/talk
-    create: true
-    fields: 
-      - { label: "Layout", name: "layout", widget: "hidden", default: "talk" }
-      - { name: title, label: "Talk Title" }
-      - { name: date, label: "Date", widget: date }
-      - { name: notistlink, label: "Noti.st Link", required: false  }
-      - { name: eventpage, label: "Event Page", required: false }
-      - { name: slides, label: "Slides" }
-      - { name: coverimage, label: "Image", widget: image, allow_multiple: false}   
-      - { name: conference, label: Confernece, widget: boolean, required: false }
-      - { name: body, label: Body, widget: markdown }
-
-  - name: tech
-    label: Tech
-    folder: src/pages/tech
-    create: true
-    fields: 
-      - { name: title, label: Title }
-      - { name: icon, label: "Icon", widget: image, allow_multiple: false }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "tech" }
       - { name: tags, label: Tags, widget: select, multiple: true, 
             options: [
               "Portfolio",
@@ -151,6 +127,31 @@ collections:
               "Fremium",
               "Subscription"
             ] }  
+      
+  - name: talk
+    label: Talk
+    folder: src/pages/talk
+    create: true
+    fields: 
+      - { label: "Layout", name: "layout", widget: "hidden", default: "talk" }
+      - { name: title, label: "Talk Title" }
+      - { name: date, label: "Date", widget: date }
+      - { name: notistlink, label: "Noti.st Link", required: false  }
+      - { name: eventpage, label: "Event Page", required: false }
+      - { name: slides, label: "Slides" }
+      - { name: coverimage, label: "Image", widget: image, allow_multiple: false}   
+      - { name: conference, label: Confernece, widget: boolean, required: false }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: tech
+    label: Tech
+    folder: src/pages/tech
+    create: true
+    fields: 
+      - { name: title, label: Title }
+      - { name: icon, label: "Icon", widget: image, allow_multiple: false }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "tech" }
+      
   - name: uses
     label: Uses 
     folder: src/pages/uses
