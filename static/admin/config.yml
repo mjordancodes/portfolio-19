@@ -126,7 +126,31 @@ collections:
       - { name: title, label: Title }
       - { name: icon, label: "Icon", widget: image, allow_multiple: false }
       - { label: "Layout", name: "layout", widget: "hidden", default: "tech" }
-  
+      - { name: tags label: Tags, widget: select, multiple: true, 
+            options: [
+              "Portfolio",
+              "Design",
+              "Gatsby",
+              "JAMStack",
+              "Color",
+              "Typography",
+              "Stock",
+              "Stock Photography",
+              "Icons"
+            ] }
+      - { name: type label: Type, widget: select, 
+            options: [
+              "Article",
+              "Video",
+              "Book",
+            ] }
+      - { name: price label: Price, widget: select, multiple: true,
+            options: [
+              "Free",
+              "One Time Payment",
+              "Fremium",
+              "Subscription"
+            ] }  
   - name: uses
     label: Uses 
     folder: src/pages/uses
