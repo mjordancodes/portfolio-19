@@ -126,7 +126,7 @@ collections:
       - { name: title, label: Title }
       - { name: icon, label: "Icon", widget: image, allow_multiple: false }
       - { label: "Layout", name: "layout", widget: "hidden", default: "tech" }
-      - { name: tags label: Tags, widget: select, multiple: true, 
+      - { name: tags, label: Tags, widget: select, multiple: true, 
             options: [
               "Portfolio",
               "Design",
@@ -138,13 +138,13 @@ collections:
               "Stock Photography",
               "Icons"
             ] }
-      - { name: type label: Type, widget: select, 
+      - { name: type, label: Type, widget: select, 
             options: [
               "Article",
               "Video",
               "Book",
             ] }
-      - { name: price label: Price, widget: select, multiple: true,
+      - { name: price, label: Price, widget: select, multiple: true,
             options: [
               "Free",
               "One Time Payment",
