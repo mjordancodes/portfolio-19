@@ -83,18 +83,26 @@ collections:
       - { name: live, label: "Live Site", required: false }
       - { name: body, label: Body, widget: markdown }
       - { name: screenshot, label: "Screenshot", widget: image, allow_multiple: false }
-      - { name: techs, label: Techs, widget: list, 
-            field: {
-              name: tech, 
-              label: Tech,  
-              widget: relation, 
-              collection: tech, 
-              searchFields: "name", 
-              valueField: "name", 
-              displayFields: "name" }
+      - {
+          name: techused, 
+          label: "Tech Used",  
+          widget: "relation", 
+          collection: "tech", 
+          searchFields: "title", 
+          valueField: "title", 
+          displayFields: "title" 
         }
       - { label: "Layout", name: "layout", widget: "hidden", default: "project" }
 
+  - name: resource
+    label: resource
+    folder: src/pages/resource
+    create: true
+    fields: 
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+      - { name: icon, label: "icon", widget: image, allow_multiple: false, required: false }
+      
   - name: talk
     label: Talk
     folder: src/pages/talk
