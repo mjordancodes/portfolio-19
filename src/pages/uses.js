@@ -14,7 +14,7 @@ class UsesPage extends Component {
           <UsesSVG />
         </header>
         <div className={`container ${componentStyles.container}`}>
-          <p>Decided to create a uses page inspired by <a href="https://wesbos.com/uses/" target="_blank" rel="noopener noreferrer">Wes Bos</a>. I will try and keep this updated.</p>
+          <p>Decided to create a uses page inspired by <a href="https://wesbos.com/uses/" target="_blank" rel="noopener noreferrer">Wes Bos</a>. I will try and keep this updated. Last update: 02/13/19</p>
           <p>Want to know about something not listed here? Shoot me a <a href="https://twitter.com/mjordancodes" target="_blank" rel="noopener noreferrer">DM on Twitter</a>!</p>
           <p>Click a link to jump to a specific bit of my set up, or read on to see it all. The page got a little longer than originally intended. Might break it up into blog posts later on and add more things.</p>
           <ul>

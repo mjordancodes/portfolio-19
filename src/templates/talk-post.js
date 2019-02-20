@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
-import Header from '../components/Header/header';
 
 import componentStyles from './talk-post.module.css';
 
@@ -10,7 +9,6 @@ export default ({ data }) => {
   const post = data.markdownRemark  
   return (
     <Layout>
-      <Header />
       <div className="container">  
         <header>
           <div>

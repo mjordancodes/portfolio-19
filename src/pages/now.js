@@ -4,8 +4,6 @@ import { Link, graphql } from "gatsby";
 import Layout from '../components/layout';
 import NowCurrent from '../components/Now-Current/now-current';
 
-// import componentStyles from './now.module.css'
-
 class NowPage extends Component {
   render() {
     return (
@@ -14,15 +12,15 @@ class NowPage extends Component {
           <h1>Now</h1>
         </header>
         <NowCurrent />
-        <div className={`container`}>
-          <p>Previous updates:</p>
+        <div>
+          <h2>Previous updates:</h2>
           <ul>
             {this.props.data.allMarkdownRemark.edges.map(post => (
-              <Link to={post.node.fields.slug} key={post.node.fields.slug}>
-                <li>
+              <li>
+                <Link to={post.node.fields.slug} key={post.node.fields.slug}>
                     {post.node.frontmatter.date}
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

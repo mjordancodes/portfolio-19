@@ -1,66 +1,45 @@
-import React, { Component }  from 'react'
+import React from 'react'
+import { Link } from "gatsby";
+
+
+import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaWordpressSimple, FaMicrophoneAlt, FaDog, FaPencilAlt, FaBriefcase, FaAngleDoubleLeft, FaWrench } from 'react-icons/fa';
 
 import componentStyles from './header.module.css';
 
-class HeaderNav extends Component {
-  render() {
-    return (
-      <nav className={componentStyles.pageNav} id="page-nav">
-        <div className={componentStyles.hamburger}>
-          <input type="checkbox" id="hamburger" />
-          <label htmlFor="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+const Nav = () => (
+  <div>
+    <input type="checkbox" id="toggleBox" className={componentStyles.toggleBox} />
+    <label for ="toggleBox" className={componentStyles.toggle} >
+      <FaAngleDoubleLeft /
+      >Menu
+    </label>
+    <nav className={componentStyles.nav}>
+      <div>
+        <Link to="/about"><span><FaUserAstronaut /></span>About</Link>
+        <div>
+          <Link to="/now"><FaRegClock />Now</Link>
+          <Link to="/uses"><FaToolbox />Uses</Link>
+          <Link to="/resume"><FaBriefcase />Resume</Link>
         </div>
-        <ul className={componentStyles.pages} id="page-list">
-          <li>
-            <a href="/about">about</a>
-            <ul>
-              <li>
-                <a href="/now">now</a>
-              </li>
-              <li>
-                <a href="/uses">uses</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="/projects">projects</a>
-          </li>
-          <li>
-            <a href="/blog">blog</a>
-            <ul>
-              <li>
-                <a href="/portfolio">portfolio</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="/speaking">speaking</a>
-          </li>
-        </ul>
-      </nav>
-    )
-  }
-  componentDidMount() {
-    const hamburger = document.getElementById("hamburger");
-    const menu = document.getElementById("page-nav");
-    const pageList = document.getElementById("page-list");
+      </div>
+      <div>
+        <Link to="projects"><span><FaCode /></span>Projects</Link>
+        <div>
+          {/* <Link to="/projects"><FaLaptopCode />Portfolio</Link> */}
+          <Link to="speaking"><FaMicrophoneAlt />Speaking</Link>
+          {/* <Link to="wp-gatsby"><FaWordpressSimple />WordPress to Gatsby</Link> */}
+          <Link to="puppies-and-portfolios"><FaDog />Puppies and Portfolios</Link>
+        </div>
+      </div>
+      <div>
+        <Link to="/blog"><span><FaPencilAlt /></span>Blog</Link>
+      </div>
+      {/* <div>
+        <Link to="/resources"><span><FaWrench /></span>Resources</Link>
+      </div> */}
+    </nav>
+  </div>
+)
 
-
-    hamburger.addEventListener('click', function() {
-      if(menu.classList.contains('closed')) {
-        menu.classList.remove('closed')
-        pageList.setAttribute('style', 'right: -55vw;');
-      } else {
-        menu.classList.add('closed')
-        pageList.setAttribute('style', 'right: -5vw;');
-      }
-    });
-  }
-}
-
-export default HeaderNav
+export default Nav
          

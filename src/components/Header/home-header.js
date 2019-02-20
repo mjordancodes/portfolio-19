@@ -2,11 +2,11 @@ import React from 'react'
 
 import componentStyles from './header.module.css';
 
-import HeaderNav from './nav';
+import Nav from './nav';
 
 const HomeHeader = () => (
   <header className={componentStyles.headerHome}>
-    <HeaderNav />
+    <Nav />
   </header>
 )
 

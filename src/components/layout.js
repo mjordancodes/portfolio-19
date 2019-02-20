@@ -5,7 +5,6 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from '../components/Header/header';
 
-import './layout.css'
 import '../styles/globals.css'
 
 const Layout = ({ children }) => (
@@ -28,16 +27,15 @@ const Layout = ({ children }) => (
           ]}
         >
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-          <html lang="en" />
+        <html lang="en" />
         </Helmet>
 
-        <main>
-
+        <div id="page">
           <Header />
-          <div className="container">
+          <main id="container">
             {children}
-          </div>
-        </main>
+          </main>
+        </div>
       </>
     )}
   />

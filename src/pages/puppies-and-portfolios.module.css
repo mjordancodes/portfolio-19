@@ -1,0 +1,17 @@
+.info, .members {
+  margin-bottom: 50px;
+  p {
+    margin: 0 0 10px;
+  }
+  h3 {
+    margin: 10px 0 0;
+  }
+  ul {
+    li {
+      span {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+    }
+  }
+}

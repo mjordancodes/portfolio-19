@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from '../components/layout';
+import TalkCard from '../components/Cards/Talk-Card/talk-card';
+import FutureTalks from '../components/Future-Talk/future-talks';
 
 import componentStyles from './speaking.module.css';
 
@@ -9,20 +11,21 @@ class TalksPage extends Component {
   render() {
     return (
       <Layout>
-        <header className={`container`}>
+        <header className={componentStyles.header}>
           <h1>mJordan Speaks:</h1>
           <h2>meetups, workshops, conferneces</h2>
         </header>
-        <ul className={`container ${componentStyles.container}`}>
+        <h2>Upcoming Talks:</h2>
+        <FutureTalks />
+        <h2>Previous Talks:</h2>
+        <ul className={componentStyles.talkGrid}>
           {this.props.data.allMarkdownRemark.edges.map(post => (
-            <Link to={post.node.fields.slug} key={post.node.fields.slug}>
-              <li className={componentStyles.talkcard}>
-                <img src={post.node.frontmatter.coverimage} alt={post.node.frontmatter.title} />
-                <h3>{post.node.frontmatter.title}</h3>
-                <p>{post.node.frontmatter.date} </p>
-
-              </li>
-            </Link>
+            <TalkCard 
+              link={post.node.fields.slug}
+              img={post.node.frontmatter.coverimage}
+              title={post.node.frontmatter.title}
+              date={post.node.frontmatter.date}
+            />
           ))}
         </ul>
       </Layout>

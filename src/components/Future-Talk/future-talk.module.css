@@ -1,0 +1,8 @@
+.talk {
+  p {
+    margin: 0;
+    span {
+      font-weight: bold;
+    }
+  }
+}

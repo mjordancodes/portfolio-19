@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "gatsby";
 import { TimelineMax } from 'gsap/all'; 
 import SocialIcons from '../Social-Icons/social-icons';
 import Logo from '../Logo/logo';
@@ -26,7 +27,6 @@ class DeskLanding extends Component {
     return (
       <section className={componentStyles.container}>
         <BackgroundImage className={componentStyles.bg} />
-        {/* <DeskItems className={componentStyles.deskitems} /> */}
         <div className={componentStyles.deskitems}>
           <Cup />
           <Books />
@@ -39,8 +39,8 @@ class DeskLanding extends Component {
             <p className={`title ${componentStyles.tagline}`}>I design, develop &amp; teach the web</p>
             <div className={componentStyles.buttons}>
               <div className={componentStyles.ctas}>
-                <a href="/projects" className={`${componentStyles.cta} cta`}>Projects</a>
-                <a href="/about" className={`${componentStyles.cta} cta`}>About</a>
+                <Link to="/projects" className={`${componentStyles.cta} cta`}>Projects</Link>
+                <Link to="/about" className={`${componentStyles.cta} cta`}>About</Link>
               </div>
               <SocialIcons />
             </div>

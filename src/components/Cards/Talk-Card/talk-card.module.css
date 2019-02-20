@@ -1,0 +1,41 @@
+@import "../../../styles/colors.css";
+
+.card {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  img {
+    transition: 500ms;
+  }
+  a {
+    background: transparent !important;
+    &:hover {
+      img {
+        transform: scale(1.25);
+      }
+      .info {
+        bottom: 0;
+      }
+    }
+    .info {
+      transition: 500ms;
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: $color_dark_trans;
+      color: $color_light;
+      text-shadow: 2px 2px 4px $color_dark;
+      padding: 5px;
+          > * {
+        margin: 0;
+      }
+    }
+  }
+}
