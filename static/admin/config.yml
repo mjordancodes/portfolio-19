@@ -88,7 +88,7 @@ collections:
           label: "Tech Used",  
           widget: "relation", 
           collection: "tech", 
-          searchFields: "title", 
+          searchFields: ["title"], 
           valueField: "title", 
           displayFields: "title" 
         }
