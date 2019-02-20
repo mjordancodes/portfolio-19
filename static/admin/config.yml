@@ -101,24 +101,41 @@ collections:
     fields: 
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-      - { name: icon, label: "icon", widget: image, allow_multiple: false, required: false }
+      - { name: link, label: Link}
       - { name: tags, label: Tags, widget: select, multiple: true, 
             options: [
-              "Portfolio",
-              "Design",
-              "Gatsby",
-              "JAMStack",
+              "Animation",
               "Color",
-              "Typography",
+              "CSS",
+              "CSS Grid",
+              "Command Line"
+              "Design",
+              "Font Icons",
+              "Gatsby",
+              "Icons",
+              "JAMStack",
+              "Linux",
+              "npm",
+              "Optimization",
+              "Portfolio",
               "Stock",
               "Stock Photography",
-              "Icons"
+              "SVG",
+              "Typography",
+              "VSCode Plugins",
             ] }
-      - { name: type, label: Type, widget: select, 
+      - { name: type, label: Type, widget: select, multiple: true,
             options: [
               "Article",
-              "Video",
               "Book",
+              "Cheatsheet",
+              "CodePen"
+              "Full Course",
+              "Other",
+              "Reference Code",
+              "Tool",
+              "Tutorial",
+              "Video",
             ] }
       - { name: price, label: Price, widget: select, multiple: true,
             options: [

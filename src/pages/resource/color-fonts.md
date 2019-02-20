@@ -1,9 +1,12 @@
 ---
-title: 'Color Fonts '
+title: 'Color Fonts'
+link: 'https://www.colorfonts.wtf/'
+layout: resource
 tags:
   - Design
   - Typography
-type: Article
+type: 
+  - Other
 price:
   - Free
 ---
