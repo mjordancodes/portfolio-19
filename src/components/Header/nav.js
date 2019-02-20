@@ -27,16 +27,16 @@ const Nav = () => (
         <div>
           {/* <Link to="/projects"><FaLaptopCode />Portfolio</Link> */}
           <Link to="speaking"><FaMicrophoneAlt />Speaking</Link>
-          <Link to="wp-gatsby"><FaWordpressSimple />WordPress to Gatsby</Link>
+          {/* <Link to="wp-gatsby"><FaWordpressSimple />WordPress to Gatsby</Link> */}
           <Link to="puppies-and-portfolios"><FaDog />Puppies and Portfolios</Link>
         </div>
       </div>
       <div>
         <Link to="/blog"><span><FaPencilAlt /></span>Blog</Link>
       </div>
-      <div>
+      {/* <div>
         <Link to="/resources"><span><FaWrench /></span>Resources</Link>
-      </div>
+      </div> */}
     </nav>
   </div>
 )
