@@ -1,3 +1,28 @@
-$lochmara: #326496;
+/*  Main Colors  */
+$red:             #E66565;
+$red_trans:       rgba(230,101,101,0.5);
+$orange:          #F37E43;
+$orange_trans:    rgba(243,126,67,0.5);
+$yellow:          #FFD603;
+$yellow_trans:    rgba(255,214,3,0.5);
+$green:           #9FCEB4;
+$green_trans:     rgba(159,206,180,0.5);
+$blue:            #ACCAE8;
+$blue_trans:      rgba(172,202,232,0.5);
+$purple:          #9295CA;
+$purple_trans:    rgba(146,149,202,0.5);
+$magenta:         #AE70AF;
+$magenta_trans:   rgba(174,112,175,0.5);
 
-$color-main: $lochmara;
+$black:           #333333;
+$black_trans:     rgba(51,51,51,0.8);
+$white:           #ffffff;
+$white_trans:     rgba(255,255,255,0.8);
+
+/* Use Colors */
+$color_default:       $red;
+$color_default_trans: $blue_trans;
+$color_dark:          $black;
+$color_dark_trans:    $black_trans;
+$color_light:         $white;
+$color_light_trans:   $white_trans;

@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 
 import componentStyles from './portfolio.module.css';
 
-import SiteCard from '../components/Site-Card/site-card'
+import SiteCard from '../components/Cards/Site-Card/site-card'
 
 
 class PortfolioPage extends Component {

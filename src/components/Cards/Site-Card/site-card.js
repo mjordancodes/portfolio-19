@@ -5,7 +5,7 @@ import React from 'react';
 const SiteCard = ({site, url, thumbnail, fullImg, desc, className}) => (
   <li className={className}>
     <a href={fullImg}>
-      <img src={thumbnail} />
+      <img src={thumbnail} alt={`screen shot of ${site} `} />
     </a>
     <p>{desc}</p>
     <a href={url} target="_blank" without rel="noopener noreferrer">

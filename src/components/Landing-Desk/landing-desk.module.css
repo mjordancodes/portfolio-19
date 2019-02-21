@@ -40,8 +40,10 @@ $button-height: 42px;
       padding: 10px;
       text-align: center;
       font-weight: bold;
-      @media (min-width: 500px) {
+      @media (min-width: 650px) {
         text-align: left;
+      }
+      @media (min-width: 500px) {
         margin-top: 27vh;
         margin-left: 15vw;
       }
@@ -62,17 +64,18 @@ $button-height: 42px;
         display: flex;
         flex-direction: column;
         margin-top: 10px;
-        @media (min-width: 500px) {
+        @media (min-width: 650px) {
           flex-direction: row;
         }
         .ctas {
+          margin-bottom: 10px;
           .cta {
             line-height: calc($button-height + 10px);
-            border: 3px solid $color-main;
+            border: 3px solid $color_default;
             background: white;
             padding: 10px 20px;
             margin-right: 5px;
-            color: $color-main;
+            color: $color_default;
             text-decoration: none;
             transition: 1s;
           }

@@ -1,41 +1,31 @@
-.about {
-  width: 75vw;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 20px;
-
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas:  'img hello'
-                        'comm comm'
-                        'wwcode wwcode'
-                        'wwcodeTxt wwcodeTxt'
-                        'pdxnode pdxnode'
-                        'pdxnodeTxt pdxnodeTxt'
-                        'toast toast'
-                        'toastTxt toastTxt';
-
-  .meImage { grid-area: img; }
-  .hello { grid-area: hello; }
-  .community { grid-area: comm; }
-
-  .wwcode { grid-area: wwcodeTxt; }
-  .pdxnode { grid-area: pdxnodeTxt; }
-  .toastmasters { grid-area: toastTxt; }
-
-  .wwcodeImg { grid-area: wwcode; }
-  .pdxnodeImg { grid-area: pdxnode; }
-  .toastmastersImg { grid-area: toast; }
-
-  @media (min-width: 1000px) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'img hello hello'
-                         'img comm comm'
-                         'wwcode pdxnode toast'
-                         'wwcodeTxt pdxnodeTxt toastTxt';
-
+.meImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  position: fixed;
+  width: 100vw;
+  height: 75vh;
+  z-index: -1;
+  @media (min-width: 500px) {
+    display: initial;
+    opacity: initial;
+    position: initial;
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 0 25px 0 0;
   }
+}
+
+.commGrid {
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
   img {
-    max-width: 75%;
-    margin: 10px auto;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
   }
 }
