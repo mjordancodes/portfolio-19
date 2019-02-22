@@ -28,6 +28,7 @@ class ResumePage extends Component {
                     <li>PostCSS</li>
                     <li>Gatsby</li>
                     <li>React.js</li>
+                    <li>Vue.js</li>
                     <li>Greensock</li>
                     <li>Git / GitHub</li>
                     <li>Design Systems</li>
@@ -36,14 +37,13 @@ class ResumePage extends Component {
                 <div>
                   <h2>Self Explored</h2>
                   <ul>
-                    <li>Vue.js</li>
+                    <li>Pattern Lab</li>
                     <li>Python</li>
+                    <li>WordPress</li>
                     <li>SQL</li>
                     <li>PHP</li>
-                    <li>WordPress</li>
                     <li>Vagrant</li>
                     <li>Bash Scripting (ZSH)</li>
-                    <li>Pattern Lab</li>
                   </ul>
                 </div>
                 <div>
