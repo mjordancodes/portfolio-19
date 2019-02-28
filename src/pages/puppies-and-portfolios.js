@@ -13,11 +13,13 @@ class PuppiesAndPortfoliosPage extends Component {
       <Layout>
         <h1>Pupipes and Portfolios Hangout Club Thing</h1>
         <div className={componentStyles.info}>
-          <h3>First meeting</h3>
+          <h3>First Meeting</h3>
             <p>February 10, 2019</p>
-          <h3>The Why</h3>
+          <h3>Next Meeting</h3>
+            <p>March 3, 2019</p>
+          <h3>About</h3>
             <p>
-              This group was created to encourage and help people with creating awesome portfolios. We meet every other weekend at various locations around Portland to learn from each other and talk about designs and content. You can also get help with the code, or advice on what stack you should use to build the portfolio. We can review projects and help you decide which ones to showcase, or look at designs and give feedback. <em>I want to help you have a super cool portfolio to help you break into the tech field / advance your career!</em>
+              This group was created to encourage and help people with creating awesome portfolios. We meet  to learn from each other and talk about designs and content. You can also get help with the code, or advice on what stack you should use to build the portfolio. We can review projects and help you decide which ones to showcase, or look at designs and give feedback. <em>I want to help you have a super cool portfolio to help you break into the tech field / advance your career!</em>
             </p>
             <p>
               You can join us on slack! --> <a href="http://bit.ly/pupsandports" target="_blank" rel="noopener noreferrer">http://bit.ly/pupsandports</a>
