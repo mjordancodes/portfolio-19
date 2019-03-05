@@ -22,7 +22,10 @@ class AboutPage extends Component {
           </div>
           <SimpleText title="Hello World" className={componentStyles.hello}>
             <p>
-              I’m Jordan, a creative front end developer in Portland, Oregon. Nothing excites me more than immersing myself in a good challenge or a great book. For me, coding is the perfect mix of logical problem solving, and creative artistic expression. When not coding, I am spending my time playing with <a href="https://www.instagram.com/cubandpebbles/" target="_blank" rel="noopener noreferrer">my puppies</a>, creating something new, getting involved in the local tech community, or exploring the world around me with my trusty Nikon camera.
+              I'm Jordan Brady, a creative front end developer, mentor, and community leader working with groups like <a href="https://www.womenwhocode.com/portland" target="_blank" rel="noopener noreferrer">Women Who Code Portland</a> and <a href="http://pdxnode.org/">PDXNode</a>. I founded a group called <Link to="/puppies-and-portfolios">Puppies and Portfolios</Link> to help new developers build an awesome online presence. I have a great passion for everything CSS and rubber duck debugging. I enjoy <Link to="/speaking">speaking</Link> at meetups and conferences to share the things I know.
+            </p>
+            <p>
+            When not coding, I can be found exploring the world around me with <a href="https://www.instagram.com/cubandpebbles/" target="_blank" rel="noopener noreferrer">my puppies</a> and my favorite Nikon camera. Nothing excites me more than immersing myself in a good challenge or a great book.
             </p>
             <p>
               I have spent a lot of time freelancing and doing contract work, but I am really hoping to find a long-term job that I can really dig in on. This job would include an awesome team that I can learn from and and teach things to as I grow as a developer. I am looking for a role that allows me to flex my creativity muscles, while I work on solving challenging problems with code. Check out my <Link to="/resume">resume</Link>, and send me a message if you think I might be a good fit for your team.
