@@ -35,7 +35,7 @@ $button-height: 42px;
       justify-content: flex-start;
       /* z-index: -1; */
     }
-    hgroup {
+    [data-tilt] {
       background: rgba(255, 255, 255, 0.6);
       padding: 10px;
       text-align: center;

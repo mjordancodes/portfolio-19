@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby";
 import { TimelineMax } from 'gsap/all'; 
+import Tilt from 'react-vanilla-tilt'
+
 import SocialIcons from '../Social-Icons/social-icons';
 import Logo from '../Logo/logo';
 
@@ -34,7 +36,7 @@ class DeskLanding extends Component {
           <Fishtank />
         </div>
         <header>
-          <hgroup>
+        <Tilt>
             <Logo />
             <p className={`title ${componentStyles.tagline}`}>I design, develop &amp; teach the web</p>
             <div className={componentStyles.buttons}>
@@ -44,7 +46,7 @@ class DeskLanding extends Component {
               </div>
               <SocialIcons />
             </div>
-          </hgroup>
+        </Tilt>
         </header>
       </section>
     );
