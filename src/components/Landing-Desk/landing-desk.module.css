@@ -21,7 +21,7 @@ $button-height: 42px;
       z-index: -2;
     }
   }
-  header {
+    header {
     display: flex;
     position: absolute;
     top: 0;
@@ -30,25 +30,25 @@ $button-height: 42px;
     align-items: center;
     justify-content: center;
     @media (min-width: 500px) {
-    height: 50vh;
-      align-items: flex-start;
-      justify-content: flex-start;
-      /* z-index: -1; */
+      height: 50vh;
+      /* align-items: flex-start; */
+      /* justify-content: flex-start; */
     }
-    [data-tilt] {
-      background: rgba(255, 255, 255, 0.6);
+    [data-tilt], > div{
+      width: 100vw !important;
+      background: rgba(255, 255, 255, 0.6) !important;
       padding: 10px;
       text-align: center;
       font-weight: bold;
       @media (min-width: 650px) {
+        width: 600px !important;
         text-align: left;
       }
       @media (min-width: 500px) {
-        margin-top: 27vh;
-        margin-left: 15vw;
+        margin-top: 27vh !important;
       }
       h1 {
-        font-size: 5em;
+        font-size: 4em;
         margin: 0;
         transition: 2s;
         @media (min-width: 800px) {

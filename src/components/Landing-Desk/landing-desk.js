@@ -36,17 +36,19 @@ class DeskLanding extends Component {
           <Fishtank />
         </div>
         <header>
-        <Tilt>
-            <Logo />
-            <p className={`title ${componentStyles.tagline}`}>I design, develop &amp; teach the web</p>
-            <div className={componentStyles.buttons}>
-              <div className={componentStyles.ctas}>
-                <Link to="/projects" className={`${componentStyles.cta} cta`}>Projects</Link>
-                <Link to="/about" className={`${componentStyles.cta} cta`}>About</Link>
+          <Tilt>
+            <div>
+              <Logo />
+              <p className={`title ${componentStyles.tagline}`}>I design, develop &amp; teach the web</p>
+              <div className={componentStyles.buttons}>
+                <div className={componentStyles.ctas}>
+                  <Link to="/projects" className={`${componentStyles.cta} cta`}>Projects</Link>
+                  <Link to="/about" className={`${componentStyles.cta} cta`}>About</Link>
+                </div>
+                <SocialIcons />
               </div>
-              <SocialIcons />
             </div>
-        </Tilt>
+          </Tilt>
         </header>
       </section>
     );
