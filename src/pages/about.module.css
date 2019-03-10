@@ -1,20 +1,29 @@
+@import "../styles/colors.css";
+
+.about {
+  max-width: 800px;
+  margin: auto;
+  h2 {
+    font-size: 3em;
+  }
+}
+
 .meImage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
-  position: fixed;
-  width: 100vw;
-  height: 75vh;
-  z-index: -1;
+  height: 90vw;
+  width: 90vw;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 100%;
+  background: $color_default_trans;
   @media (min-width: 500px) {
-    display: initial;
-    opacity: initial;
-    position: initial;
-    width: auto;
+    background: transparent;
+    border-radius: 0;
     height: auto;
+    width: 200px;
     float: left;
     margin: 0 25px 0 0;
+    shape-outside: polygon(0px 665px, 162px 679px, 171px 627px, 164px 516px, 142px 437px, 148px 384px, 135px 292px, 158px 287px, 209px 203px, 123px 88px, 107px 1px, 0px 0px);
+    clip-path: none;
   }
 }
 
@@ -22,10 +31,13 @@
   clear: both;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 25px;
   img {
     display: block;
     margin: 0 auto;
-    width: 75%;
+    width: 50%;
+  }
+  h2 {
+    text-align: center;
   }
 }

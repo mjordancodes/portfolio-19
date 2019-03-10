@@ -40,45 +40,45 @@ class AboutPage extends Component {
               Today, I volunteer as part of the Leadership Teams for PDXNode and Women Who Code Portland. I also mentor periodically at other local meetups such as Free Code Camp Portland and Mentorship Saturdays. In 2019 I started my own group called Puppies and Portfolios.
             </p>
           </SimpleText>
-          <section className={componentStyles.commGrid}>
-            <SimpleTextImage
-              title="Puppies and Portfolios"
-              image="/images/Group-Logos/puppiesandportfolios.png"
-            >
-              <p>
-                I started the Puppies and Portfolios Hangout Club Thing in early 2019. This group is meant to be a laid back hangout at various cafes across Portland where people can meet up every other weekend to work on their portfolios. I lead discussions and answer questions about design, content, or anything else related to portfolios that comes up. I help with code, and encourage people to build awesome portfolios during their job hunt. Weather and location permitting, I also bring my puppies to the events because puppies make everything better.
-              </p>
-              <p>You can find out more about this group <Link to="/puppies-and-portfolios">here</Link>, or sign up for the <a href="http://bit.ly/pupsandports" target="_blank" rel="noopener noreferrer">slack group</a> to join the conversation and find out when our next event is..</p>
-            </SimpleTextImage>
-            <SimpleTextImage
-              title="Women Who Code Portland"
-              image="/images/Group-Logos/wwcode.png"
-            >
-              <p>
-                During the second half of 2016 I moved from an occasional volunteer to a full member of the leadership team. In the beginning, I mostly helped out with monthly networking nights. I was even able to take lead and plan one myself. in 2018, I stepped up into a more regular role as the co-lead for the new monthly Open Soruce Study Nights. As co-lead for a study night, I schedule speakers, prepare my own content to teach, and generally answer questions for people who attend the events. 
-              </p>
-            </SimpleTextImage>
-            <SimpleTextImage
-              title="PDX Node"
-              image="/images/Group-Logos/pdxnode.png"
-            >
-              <p>
-                I started volunteering with PDXNode in early 2017. We have two regular events every month: presentation nights and hack nighs. My role with this group includes securing sponsorship, updating meetup.com and twitter, finding and scheduling speakers, developing workshops, and occasionally acting as announcer at the events themselves.
-              </p>
-              <p>
-                During summer of 2018, I acted as lead organizer and hosted a special edition of the presntation night as part of OSCON (Open Source Conference put on by O'Reilly) and an International Nodebots Day workshop
-              </p>
-            </SimpleTextImage>
-            <SimpleTextImage
-              title="Toastmasters"
-              image="/images/Group-Logos/toastmasters.png"
-            >
-              <p>
-                I joined ToastMasters in February of 2018, and completed my first four speeches within the first six months. I was elected VP of Education for the West Beaverton ToastMasters club. Unfortunatly, I won't be able to serve at this time due to taking a new job that is requiring me to find a different club to join. Hopefully I will have another opportunity to fill an officer role down the line. In the mean time, I will continue to attend weekly club meetings (once I find a new club) and participate in every meeting.
-              </p>
-            </SimpleTextImage>
-          </section>
         </div>
+        <section className={componentStyles.commGrid}>
+          <SimpleTextImage
+            title="Puppies and Portfolios"
+            image="/images/Group-Logos/puppiesandportfolios.png"
+          >
+            <p>
+              I started the Puppies and Portfolios Hangout Club Thing in early 2019. This group is meant to be a laid back hangout at various cafes across Portland where people can meet up every other weekend to work on their portfolios. I lead discussions and answer questions about design, content, or anything else related to portfolios that comes up. I help with code, and encourage people to build awesome portfolios during their job hunt. Weather and location permitting, I also bring my puppies to the events because puppies make everything better.
+            </p>
+            <p>You can find out more about this group <Link to="/puppies-and-portfolios">here</Link>, or sign up for the <a href="http://bit.ly/pupsandports" target="_blank" rel="noopener noreferrer">slack group</a> to join the conversation and find out when our next event is..</p>
+          </SimpleTextImage>
+          <SimpleTextImage
+            title="Women Who Code Portland"
+            image="/images/Group-Logos/wwcode.png"
+          >
+            <p>
+              During the second half of 2016 I moved from an occasional volunteer to a full member of the leadership team. In the beginning, I mostly helped out with monthly networking nights. I was even able to take lead and plan one myself. in 2018, I stepped up into a more regular role as the co-lead for the new monthly Open Soruce Study Nights. As co-lead for a study night, I schedule speakers, prepare my own content to teach, and generally answer questions for people who attend the events. 
+            </p>
+          </SimpleTextImage>
+          <SimpleTextImage
+            title="PDX Node"
+            image="/images/Group-Logos/pdxnode.png"
+          >
+            <p>
+              I started volunteering with PDXNode in early 2017. We have two regular events every month: presentation nights and hack nighs. My role with this group includes securing sponsorship, updating meetup.com and twitter, finding and scheduling speakers, developing workshops, and occasionally acting as announcer at the events themselves.
+            </p>
+            <p>
+              During summer of 2018, I acted as lead organizer and hosted a special edition of the presntation night as part of OSCON (Open Source Conference put on by O'Reilly) and an International Nodebots Day workshop
+            </p>
+          </SimpleTextImage>
+          <SimpleTextImage
+            title="Toastmasters"
+            image="/images/Group-Logos/toastmasters.png"
+          >
+            <p>
+              I joined ToastMasters in February of 2018, and completed my first four speeches within the first six months. I was elected VP of Education for the West Beaverton ToastMasters club. Unfortunatly, I won't be able to serve at this time due to taking a new job that is requiring me to find a different club to join. Hopefully I will have another opportunity to fill an officer role down the line. In the mean time, I will continue to attend weekly club meetings (once I find a new club) and participate in every meeting.
+            </p>
+          </SimpleTextImage>
+        </section>
       </Layout>
     );
   }

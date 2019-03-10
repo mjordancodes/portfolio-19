@@ -15,8 +15,8 @@ class PuppiesAndPortfoliosPage extends Component {
         <div className={componentStyles.info}>
           <h3>First Meeting</h3>
             <p>February 10, 2019</p>
-          <h3>Next Meeting</h3>
-            <p>March 3, 2019</p>
+          <h3>Now Meeting Weekly!</h3>
+            <p>Every Sunday from 1-5pm at Lucky Labrador on Quimby in downtown Portland.</p>
           <h3>About</h3>
             <p>
               This group was created to encourage and help people with creating awesome portfolios. We meet  to learn from each other and talk about designs and content. You can also get help with the code, or advice on what stack you should use to build the portfolio. We can review projects and help you decide which ones to showcase, or look at designs and give feedback. <em>I want to help you have a super cool portfolio to help you break into the tech field / advance your career!</em>
