@@ -1,6 +1,6 @@
 ---
 date: 2019-02-28T03:41:42.006Z
-datecomplete: 2019-02-28T03:41:42.116Z
+datecomplete: 2019-03-15T02:41:42.116Z
 title: Towers of Midnight
 authorfirst: Robert
 authorlast: Jordan
