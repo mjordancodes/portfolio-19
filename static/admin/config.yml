@@ -100,25 +100,37 @@ collections:
     create: true
     fields: 
       - { name: title, label: Title }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "resource" }
+      - { name: link, label: Link }
+      - { name: date, label: "Date Added", widget: date }
       - { name: body, label: Body, widget: markdown }
       - { name: icon, label: "icon", widget: image, allow_multiple: false, required: false }
       - { name: tags, label: Tags, widget: select, multiple: true, 
             options: [
-              "Portfolio",
+              "CSS",
+              "Code",
+              # "Color",
+              "Components",
               "Design",
-              "Gatsby",
-              "JAMStack",
-              "Color",
+              "Design Systems"
+              # "Gatsby",
+              # "Icons"
+              # "JAMStack",
+              "Methodology",
+              # "Portfolio",
+              # "Stock",
+              # "Stock Photography",
+              "Style Guides"
               "Typography",
-              "Stock",
-              "Stock Photography",
-              "Icons"
             ] }
       - { name: type, label: Type, widget: select, 
             options: [
               "Article",
-              "Video",
               "Book",
+              "Course",
+              "Documentation",
+              "Tool",
+              "Video",
             ] }
       - { name: price, label: Price, widget: select, multiple: true,
             options: [

@@ -34,9 +34,9 @@ const Nav = () => (
       <div>
         <Link to="/blog"><span><FaPencilAlt /></span>Blog</Link>
       </div>
-      {/* <div>
+      <div>
         <Link to="/resources"><span><FaWrench /></span>Resources</Link>
-      </div> */}
+      </div>
     </nav>
   </div>
 )
