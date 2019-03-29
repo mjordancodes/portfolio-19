@@ -111,6 +111,7 @@ collections:
               "Code",
               # "Color",
               "Components",
+              "Conferences",
               "Design",
               "Design Systems"
               # "Gatsby",
@@ -123,7 +124,7 @@ collections:
               "Style Guides"
               "Typography",
             ] }
-      - { name: type, label: Type, widget: select, 
+      - { name: type, label: Type, widget: select, required: false
             options: [
               "Article",
               "Book",
