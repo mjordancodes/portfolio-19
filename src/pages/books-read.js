@@ -18,6 +18,13 @@ class BooksPage extends Component {
       </Layout>
     )
   }
+
+  componentDidMount() {
+    const ducky = document.getElementById('ducky');
+    ducky.addEventListener('click', function() {
+      window.location.href = '/rubber-ducks';
+    })
+  }
 }
 
 export default BooksPage
