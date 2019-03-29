@@ -28,15 +28,15 @@ const Nav = () => (
           {/* <Link to="/projects"><FaLaptopCode />Portfolio</Link> */}
           <Link to="speaking"><FaMicrophoneAlt />Speaking</Link>
           {/* <Link to="wp-gatsby"><FaWordpressSimple />WordPress to Gatsby</Link> */}
-          <Link to="puppies-and-portfolios"><FaDog />Puppies and Portfolios</Link>
+          <a href="https://portfoliopuppies.dev/" target="_blank" rel="noopener noreferrer"><FaDog />Puppies and Portfolios</a>
         </div>
       </div>
       <div>
         <Link to="/blog"><span><FaPencilAlt /></span>Blog</Link>
       </div>
-      {/* <div>
+      <div>
         <Link to="/resources"><span><FaWrench /></span>Resources</Link>
-      </div> */}
+      </div>
     </nav>
   </div>
 )
