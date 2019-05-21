@@ -28,7 +28,7 @@ const Nav = () => (
           {/* <Link to="/projects"><FaLaptopCode />Portfolio</Link> */}
           <Link to="speaking"><FaMicrophoneAlt />Speaking</Link>
           {/* <Link to="wp-gatsby"><FaWordpressSimple />WordPress to Gatsby</Link> */}
-          <Link to="puppies-and-portfolios"><FaDog />Puppies and Portfolios</Link>
+          <Link to="https://portfoliopuppies.dev"><FaDog />Puppies and Portfolios</Link>
         </div>
       </div>
       <div>
