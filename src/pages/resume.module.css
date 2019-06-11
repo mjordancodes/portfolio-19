@@ -19,25 +19,16 @@
   .content {
     padding: 10px;
     section {
-      display: grid;
-      grid-column-gap: 10px;
-      grid-template-columns: 40px 1fr;
-      grid-template-areas: 'title role1'
-                           'title role2'
-                           'title role3'
-                           'title role4';
       > h1 {
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        grid-area: title;
-        background: #E66565;
-        color: white;
+        color: #E66565;
         text-align: center;
-        border: 2.5px solid white;
+        border-top: 2.5px solid #E66565;
+        border-bottom: 1px solid #E66565;
+        margin: 10px 0;
+        padding: 10px 0;
       }
       article {
         hgroup {
-          border-bottom: 1px solid #E66565;
           h1 {
             color: #E66565;
           }
