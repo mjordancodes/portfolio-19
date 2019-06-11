@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby";
 
 
-import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaWordpressSimple, FaMicrophoneAlt, FaDog, FaPencilAlt, FaBriefcase, FaAngleDoubleLeft, FaWrench } from 'react-icons/fa';
+import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaMicrophoneAlt, FaDog, FaPencilAlt, FaBriefcase, FaAngleDoubleLeft, } from 'react-icons/fa';
 
 import componentStyles from './header.module.css';
 
@@ -25,18 +25,13 @@ const Nav = () => (
       <div>
         <Link to="projects"><span><FaCode /></span>Projects</Link>
         <div>
-          {/* <Link to="/projects"><FaLaptopCode />Portfolio</Link> */}
           <Link to="speaking"><FaMicrophoneAlt />Speaking</Link>
-          {/* <Link to="wp-gatsby"><FaWordpressSimple />WordPress to Gatsby</Link> */}
           <Link to="https://portfoliopuppies.dev"><FaDog />Puppies and Portfolios</Link>
         </div>
       </div>
       <div>
         <Link to="/blog"><span><FaPencilAlt /></span>Blog</Link>
       </div>
-      {/* <div>
-        <Link to="/resources"><span><FaWrench /></span>Resources</Link>
-      </div> */}
     </nav>
   </div>
 )
