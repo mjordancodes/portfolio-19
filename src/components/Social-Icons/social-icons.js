@@ -10,19 +10,19 @@ class SocialIcons extends Component {
     return (
       <div className={this.props.className}>
       <div className={componentStyles.social}>
-        <a href="https://www.twitter.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faTwitter} ${componentStyles.fa} fa`}>
+        <a href="https://www.twitter.com/mjordancodes/" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faTwitter} ${componentStyles.fa} fa`}>
           <FaTwitter />
         </a>
-        <a href="https://www.github.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faGithub} ${componentStyles.fa} fa`}>
+        <a href="https://www.github.com/mjordancodes/" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faGithub} ${componentStyles.fa} fa`}>
           <FaGithubAlt />
         </a>
-        <a href="https://www.codepen.io/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faCodepen} ${componentStyles.fa} fa`}>
+        <a href="https://www.codepen.io/mjordancodes/" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faCodepen} ${componentStyles.fa} fa`}>
           <FaCodepen />
         </a>
-        <a href="https://www.linkedin.com/in/michellejl/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faLinkedin} ${componentStyles.fa} fa`}>
+        <a href="https://www.linkedin.com/in/michellejl/" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faLinkedin} ${componentStyles.fa} fa`}>
           <FaLinkedin />
         </a>
-        <a href="https://www.instagram.com/mjordancodes/" target="_blank" rel="noopener noreferrer" className={`${componentStyles.faInstagram} ${componentStyles.fa} fa`}>
+        <a href="https://www.instagram.com/mjordancodes/" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faInstagram} ${componentStyles.fa} fa`}>
           <FaInstagram />
         </a>
       </div>
