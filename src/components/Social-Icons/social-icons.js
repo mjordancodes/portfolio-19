@@ -10,19 +10,19 @@ class SocialIcons extends Component {
     return (
       <div className={this.props.className}>
       <div className={componentStyles.social}>
-        <a href="https://twitter.com/mjordancodes/" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faTwitter} ${componentStyles.fa} fa`}>
+        <a href="https://twitter.com/mjordancodes" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faTwitter} ${componentStyles.fa} fa`}>
           <FaTwitter />
         </a>
-        <a href="https://github.com/mjordancodes/" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faGithub} ${componentStyles.fa} fa`}>
+        <a href="https://github.com/mjordancodes" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faGithub} ${componentStyles.fa} fa`}>
           <FaGithubAlt />
         </a>
-        <a href="https://codepen.io/mjordancodes/" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faCodepen} ${componentStyles.fa} fa`}>
+        <a href="https://codepen.io/mjordancodes" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faCodepen} ${componentStyles.fa} fa`}>
           <FaCodepen />
         </a>
-        <a href="https://linkedin.com/in/michellejl/" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faLinkedin} ${componentStyles.fa} fa`}>
+        <a href="https://linkedin.com/in/mjordancodes" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faLinkedin} ${componentStyles.fa} fa`}>
           <FaLinkedin />
         </a>
-        <a href="https://instagram.com/mjordancodes/" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faInstagram} ${componentStyles.fa} fa`}>
+        <a href="https://instagram.com/mjordancodes" target="_blank" rel="noopener noreferrer me" className={`${componentStyles.faInstagram} ${componentStyles.fa} fa`}>
           <FaInstagram />
         </a>
       </div>
