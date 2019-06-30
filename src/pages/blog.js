@@ -9,21 +9,21 @@ class BlogPage extends Component {
   render() {
     return (
       <Layout>
-        <header className={`container ${componentStyles.header}`}>
-          <h1>mJordan Writes:</h1>
-          <h2>articles, reviews, tutorials, life, and musings</h2>
+        <header className={`container h-feed ${componentStyles.header}`}>
+          <h1 className="p-name">mJordan Writes:</h1>
+          <h2>articles, reviews, tutorials, life, and musings by <span className="h-card p-author">mJordan</span></h2>
         </header>
         <ul className={`container ${componentStyles.postList}`}>
           {this.props.data.allMarkdownRemark.edges.map(post => (
             <Link to={post.node.fields.slug} key={post.node.fields.slug}>
-              <li className={componentStyles.post}>
-                <img src={post.node.frontmatter.thumbnail} alt="featured" />
-                <div className={componentStyles.words}>
-                  <h2>{post.node.frontmatter.title}</h2>
-                  <p className={componentStyles.info}>
+              <li className={`h-entry ${componentStyles.post}`}>
+                <img src={post.node.frontmatter.thumbnail} alt="featured" className="u-featured" />
+                <div className={`${componentStyles.words}`}>
+                  <h3 className="p-name">{post.node.frontmatter.title}</h3>
+                  <p className={`dt-published ${componentStyles.info}`}>
                     {post.node.frontmatter.date}
                   </p>
-                  <p>{post.node.excerpt}</p>
+                  <p className="p-summary">{post.node.excerpt}</p>
                 </div>
               </li>
             </Link>
