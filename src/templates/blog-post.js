@@ -9,17 +9,17 @@ export default ({ data }) => {
   const post = data.markdownRemark  
   return (
     <Layout>
-      <div className="container">  
+      <div className="container h-entry">  
         <header className={componentStyles.header}>
-          <img src={post.frontmatter.thumbnail} alt="featured" />  
+          <img src={post.frontmatter.thumbnail} alt="featured" className="u-featured" />  
           <div className={componentStyles.text}>
-            <h1>{post.frontmatter.title}</h1>   
+            <h2 className="p-name">{post.frontmatter.title}</h2>   
             <p>
-              {post.frontmatter.date}
+              Published by <span className="h-card p-author">mJordan</span> on <span className="dt-published">{post.frontmatter.date}</span>
             </p> 
           </div>   
         </header>      
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />      
+        <div dangerouslySetInnerHTML={{ __html: post.html }} className="e-content" />      
       </div>    
     </Layout>
   )
