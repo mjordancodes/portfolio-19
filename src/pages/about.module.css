@@ -6,6 +6,12 @@
   h2 {
     font-size: 3em;
   }
+  ul {
+    list-style-position: inside;
+    li {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .meImage {

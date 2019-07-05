@@ -1,0 +1,10 @@
+.tech {
+  li {
+    display: inline-block !important;
+    padding-bottom: 0 !important;
+    &:not(:last-child):after {
+      content: ',';
+      padding-right: 5px;
+    }
+  }
+}

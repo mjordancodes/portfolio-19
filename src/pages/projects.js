@@ -21,21 +21,12 @@ class ProjectsPage extends Component {
               image={project.node.frontmatter.screenshot} 
               github={project.node.frontmatter.github} 
               live={project.node.frontmatter.live} 
+              techs={project.node.frontmatter.techs}
             >
               <div dangerouslySetInnerHTML={{ __html: project.node.html }} /> 
             </ProjectCard>
           ))}
         </ul>
-          {/* <div className={componentStyles.github} >
-            <a href="https://github.com/mjordancodes">
-              <img src="/images/github.png" alt="github logo with custom octocat" />
-            </a>
-          </div>
-          <div className={componentStyles.codepen} >
-          <a href="https://codepen.io/mjordancodes">
-              <img src="/images/codepen.png" alt="codepen logo with screenshot of a pen" />
-            </a>
-          </div> */}
           <div className={componentStyles.projectsInfo}>
             <h3>Technologies I Use:</h3>
             <TechList />
@@ -66,6 +57,7 @@ export const projectListQuery = graphql`
             screenshot
             github
             live
+            techs
           }
           html
         }
