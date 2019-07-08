@@ -1,0 +1,21 @@
+@import "../styles/colors.css";
+
+.table {
+  border: 2px solid $color_dark;
+  border-collapse: collapse;
+  thead {
+    background: $color_default;
+    color: $color_light;
+    th {
+      font-weight: bold;
+      height: 50px;
+      text-align: center;
+    }
+  }
+  th, td {
+    padding: 0 5px;
+  }
+  tr:nth-of-type(2n) {
+    background: rgba(0,0,0,0.05);
+  }
+}

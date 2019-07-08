@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby";
 
 
-import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaMicrophoneAlt, FaDog, FaPencilAlt, FaBriefcase, FaAngleDoubleLeft, } from 'react-icons/fa';
+import { FaUserAstronaut, FaRegClock, FaToolbox, FaCode, FaMicrophoneAlt, FaDog, FaPencilAlt, FaBriefcase, FaAngleDoubleLeft, FaHashtag } from 'react-icons/fa';
 
 import componentStyles from './header.module.css';
 
@@ -26,6 +26,7 @@ const Nav = () => (
         <Link to="projects"><span><FaCode /></span>Projects</Link>
         <div>
           <Link to="speaking"><FaMicrophoneAlt />Speaking</Link>
+          <Link to="100-days-of-content"><FaHashtag />100 Days of Content</Link>
           <Link to="https://portfoliopuppies.dev"><FaDog />Puppies and Portfolios</Link>
         </div>
       </div>
