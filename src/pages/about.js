@@ -32,12 +32,13 @@ class AboutPage extends Component {
               <li>Exploring the world around me and  <a href="https://threewoodenpigeoons.com" target="_blank" rel="noopener noreferrer">taking pictures</a> on my favorite Nikon camera. </li>
               <li>Immersing myself in a good challenge or a <Link to="/books-read/">great book</Link>.</li>
               <li>Getting involved in my community or mentoring a new developer.</li>
+              <li>Kickboxing at <a href="https://www.facebook.com/iLoveKickboxingTigardOR/" target="_blank" rel="noopener noreferrer">iLoveKickboxing: Tigard</a></li>
             </ul>
           </SimpleText>
           <br />
           <SimpleText title="Community Involvement" className={componentStyles.community}>
             <p>
-              During summer of 2015 I attended my first tech event: a networking night put on by Women Who Code Portland that introduced me to the wonderful world of meetups. Since then, I have attended numerous different meetups where I learnt a lot, met some amazing humans, and grew well out of my comfort zone. I've even started speak at and organizing my own events.
+              During summer of 2015 I attended my first tech event: a networking night put on by Women Who Code Portland that introduced me to the wonderful world of meetups. Since then, I have attended numerous different meetups where I learnt a lot, met some amazing humans, and grew out of my comfort zone. I've even started speaking at and organizing my own events.
             </p>
           </SimpleText>
         </div>
