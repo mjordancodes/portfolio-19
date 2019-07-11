@@ -54,6 +54,17 @@ class OneHundredDaysOfContentPage extends Component {
             </td>
             <td>Decided that my notebook was too boring and single colored so </td>
           </tr>
+          <tr>
+            <td>003</td>
+            <td>July 10, 2019</td>
+            <td>SVG Illustration</td>
+            <td>
+              <a href="/assets/terrarium.png">
+                <img src="/assets/terrarium.png" alt="Graphic drawing of a few succulents in a bubble bowl" />
+              </a>
+            </td>
+            <td>Worked on a SVG of a succulent terrarium to add to the bookcase on my books list page. Want to add a bee that flies out of the bowl and around the page that is triggered by a mouse hover over. Maybe tomorrow's project.</td>
+          </tr>
         </table>
         
       </Layout>
