@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 
 import Layout from '../components/layout';
 import TalkCard from '../components/Cards/Talk-Card/talk-card';
-import FutureTalks from '../components/Future-Talk/future-talks';
 
 import componentStyles from './speaking.module.css';
 
@@ -15,8 +14,7 @@ class TalksPage extends Component {
           <h1>mJordan Speaks:</h1>
           <h2>meetups, workshops, conferneces</h2>
         </header>
-        <h2>Upcoming Talks:</h2>
-        <FutureTalks />
+        
         <h2>Previous Talks:</h2>
         <ul className={componentStyles.talkGrid}>
           {this.props.data.allMarkdownRemark.edges.map(post => (

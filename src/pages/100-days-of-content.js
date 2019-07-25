@@ -25,6 +25,30 @@ class OneHundredDaysOfContentPage extends Component {
           </thead>
 
           <tr>
+            <td>007</td>
+            <td>July 24, 2019</td>
+            <td>CSS Playground Experiment</td>
+            <td><a href="https://playground.mjordan.codes/swissted/yo-la-tengo.html"><img src="/assets/yo-la-tengo.png" /></a></td>
+            <td>Playing with CSS Grid and Typography, creating a page based off of of set of posters designed by Mike Joyce as part of his "Swissted" series.</td>
+          </tr>
+
+          <tr>
+            <td>006</td>
+            <td>July 23, 2019</td>
+            <td>CSS Playground Experiment</td>
+            <td><a href="https://playground.mjordan.codes/w-flemming/"><img src="/assets/colourful.png" /></a></td>
+            <td>Created an SVG based off a shirt designed by W. Flemming and then animated it using Greensock. If you click anywhere on the screen, the letters in 'colourful' change colors randomly.</td>
+          </tr>
+
+          <tr>
+            <td>005</td>
+            <td>July 22, 2019</td>
+            <td>New Project</td>
+            <td><a href="https://playground.mjordan.codes"><img src="/assets/css-playground.png" /></a></td>
+            <td>Created homepage layout for a new project I wanted to start. This new site will be a fun place I can collect random CSS experiments mostly based off of art and posters. The homepage draws it's inspiration from Piet Mondrian's Composition A.</td>
+          </tr>
+
+          <tr>
             <td>004</td>
             <td>July 12, 2019</td>
             <td>SVG Animations</td>
@@ -63,9 +87,10 @@ class OneHundredDaysOfContentPage extends Component {
             <td>July 08, 2019</td>
             <td>Slides</td>
             <td>
+              <a href="http://localhost:8000/talk/greensock-portfolio/">
               <img src="assets/animation-slides.png" alt="Title slide with title: Animating your portfolio to awesome with Greensock"/>
-              <br />
-              Slide Deck will be posted early on the 16th.</td>
+              </a>
+            </td>
             <td>Built slide deck for animation presentation I am giving at Front End PDX next week. While building this deck I focused on the why as well as just the technical how. I've found that spelling out the why and giving examples of the when can make a technical talk way more intersting. </td>
           </tr>
 
