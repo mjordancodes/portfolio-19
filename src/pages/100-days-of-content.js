@@ -28,7 +28,7 @@ class OneHundredDaysOfContentPage extends Component {
             <td>007</td>
             <td>July 24, 2019</td>
             <td>CSS Playground Experiment</td>
-            <td><a href="https://playground.mjordan.codes/swissted/yo-la-tengo.html"><img src="/assets/yo-la-tengo.png" /></a></td>
+            <td><a href="https://playground.mjordan.codes/swissted/yo-la-tengo.html"><img src="/assets/yo-la-tengo.png" alt="Yo La Tengo Poster"/></a></td>
             <td>Playing with CSS Grid and Typography, creating a page based off of of set of posters designed by Mike Joyce as part of his "Swissted" series.</td>
           </tr>
 
@@ -36,7 +36,7 @@ class OneHundredDaysOfContentPage extends Component {
             <td>006</td>
             <td>July 23, 2019</td>
             <td>CSS Playground Experiment</td>
-            <td><a href="https://playground.mjordan.codes/w-flemming/"><img src="/assets/colourful.png" /></a></td>
+            <td><a href="https://playground.mjordan.codes/w-flemming/"><img src="/assets/colourful.png" alt="Colourful is my favourite colour" /></a></td>
             <td>Created an SVG based off a shirt designed by W. Flemming and then animated it using Greensock. If you click anywhere on the screen, the letters in 'colourful' change colors randomly.</td>
           </tr>
 
@@ -44,7 +44,7 @@ class OneHundredDaysOfContentPage extends Component {
             <td>005</td>
             <td>July 22, 2019</td>
             <td>New Project</td>
-            <td><a href="https://playground.mjordan.codes"><img src="/assets/css-playground.png" /></a></td>
+            <td><a href="https://playground.mjordan.codes"><img src="/assets/css-playground.png" alt="Home page for my new CSS Playground" /></a></td>
             <td>Created homepage layout for a new project I wanted to start. This new site will be a fun place I can collect random CSS experiments mostly based off of art and posters. The homepage draws it's inspiration from Piet Mondrian's Composition A.</td>
           </tr>
 
