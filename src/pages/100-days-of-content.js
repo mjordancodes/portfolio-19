@@ -25,6 +25,20 @@ class OneHundredDaysOfContentPage extends Component {
           </thead>
 
           <tr>
+            <td>008</td>
+            <td>July 31, 2019</td>
+            <td>Particle.js Experiment</td>
+            <td>
+              <a href="https://codepen.io/mjordancodes/live/JgJEOY" target="_blank">
+                CodePen: Dinosaur Particles
+              </a>
+            </td>
+            <td>
+              Today I was playing around with the <a href="https://github.com/VincentGarreau/particles.js" target="_blank">Particle.js Library</a>. It was pretty easy to use once I got used to it, and a lot of fun to play with. Now I just need to find somewhere to use it on a project.
+            </td>
+          </tr>
+
+          <tr>
             <td>007</td>
             <td>July 24, 2019</td>
             <td>CSS Playground Experiment</td>
@@ -88,7 +102,7 @@ class OneHundredDaysOfContentPage extends Component {
             <td>Slides</td>
             <td>
               <a href="http://localhost:8000/talk/greensock-portfolio/">
-              <img src="assets/animation-slides.png" alt="Title slide with title: Animating your portfolio to awesome with Greensock"/>
+              <img src="/assets/animation-slides.png" alt="Title slide with title: Animating your portfolio to awesome with Greensock"/>
               </a>
             </td>
             <td>Built slide deck for animation presentation I am giving at Front End PDX next week. While building this deck I focused on the why as well as just the technical how. I've found that spelling out the why and giving examples of the when can make a technical talk way more intersting. </td>
